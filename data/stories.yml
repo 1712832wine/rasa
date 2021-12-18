@@ -26,8 +26,6 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: ask_func_list
-  - action: uttet_ask_func_list
-  - intent: bot_challenge
-  - intent: utter_bot_challenge
+  - action: utter_ask_func_list
   - intent: goodbye
   - action: utter_goodbye
