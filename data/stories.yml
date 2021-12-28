@@ -1,18 +1,20 @@
-version: "3.0"
+version: "2.0"
 
 stories:
 
-- story: happy path
+- story: greet
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: give_name
+  - action: utter_greet_with_name
 
 - story: sad path 1
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: give_name
+  - action: utter_greet_with_name
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -23,8 +25,54 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: give_name
+  - action: utter_greet_with_name
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: ask_bot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: give_name
+  - action: utter_greet_with_name
+  - intent: ask_bot
+  - action: utter_ask_bot
+
+- story: thank
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: ask_func_list
+  steps:
+  - intent: ask_func_list
+  - action: utter_ask_func_list
+
+- story: ask_stupid
+  steps:
+  - intent: ask_stupid
+  - action: utter_ask_stupid
+  - intent: angry
+  - action: utter_ask_angry
+
+
+- story: ask_food
+  steps:
+  - intent: ask_stupid
+  - action: utter_ask_food
+
+
+- story: ask_lottery
+  steps:
+  - intent: ask_lottery
+  - action: utter_ask_lottery
+
+
+- story: ask_weather 
+  steps:
+  - intent: ask_weather 
+  - action: utter_ask_weather 
