@@ -12,20 +12,35 @@ stories:
 
 - story: story 2
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: give_name
   - action: utter_give_name
-  - intent: goodbye
-  - action: utter_goodbye
   
-
-
 - story: story 3
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: ask_func_list
   - action: utter_ask_func_list
-  - intent: goodbye
-  - action: utter_goodbye
+
+- story: story 4
+  steps:
+  - intent: medical
+  - action: utter_medical
+
+- story: story 5
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: story 6
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- story: story 7
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- story: story 8
+  steps:
+  - intent: thank
+  - action: utter_thank

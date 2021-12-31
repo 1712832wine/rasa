@@ -3,166 +3,59 @@ version: "3.0"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
     - xin chào
     - chào bạn
-    - hey
-    - mình có vài câu hỏi
-    - có ai giúp mình không
-    - bạn ơi
-    - anh ơi
-    - chị ơi
-    - cháu ơi
     - hello
-    - chào
-    - ê mày
-    - có ai ở đây không?
 
 - intent: give_name
   examples: |
-    - [Anh](cust_sex) là [Lộc](cust_name)
-    - [Anh](cust_sex) là [Long](cust_name)
-    - [Anh](cust_sex) là [Đạt](cust_name)
-    - [Anh](cust_sex) là [Cường](cust_name)
-    - [Anh](cust_sex) là [Nam](cust_name)
-    - [Chị](cust_sex) là [Ái](cust_name)
-    - [Chị](cust_sex) là [Vy](cust_name)
-    - [Chị](cust_sex) là [Ngọc](cust_name)
-    - [Chị](cust_sex) là [Linh](cust_name)
-    - [Chị](cust_sex) là [Hoa](cust_name)
-    - [Em](cust_sex) là [Trang](cust_name)
-    - [Em](cust_sex) là [Vy](cust_name)
-    - [Em](cust_sex) là [Nhi](cust_name)
-    - [Cô](cust_sex) [Vân](cust_name)
-    - [Mình](cust_sex) là [Ngọc](cust_name)
-    - [Mình](cust_sex) là [Ái](cust_name)
-    - [Mình](cust_sex) là [Lộc](cust_name)
-    - [Tôi](cust_sex) là [Đạt](cust_name)
-    - [Tôi](cust_sex) là [Hùng](cust_name)
-    - [Tôi](cust_sex) là [Hương](cust_name)
-    - [Tôi](cust_sex) là [Long](cust_name)
+    - [Anh](user_gender) là [Lộc](user_name)
+    - [Anh](user_gender) là [Long](user_name)
+    - [Anh](user_gender) là [Đạt](user_name)
+    - [Chị](user_gender) là [Ái](user_name)
+    - [Chị](user_gender) là [Vy](user_name)
+    - [Chị](user_gender) là [Ngọc](user_name)
 
 - intent: goodbye
   examples: |
     - bái bai
     - tạm biệt
-    - chào tạm biệt
-    - chào tạm biệt em
-    - tạm biệt em
-    - tạm biệt em nhé
-    - bye nha
-    - thôi t đi đây
 
 - intent: affirm
   examples: |
-    - yes
-    - okkkk
-    - đúng vậyyyy
+    - đúng vậy
     - đúng rùi đó
     - ừa nè
-    - chính xác
-    - cũng ok
 
 - intent: deny
   examples: |
-    - no
-    - nô nô
     - hong phải
     - không
-    - đâu có 
-    - có đâu
     - không nha
-
-# - intent: mood_great
-#   examples: |
-#     - tuyệt vời
-#     - xịn xò ta
-#     - vui ghê
-#     - t vui quá
-#     - mình thấy thích rồi đó
-#     - mình thấy tốt nè
-
-# - intent: mood_angry
-#   examples: |
-#    - m tào lao quá
-#    - khùng hả
-#    - ủa nói gì kì cục vậy
-#    - dô diên nha
-#    - nghỉ chơi
-#    - xàm quá 
-#    - thôi không nói nữa
-
-# - intent: mood_unhappy
-#   examples: |
-#     - t chán quá
-#     - chán ghê
-#     - buồn ghê á
-#     - làm biếng ghê
-#     - chán như con gián
-#     - t đang buồn 
-#     - t rầu ghê
-#     - very sad
-#     - hỏng dui
-#     - hôm nay tui buồn
 
 - intent: thank
   examples: |
-    - chuẩn
-    - hay
-    - siêu
-    - tuyệt
     - cám ơn
-    - thanks
-    - thank you
-    - ok
     - cảm ơn em
-    - cảm ơn em nhiều nhé
-    - cảm ơn
 
 - intent: ask_func_list
   examples: |
     - bạn có thể làm được những gì
     - bạn giúp được gì nào
-    - chức năng của bạn là gì
-    - bạn có thể làm được mấy chức năng
-    - bạn giỏi nhất làm gì
-    - bạn có tư vấn giúp mình được không
-    - việc gì bạn làm được
-    - kể xem bạn làm được gì
-    - cho mình biết bạn làm được gì nhé
-    - bạn hữu dụng như thế nào
-    - bạn có ích trong những việc gì
-    - lĩnh vực gì bạn giỏi nhất
-    - mình tò mò về những việc bạn làm được
-    - chẳng biết bạn làm được gì
-    - bạn tệ nhất trong việc gì
-    - bạn biết được những lĩnh vực gì
-    - bạn giỏi hỗ trợ nhất trong lĩnh vực gì
-    - kể cho mình biết những việc bạn có thể làm được nhé
-    - nói cho mình về những việc bạn giúp được mình
-    - bạn giúp được mình gì nào
-    - bạn có thể làm gì
-    - em giúp được gì
-    - em làm được gì
-    - mày biết làm gì
-    - em biết làm gì
-    - bạn biết làm gì
-    - biết làm gì
-    - làm được gì
-    - có làm được gì
-    - có làm được trò gì
-    - giúp giúp cái gì
-    - biết gì mà nói
-    - làm được gì
-    - giúp được gì
-    - mày làm được gì
-    - có biết gì
 
 - intent: bot_challenge
   examples: |
     - bạn là robot hả?
     - bạn có phải con người không?
-    - tôi đang nói chuyện với robot à?
-    - tôi đang nói chuyện với con người à?
+
+- intent: medical
+  examples: |
+    - Virus [corona (2019-nCoV)](covid) là gì? 
+    - Tại sao bệnh viêm đường hô hấp cấp do virus corona được đặt tên là [Covid-19](covid)? 
+    - Cơ chế gây bệnh và lây lan của Virus [Corona SARS-CoV-2](covid)? 
+    - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát [Covid-19](covid) không? 
+    - Lây lan [SARS-COV-2](covid) trong cộng đồng là gì? 
+    - Muỗi hay ve có thể lan truyền virus gây bệnh [Covid-19](covid) không? 
+    - Các triệu chứng thường thấy khi bệnh nhân đã nhiễm [(2019-nCoV)](covid)? 
+    - Khi nào cần chăm sóc khẩn cấp khi mắc [Covid-19](covid)? 
+    - Có thể xảy ra trường hợp nhiễm cùng lúc cúm và [Covid-19](covid)?
