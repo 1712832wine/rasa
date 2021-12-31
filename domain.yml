@@ -105,7 +105,6 @@ responses:
   - text: "Sa hong hiểu câu này, xin lũi nhiều nha"
   - text: "Là sao, chưa hiểu thông cảm nha hihi"
 
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
