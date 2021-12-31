@@ -199,7 +199,7 @@ nlu:
 
 - intent: medical
   examples: |
-    - Virus [corona (2019-nCoV)](covid) là gì? 
+    - Virus [corona 2019-nCoV](covid) là gì? 
     - Tại sao bệnh viêm đường hô hấp cấp do virus [corona](covid) được đặt tên là [Covid-19](covid)? 
     - Cơ chế gây bệnh và lây lan của Virus Corona [SARS-CoV-2](covid)? 
     - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát [Covid-19](covid) không? 
