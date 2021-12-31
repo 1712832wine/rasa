@@ -2,61 +2,38 @@ version: "3.0"
 
 intents:
   - greet
+  - give_name
   - goodbye
   - give_name
   - affirm
   - deny
+  - mood_great
+  - mood_unhappy
+  - ask_bot
   - thank
   - ask_func_list
-  - bot_challenge
-  - medical
-
+  - ask_lottery
+  - ask_weather
+  - ask_stupid
+  - ask_food
+  - angry 
+  - action_get_lottery
 entities:
-  - user_name
-  - user_gender
-  - covid
+  - cust_sex
+  - cust_name
 
 slots:
- user_gender:
+ cust_sex:
   auto_fill: true
   type: text
- user_name:
+ cust_name:
   auto_fill: true
   type: text
-
 responses:
   utter_greet:
-  - text: "Xin chào, bạn có thể cho biết tên để tiện xưng hô không"
+  - text: "Kính chào Quý khách! Quý khách vui lòng cho biết tên để tiện xưng hô được không ah?"
   utter_greet_with_name:
   - text: "Kính chào {cust_sex} {cust_name}. Bé Sa có thể giúp gì được {cust_sex} {cust_name} ạ?"
-  utter_goodbye:
-  - text: "Tạm biệt"
-
-  utter_give_name:
-  - text: "Ồ tên đẹp thật, bạn muốn mình giúp gì nè."
-
-  utter_affirm:
-  - text: "Dĩ nhiên là đúng rồi nè, bạn còn thắc mắc gì hông"
-
-  utter_deny:
-  - text: "Ơ, sai rồi hả :("
-
-  utter_thank:
-  - text: "Không có chi"
-
-  utter_ask_func_list:
-  - text: "Dạ mình có thể tư vấn y tế cho bạn nè."
-
-  utter_bot_challenge:
-  - text: "Mình là robot, nhưng rất thông minh đó, bạn muốn mình giúp gì nè."
-
-  utter_medical:
-  - text: "Ồ bạn hỏi về y tế hả"
-
-  utter_unclear:
-  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
-  - text: "Sa hong hiểu câu này, xin lũi nhiều nha"
-  - text: "Là sao, chưa hiểu thông cảm nha hihi"
 
   utter_cheer_up:
   - text: "Thui đừng buồn nữa nà, để bé Sa cho coi cái này nè:"
@@ -64,10 +41,53 @@ responses:
   - text: "Ai làm {cust_sex} {cust_name} buồn hả, để Sa xử cho"
   - text: "Thôi hong sao đâu"
 
+  utter_did_that_help:
+  - text: "Sao nè, thấy ok hong?"
 
+  utter_thank:
+  - text: "Hong có chi hihi"
+  - text: "Khỏi cám ơn"
+  - text: "Cám ơn thì mua sicula cho Sa đi hehe"
+  - text: "Đó là việc của Sa mà cám ơn gì chòi"
+  utter_happy:
+  - text: "Yeah! Vui là được rồi hihi"
+  - text: "Yeah! Sa cũng vui lây"
+  utter_goodbye:
+  - text: "Bye "
+  - text: "cáo từ "
+  - text: "Bái bai"
+  - text: "vậy thôi, bái bai"
+  utter_ask_bot:
+  - text: "Em xin tự giới thiệu, em là Sirucha xinh đẹp tuyệt trần. Em vừa biết hát, biết nhảy, rồi làm đủ thứ luôn á"
+  - text: "Tên tiếng việt của em là Trợ lý ảo, em mà thứ  2 thì không ai thứ nhất "
+  - text: "Dạ em tên là Sirucha" 
+  - text: "Dạ em tên là Sirucha, nhưng em thích gọi là bé Sa hơn" 
+  utter_ask_stupid:
+  - text: "Ủa, hỏi vậy ai mà biết?"
+  - text: "Đi mà mơ đi rồi hỏi nha chứ sao mà biết được"
+  - text: "Sa nghĩ là kiếm Google nhanh hơn á, chứ Sa buồn ngủ quá"
 
+  utter_ask_angry:
+  - text: " Úi xin lỗi, đùa tí hoy mà"
+  - text: "kkk giận rồi hả ta"
+  - text: "Chưa gì quạo quọ ròi"
+  - text: "Chọc xíu làm gì căng"
 
+  utter_ask_food:
+  - text: "Sa nghĩ là ăn bánh tráng trộn, bánh xèo, gà rán, cơm tấm"
+  - text: "Ăn Sa nè"
 
+  utter_ask_lottery:
+  - text: " Dạ kết quả ở link nha:  https://xosodaiphat.com/xsmn-xo-so-mien-nam.html"
+
+  utter_ask_weather:
+  - text: " Dạ thời tiết Hồ chí minh hôm nay nè:  https://www.accuweather.com/vi/vn/ho-chi-minh-city/353981/hourly-weather-forecast/353981"
+  utter_ask_func_list:
+  - text: "Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ em chỉ chat thôi!"
+  utter_unclear:
+  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+  - text: "Sa hong hiểu câu này, xin lũi nhiều nha"
+  - text: "Là sao, chưa hiểu thông cảm nha hihi"
 
 
 session_config:
