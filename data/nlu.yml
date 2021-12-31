@@ -6,17 +6,6 @@ nlu:
     - xin chào
     - chào bạn
     - hello
-<<<<<<< HEAD
-
-- intent: give_name
-  examples: |
-    - [Anh](user_gender) là [Lộc](user_name)
-    - [Anh](user_gender) là [Long](user_name)
-    - [Anh](user_gender) là [Đạt](user_name)
-    - [Chị](user_gender) là [Ái](user_name)
-    - [Chị](user_gender) là [Vy](user_name)
-    - [Chị](user_gender) là [Ngọc](user_name)
-=======
     - hi
     - xin chào
     - chào bạn
@@ -31,7 +20,6 @@ nlu:
     - chào
     - ê mày
     - có ai ở đây không?
->>>>>>> origin/dev-Thanh
 
 - intent: give_name
   examples: |
@@ -60,19 +48,6 @@ nlu:
   examples: |
     - bái bai
     - tạm biệt
-<<<<<<< HEAD
-
-- intent: affirm
-  examples: |
-    - đúng vậy
-    - đúng rùi đó
-    - ừa nè
-
-- intent: deny
-  examples: |
-    - hong phải
-    - không
-=======
     - chào tạm biệt
     - chào tạm biệt em
     - tạm biệt em
@@ -98,29 +73,19 @@ nlu:
     - không
     - đâu có 
     - có đâu
->>>>>>> origin/dev-Thanh
     - không nha
 
 - intent: thank
   examples: |
-<<<<<<< HEAD
-    - cám ơn
-    - cảm ơn em
-=======
     - tuyệt vời
     - xịn xò ta
     - vui ghê
     - t vui quá
     - mình thấy thích rồi đó
     - mình thấy tốt nè
->>>>>>> origin/dev-Thanh
 
 - intent: ask_func_list
   examples: |
-<<<<<<< HEAD
-    - bạn có thể làm được những gì
-    - bạn giúp được gì nào
-=======
     - t chán quá
     - chán ghê
     - buồn ghê á
@@ -131,26 +96,9 @@ nlu:
     - very sad
     - hỏng dui
     - hôm nay tui buồn
->>>>>>> origin/dev-Thanh
 
 - intent: ask_bot
   examples: |
-<<<<<<< HEAD
-    - bạn là robot hả?
-    - bạn có phải con người không?
-
-- intent: medical
-  examples: |
-    - Virus [corona (2019-nCoV)](covid) là gì? 
-    - Tại sao bệnh viêm đường hô hấp cấp do virus corona được đặt tên là [Covid-19](covid)? 
-    - Cơ chế gây bệnh và lây lan của Virus [Corona SARS-CoV-2](covid)? 
-    - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát [Covid-19](covid) không? 
-    - Lây lan [SARS-COV-2](covid) trong cộng đồng là gì? 
-    - Muỗi hay ve có thể lan truyền virus gây bệnh [Covid-19](covid) không? 
-    - Các triệu chứng thường thấy khi bệnh nhân đã nhiễm [(2019-nCoV)](covid)? 
-    - Khi nào cần chăm sóc khẩn cấp khi mắc [Covid-19](covid)? 
-    - Có thể xảy ra trường hợp nhiễm cùng lúc cúm và [Covid-19](covid)?
-=======
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
@@ -274,4 +222,3 @@ nlu:
    - Giờ ăn gì đây?
    - Gợi ý món ngon coi 
    - Ăn gì đây?
->>>>>>> origin/dev-Thanh
