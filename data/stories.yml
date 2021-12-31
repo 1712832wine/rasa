@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.0"
 
 stories:
 
@@ -9,29 +9,21 @@ stories:
   - intent: give_name
   - action: utter_greet_with_name
 
-- story: story 2
+- story: happy
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: give_name
-  - action: utter_greet_with_name
+  - intent: mood_great
+  - action: utter_mood_great
+
+
+- story: unhappy 1
+  steps:
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
 
-- story: story 4
-  steps:
-  - intent: medical
-  - action: utter_medical
-
-- story: story 5
-  steps:
-  - intent: bot_challenge
-  - action: utter_bot_challenge
-
-- story: story 6
+- story: unhappy 2
   steps:
   - intent: greet
   - action: utter_greet
@@ -43,12 +35,18 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
+- story: medical
+  steps:
+  - intent: medical
+  - action: utter_medical
+
+- story: botchalenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
 - story: ask_bot
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: give_name
-  - action: utter_greet_with_name
   - intent: ask_bot
   - action: utter_ask_bot
 
@@ -66,23 +64,14 @@ stories:
   steps:
   - intent: ask_stupid
   - action: utter_ask_stupid
+
+- story: angry
+  steps:
   - intent: angry
-  - action: utter_ask_angry
+  - action: utter_angry
 
-
-- story: ask_food
+- story: affirm
   steps:
-  - intent: ask_stupid
-  - action: utter_ask_food
+  - intent: affirm
+  - action: utter_affirm
 
-
-- story: ask_lottery
-  steps:
-  - intent: ask_lottery
-  - action: utter_ask_lottery
-
-
-- story: ask_weather 
-  steps:
-  - intent: ask_weather 
-  - action: utter_ask_weather 

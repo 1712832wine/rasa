@@ -1,4 +1,4 @@
-version: "2.0"
+version: "3.0"
 
 rules:
 
@@ -10,11 +10,6 @@ rules:
 
 - rule: Say thank anytime the user says thank
   steps:
-<<<<<<< HEAD
-  - intent: bot_challenge
-  - action: utter_bot_challenge
-=======
   - intent: thank
   - action: utter_thank
 
->>>>>>> origin/dev-Thanh
