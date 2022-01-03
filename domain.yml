@@ -20,14 +20,6 @@ entities:
   - user_name
   - covid
 
-slots:
- user_gender:
-  auto_fill: true
-  type: text
- user_name:
-  auto_fill: true
-  type: text
-
 actions:
   - utter_greet
   - utter_greet_with_name
