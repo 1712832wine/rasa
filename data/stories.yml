@@ -2,29 +2,71 @@ version: "3.0"
 
 stories:
 
-- story: happy path
+- story: greet
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: give_name
+  - action: utter_greet_with_name
 
-- story: sad path 1
+- story: happy
   steps:
-  - intent: greet
-  - action: utter_greet
+  - intent: mood_great
+  - action: utter_mood_great
+
+
+- story: unhappy 1
+  steps:
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
 
-- story: sad path 2
+- story: unhappy 2
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: give_name
+  - action: utter_greet_with_name
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: medical
+  steps:
+  - intent: medical
+  - action: utter_medical
+
+- story: ask_bot
+  steps:
+  - intent: ask_bot
+  - action: utter_ask_bot
+
+- story: thank
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: ask_func_list
+  steps:
+  - intent: ask_func_list
+  - action: utter_ask_func_list
+
+- story: ask_stupid
+  steps:
+  - intent: ask_stupid
+  - action: utter_ask_stupid
+
+- story: angry
+  steps:
+  - intent: angry
+  - action: utter_angry
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+

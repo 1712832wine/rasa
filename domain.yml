@@ -6,88 +6,83 @@ intents:
   - goodbye
   - affirm
   - deny
+  - thank
   - mood_great
   - mood_unhappy
   - ask_bot
-  - thank
   - ask_func_list
-  - ask_lottery
-  - ask_weather
   - ask_stupid
-  - ask_food
-  - angry 
-  - action_get_lottery
+  - angry
+  - medical
+  
 entities:
-  - cust_sex
-  - cust_name
+  - user_gender
+  - user_name
+  - covid
 
-slots:
- cust_sex:
-  auto_fill: true
-  type: text
- cust_name:
-  auto_fill: true
-  type: text
 responses:
   utter_greet:
   - text: "Kính chào Quý khách! Quý khách vui lòng cho biết tên để tiện xưng hô được không ah?"
+  
   utter_greet_with_name:
-  - text: "Kính chào {cust_sex} {cust_name}. Bé Sa có thể giúp gì được {cust_sex} {cust_name} ạ?"
+  - text: "Kính chào quý khách. Bé Sa có thể giúp gì được quý khách ạ?"
+
+  utter_mood_great:
+  - text: "Có chuyện gì vui vậy ạ"
 
   utter_cheer_up:
   - text: "Thui đừng buồn nữa nà, để bé Sa cho coi cái này nè:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "Ai làm {cust_sex} {cust_name} buồn hả, để Sa xử cho"
+  - text: "Ai làm cậu buồn hả, để Sa xử cho"
   - text: "Thôi hong sao đâu"
 
   utter_did_that_help:
   - text: "Sao nè, thấy ok hong?"
+  
+  utter_affirm:
+  - text: "umk đúng rồi"
 
   utter_thank:
   - text: "Hong có chi hihi"
   - text: "Khỏi cám ơn"
   - text: "Cám ơn thì mua sicula cho Sa đi hehe"
   - text: "Đó là việc của Sa mà cám ơn gì chòi"
+
   utter_happy:
   - text: "Yeah! Vui là được rồi hihi"
   - text: "Yeah! Sa cũng vui lây"
+
   utter_goodbye:
-  - text: "Bye "
-  - text: "cáo từ "
+  - text: "Bye"
+  - text: "cáo từ"
   - text: "Bái bai"
   - text: "vậy thôi, bái bai"
-  utter_ask_bot:
-  - text: "Em xin tự giới thiệu, em là Sirucha xinh đẹp tuyệt trần. Em vừa biết hát, biết nhảy, rồi làm đủ thứ luôn á"
-  - text: "Tên tiếng việt của em là Trợ lý ảo, em mà thứ  2 thì không ai thứ nhất "
-  - text: "Dạ em tên là Sirucha" 
-  - text: "Dạ em tên là Sirucha, nhưng em thích gọi là bé Sa hơn" 
+
   utter_ask_stupid:
   - text: "Ủa, hỏi vậy ai mà biết?"
   - text: "Đi mà mơ đi rồi hỏi nha chứ sao mà biết được"
   - text: "Sa nghĩ là kiếm Google nhanh hơn á, chứ Sa buồn ngủ quá"
 
-  utter_ask_angry:
+  utter_angry:
   - text: " Úi xin lỗi, đùa tí hoy mà"
   - text: "kkk giận rồi hả ta"
   - text: "Chưa gì quạo quọ ròi"
   - text: "Chọc xíu làm gì căng"
 
-  utter_ask_food:
-  - text: "Sa nghĩ là ăn bánh tráng trộn, bánh xèo, gà rán, cơm tấm"
-  - text: "Ăn Sa nè"
+  utter_ask_bot:
+  - text: "Dạ em tên là Sa, em có thể tư vấn y tế cho cậu nè"
 
-  utter_ask_lottery:
-  - text: " Dạ kết quả ở link nha:  https://xosodaiphat.com/xsmn-xo-so-mien-nam.html"
-
-  utter_ask_weather:
-  - text: " Dạ thời tiết Hồ chí minh hôm nay nè:  https://www.accuweather.com/vi/vn/ho-chi-minh-city/353981/hourly-weather-forecast/353981"
   utter_ask_func_list:
-  - text: "Em có thể làm được rất nhiều thứ: hát, đọc thơ, đọc chuyện...nhưng giờ em chỉ chat thôi!"
+  - text: "Em có thể tư vấn y tế cho cậu nè"
+
+  utter_medical:
+  - text: "cậu hỏi về covid hả"
+
+
   utter_unclear:
   - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
   - text: "Sa hong hiểu câu này, xin lũi nhiều nha"
   - text: "Là sao, chưa hiểu thông cảm nha hihi"
-
 
 session_config:
   session_expiration_time: 60
