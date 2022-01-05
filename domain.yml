@@ -29,6 +29,7 @@ actions:
   - utter_mood_great
   - utter_cheer_up
   - utter_did_that_help
+  - utter_affirm
   - utter_ask_bot
   - utter_ask_func_list
   - utter_ask_stupid
@@ -54,6 +55,9 @@ responses:
 
   utter_did_that_help:
   - text: "Sao nè, thấy ok hong?"
+  
+  utter_affirm:
+  - text: "umk đúng rồi"
 
   utter_thank:
   - text: "Hong có chi hihi"
