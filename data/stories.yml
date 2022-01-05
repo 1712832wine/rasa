@@ -40,11 +40,6 @@ stories:
   - intent: medical
   - action: utter_medical
 
-- story: botchalenge
-  steps:
-  - intent: bot_challenge
-  - action: utter_bot_challenge
-
 - story: ask_bot
   steps:
   - intent: ask_bot
