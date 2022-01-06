@@ -20,12 +20,23 @@ entities:
   - user_name
   - covid
 
+slots:
+ user_gender:
+  auto_fill: true
+  type: text
+ user_name:
+  auto_fill: true
+  type: text
+
+actions:
+
+
 responses:
   utter_greet:
-  - text: "Kính chào Quý khách! Quý khách vui lòng cho biết tên để tiện xưng hô được không ah?"
+  - text: "Em chào {user_gender}, {user_gender} vui lòng cho biết em tên để tiện xưng hô được không ah?"
   
   utter_greet_with_name:
-  - text: "Kính chào quý khách. Bé Sa có thể giúp gì được quý khách ạ?"
+  - text: "Kính chào {user_gender} {user_name}. Bé Sa có thể giúp gì được cho {user_gender} ạ?"
 
   utter_mood_great:
   - text: "Có chuyện gì vui vậy ạ"
@@ -64,7 +75,7 @@ responses:
   - text: "Sa nghĩ là kiếm Google nhanh hơn á, chứ Sa buồn ngủ quá"
 
   utter_angry:
-  - text: " Úi xin lỗi, đùa tí hoy mà"
+  - text: "Úi xin lỗi, đùa tí hoy mà"
   - text: "kkk giận rồi hả ta"
   - text: "Chưa gì quạo quọ ròi"
   - text: "Chọc xíu làm gì căng"
