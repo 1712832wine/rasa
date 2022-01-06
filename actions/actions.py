@@ -35,7 +35,7 @@ class ActionMedical(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         text = tracker.latest_message['text']
-
+        print(text)
         dispatcher.utter_message(text=text)
         return []
 
