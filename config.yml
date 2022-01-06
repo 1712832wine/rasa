@@ -4,13 +4,13 @@ recipe: default.v1
 
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: en
+language: vi
 
 pipeline:
-  - name: WhitespaceTokenizer
+  - name: VietnameseTokenizer
   - name: LanguageModelFeaturizer
     model_name: "bert"
-    model_weights: "rasa/LaBSE"
+    model_weights: "bert-base-multilingual-cased"
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer

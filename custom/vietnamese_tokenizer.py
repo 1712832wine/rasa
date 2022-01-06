@@ -75,7 +75,7 @@ class VietnameseTokenizer(Tokenizer):
     def tokenize(self, message: Message, attribute: Text) -> List[Token]:
         text = message.get(attribute)
 
-        words = word_tokenize(text)
+        words = word_tokenize(text, format="text")
         tokens = self._convert_words_to_tokens(words, text)
 
         return self._apply_token_pattern(tokens)
