@@ -21,12 +21,17 @@ entities:
   - covid
 
 slots:
- user_gender:
-  auto_fill: true
-  type: text
- user_name:
-  auto_fill: true
-  type: text
+  user_gender:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: user_gender
+  user_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: user_name
+ 
 
 actions:
 
