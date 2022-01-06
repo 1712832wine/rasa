@@ -11,7 +11,7 @@ intents:
   - mood_unhappy
   - ask_bot
   - ask_func_list
-  - ask_stupid
+  - unknown
   - angry
   - medical
   
@@ -31,10 +31,9 @@ slots:
     mappings:
       - type: from_entity
         entity: user_name
- 
 
 actions:
-
+  - action_medical
 
 responses:
   utter_greet:
@@ -74,7 +73,7 @@ responses:
   - text: "Bái bai"
   - text: "vậy thôi, bái bai"
 
-  utter_ask_stupid:
+  utter_unknown:
   - text: "Ủa, hỏi vậy ai mà biết?"
   - text: "Đi mà mơ đi rồi hỏi nha chứ sao mà biết được"
   - text: "Sa nghĩ là kiếm Google nhanh hơn á, chứ Sa buồn ngủ quá"
@@ -90,9 +89,6 @@ responses:
 
   utter_ask_func_list:
   - text: "Em có thể tư vấn y tế cho cậu nè"
-
-  utter_medical:
-  - text: "cậu hỏi về covid hả"
 
 
   utter_unclear:

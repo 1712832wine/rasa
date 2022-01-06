@@ -181,7 +181,7 @@ nlu:
     - mày làm được gì
     - có biết gì
 
-- intent: ask_stupid
+- intent: unknown
   examples: |
     - giờ làm gì để có bồ đây?
     - em có biết tại sao lá cây có màu xanh
@@ -199,10 +199,10 @@ nlu:
 
 - intent: medical
   examples: |
-    - Virus [corona 2019-nCoV](covid) là gì? 
-    - Tại sao bệnh viêm đường hô hấp cấp do virus [corona](covid) được đặt tên là [Covid-19](covid)? 
-    - Cơ chế gây bệnh và lây lan của Virus Corona [SARS-CoV-2](covid)? 
-    - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát [Covid-19](covid) không? 
+    - Virus [corona 2019-nCoV](covid:covid) là gì? 
+    - Tại sao bệnh viêm đường hô hấp cấp do virus [corona](covid:covid) được đặt tên là [Covid-19](covid:covid)? 
+    - Cơ chế gây bệnh và lây lan của [Virus Corona SARS-CoV-2](covid)? 
+    - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát [covid-19](covid) không? 
     - Lây lan [SARS-COV-2](covid) trong cộng đồng là gì? 
     - Muỗi hay ve có thể lan truyền virus gây bệnh [Covid-19](covid) không? 
     - Các triệu chứng thường thấy khi bệnh nhân đã nhiễm [2019-nCoV](covid)? 

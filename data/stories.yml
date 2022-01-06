@@ -38,7 +38,7 @@ stories:
 - story: medical
   steps:
   - intent: medical
-  - action: utter_medical
+  - action: action_medical
 
 - story: ask_bot
   steps:
@@ -55,10 +55,10 @@ stories:
   - intent: ask_func_list
   - action: utter_ask_func_list
 
-- story: ask_stupid
+- story: unknown
   steps:
-  - intent: ask_stupid
-  - action: utter_ask_stupid
+  - intent: unknown
+  - action: utter_unknown
 
 - story: angry
   steps:
