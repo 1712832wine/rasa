@@ -74,9 +74,9 @@ responses:
   - text: "vậy thôi, bái bai"
 
   utter_unknown:
-  - text: "Ủa, hỏi vậy ai mà biết?"
-  - text: "Đi mà mơ đi rồi hỏi nha chứ sao mà biết được"
-  - text: "Sa nghĩ là kiếm Google nhanh hơn á, chứ Sa buồn ngủ quá"
+  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+  - text: "Sa hong hiểu câu này, xin lũi nhiều nha"
+  - text: "Là sao, chưa hiểu thông cảm nha hihi"
 
   utter_angry:
   - text: "Úi xin lỗi, đùa tí hoy mà"
@@ -89,12 +89,7 @@ responses:
 
   utter_ask_func_list:
   - text: "Em có thể tư vấn y tế cho cậu nè"
-
-
-  utter_unclear:
-  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
-  - text: "Sa hong hiểu câu này, xin lũi nhiều nha"
-  - text: "Là sao, chưa hiểu thông cảm nha hihi"
+  
 
 session_config:
   session_expiration_time: 60
