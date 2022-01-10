@@ -4,8 +4,3 @@ clone
 git clone .......
 
 
-commit
-push
-
-pull
-
