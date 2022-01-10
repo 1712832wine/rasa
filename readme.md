@@ -5,3 +5,6 @@ git clone .......
 
 activate conda
 conda activate NAME
+
+mở 1 cmd để chạy rasa run actions
+mở 1 cmd để chạy rasa train (nlu)
