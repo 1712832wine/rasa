@@ -7,4 +7,6 @@ activate conda
 conda activate NAME
 
 mở 1 cmd để chạy rasa run actions
-mở 1 cmd để chạy rasa train (nlu)
+mở 1 cmd để chạy rasa train (nlu) -> rasa shell
+
+rasa run dùng web
