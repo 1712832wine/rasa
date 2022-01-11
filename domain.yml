@@ -37,7 +37,7 @@ actions:
 
 responses:
   utter_greet:
-  - text: "Em chào {user_gender}, {user_gender} vui lòng cho biết em tên để tiện xưng hô được không ah?"
+  - text: "Em xin chào ạ, anh/chị vui lòng cho em biết tên để tiện xưng hô được không ah?"
   
   utter_greet_with_name:
   - text: "Kính chào {user_gender} {user_name}. Bé Sa có thể giúp gì được cho {user_gender} ạ?"
