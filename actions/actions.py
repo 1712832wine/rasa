@@ -8,9 +8,11 @@
 # This is a simple example for a custom action which utters "Hello World!"
 
 from typing import Any, Text, Dict, List
-
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+
+import requests
+import json
 
 # class ActionHelloWorld(Action):
 #
@@ -35,8 +37,12 @@ class ActionMedical(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         text = tracker.latest_message['text']
-        print(text)
-        dispatcher.utter_message(text=text)
+        data = {"message": text}
+
+        response = requests.post(
+            url="http://localhost:5001/question-answering", data=data)
+
+        dispatcher.utter_message(text=response.json()['answer'])
         return []
 
 # -------------------------------------------------------------------------

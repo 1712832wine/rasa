@@ -199,7 +199,8 @@ nlu:
 
 - intent: medical
   examples: |
-    - Virus [corona 2019-nCoV](covid:covid) là gì? 
+    - Virus [corona 2019-nCoV](covid:covid) là gì?
+    - Tại sao nên tiêm ngừa cho trẻ
     - Tại sao bệnh viêm đường hô hấp cấp do virus [corona](covid:covid) được đặt tên là [Covid-19](covid:covid)? 
     - Cơ chế gây bệnh và lây lan của [Virus Corona SARS-CoV-2](covid)? 
     - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát [covid-19](covid) không? 
