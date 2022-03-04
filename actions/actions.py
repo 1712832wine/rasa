@@ -33,6 +33,18 @@ class ActionMedical(Action):
     def name(self) -> Text:
         return "action_medical"
 
+    def get_file(self, x):
+        switcher = {
+            1: 'Sunday',
+            2: 'Monday',
+            3: 'Tuesday',
+            4: 'Wednesday',
+            5: 'Thursday',
+            6: 'Friday',
+            7: 'Saturday'
+        }
+        return switcher.get(x, "nothing")
+
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
