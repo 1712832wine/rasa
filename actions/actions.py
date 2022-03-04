@@ -36,13 +36,10 @@ class ActionMedical(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        text = tracker.latest_message['text']
-        data = {"message": text}
+        intent = tracker.get_intent_of_latest_message()
+        print(intent)
 
-        response = requests.post(
-            url="http://localhost:5001/question-answering", data=data)
-
-        dispatcher.utter_message(text=response.json()['answer'])
+        dispatcher.utter_message(text=intent)
         return []
 
 # -------------------------------------------------------------------------

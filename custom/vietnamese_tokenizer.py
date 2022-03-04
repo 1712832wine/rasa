@@ -14,6 +14,8 @@ from rasa.nlu.tokenizers.tokenizer import Token, Tokenizer
 from rasa.shared.constants import DOCS_URL_COMPONENTS
 from rasa.shared.nlu.training_data.message import Message
 from underthesea import word_tokenize
+import re
+import string
 
 
 @DefaultV1Recipe.register(
@@ -63,23 +65,45 @@ class VietnameseTokenizer(Tokenizer):
         # Path to the dictionaries on the local filesystem.
         return cls(config)
 
-    def remove_emoji(self, text: Text) -> Text:
-        """Remove emoji if the full text, aka token, matches the emoji regex."""
-        match = self.emoji_pattern.fullmatch(text)
+    def remove_numbers(self, text):
+        result = re.sub(r'\d+', '', text)
+        return result
 
-        if match is not None:
-            return ""
+    def remove_punctuation(self, text):
+        translator = str.maketrans('', '', string.punctuation)
+        return text.translate(translator)
 
+    def remove_whitespace(self, text):
+        return " ".join(text.split())
+
+    def preprocess(self, text):
+        text = text.strip().lower()
+        text = self.remove_numbers(text)
+        text = self.remove_punctuation(text)
+        text = self.remove_whitespace(text)
         return text
+
+    # def _convert_words_to_tokens(words: List[Text], text: Text) -> List[Token]:
+    #     running_offset = 0
+    #     tokens = []
+
+    #     for word in words:
+    #         word_offset = text.find(word)
+    #         word_len = len(word)
+    #         running_offset = word_offset + word_len
+    #         tokens.append(Token(word, word_offset))
+
+    #     return tokens
 
     def tokenize(self, message: Message, attribute: Text) -> List[Token]:
         text = message.get(attribute)
-        # text = text.lower().strip()
-        # cach 1
-        words = word_tokenize(text)
+
+        temp = self.preprocess(text)
+
+        words = word_tokenize(temp)
+        words = [w for w in words if w]
+        if not words:
+            words = [text]
         tokens = self._convert_words_to_tokens(words, text)
+
         return self._apply_token_pattern(tokens)
-        # cach 2
-        # words = word_tokenize(text, format="text").split(' ')
-        # tokens = self._convert_words_to_tokens(words, text)
-        # return self._apply_token_pattern(words)

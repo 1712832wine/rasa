@@ -35,11 +35,6 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: medical
-  steps:
-  - intent: medical
-  - action: action_medical
-
 - story: ask_bot
   steps:
   - intent: ask_bot
@@ -70,3 +65,37 @@ stories:
   - intent: affirm
   - action: utter_affirm
 
+- story: ask_disease
+  steps:
+  - intent: béo phì
+  - action: action_medical
+  - intent: covid
+  - action: action_medical
+  - intent: da liễu
+  - action: action_medical
+  - intent: đau mắt đỏ
+  - action: action_medical
+  - intent: đau thần kinh tọa
+  - action: action_medical
+  - intent: hạ canxi máu
+  - action: action_medical
+  - intent: lao phổi
+  - action: action_medical
+  - intent: mụn trứng cá
+  - action: action_medical
+  - intent: quai bị, sâu răng
+  - action: action_medical
+  - intent: tai-mũi-họng
+  - action: action_medical
+  - intent: tay-chân-miệng
+  - action: action_medical
+  - intent: thận
+  - action: action_medical
+  - intent: thủy đậu
+  - action: action_medical
+  - intent: tim mạch
+  - action: action_medical
+  - intent: viêm đường hô hấp
+  - action: action_medical
+  - intent: viêm xoang
+  - action: action_medical

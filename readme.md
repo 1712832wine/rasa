@@ -22,7 +22,15 @@ from rasa.nlu.tokenizers.vietnamese_tokenizer import VietnameseTokenizer
  VietnameseTokenizer,
 
 # RUN
-rasa run -m models --enable-api --cors "*"
+run with api
+`rasa run -m models --enable-api --cors "*"`
+open another cmd to run action server
+`rasa run actions`
+
+# TRAIN
+If you want to train a model with rasa nlu and rasa core (chatbot will response you), let run: `rasa train`
+If you want to train a model without rasa core (only use rasa nlu), let run: `rasa train nlu`
+
 
 # RUN IN SHELL
-rasa shell
+`rasa shell`
