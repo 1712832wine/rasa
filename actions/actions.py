@@ -36,7 +36,7 @@ class ActionMedical(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        intent = tracker.get_intent_of_latest_message()
+        intent = tracker.latest_message.get("intent").get("name")
         print(intent)
 
         dispatcher.utter_message(text=intent)

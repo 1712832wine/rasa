@@ -14,11 +14,26 @@ intents:
   - unknown
   - angry
   - medical
+  - béo phì
+  - covid
+  - da liễu
+  - đau mắt đỏ
+  - đau thần kinh tọa
+  - hạ canxi máu
+  - lao phổi
+  - mụn trứng cá
+  - quai bị, sâu răng
+  - tai-mũi-họng
+  - tay-chân-miệng
+  - thận
+  - thủy đậu
+  - tim mạch
+  - viêm đường hô hấp
+  - viêm xoang
   
 entities:
   - user_gender
   - user_name
-  - covid
 
 slots:
   user_gender:
