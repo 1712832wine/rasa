@@ -1,10 +1,10 @@
 # INSTALL RASA
 To install rasa you need to install anaconda, then run these commands below:
-conda create --name NAME python==3.8
-conda activate NAME
-conda install ujson
-conda install tensorflow
-pip install rasa
+- conda create --name NAME python==3.8
+- conda activate NAME
+- conda install ujson
+- conda install tensorflow
+- pip install rasa
 
 # SETUP
 -	Ta custom VietnameseTokenizer cho tiếng Việt
