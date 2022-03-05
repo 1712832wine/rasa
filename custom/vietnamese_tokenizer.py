@@ -98,9 +98,9 @@ class VietnameseTokenizer(Tokenizer):
     def tokenize(self, message: Message, attribute: Text) -> List[Token]:
         text = message.get(attribute)
 
-        temp = self.preprocess(text)
+        text = self.preprocess(text)
 
-        words = word_tokenize(temp)
+        words = word_tokenize(text)
         words = [w for w in words if w]
         if not words:
             words = [text]
