@@ -1,3 +1,4 @@
 underthesea
 transformers
 re
+sentence-transformers
