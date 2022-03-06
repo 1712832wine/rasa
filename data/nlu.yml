@@ -23,6 +23,8 @@ nlu:
 - intent: give_name
   examples: |
     - [anh](user_gender) có tên là [Lộc](user_name)
+    - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
+    - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
     - chào, [anh](user_gender) tên là [Long](user_name)
     - xin chào, [anh](user_gender) tên là [Đạt](user_name)
     - [anh](user_gender) tên là [Cường](user_name)

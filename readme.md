@@ -44,5 +44,6 @@ Nếu chỉ muốn train với rasa nlu (rasa sẽ phân tích input của bạn
 # Test
 Validate data `rasa data validate`
 Tách data thành tập train và tập test sử dụng `rasa data split nlu`
-Test `rasa test nlu --nlu train_test_split/test_data.yml`
+Test 
+`rasa test nlu --nlu train_test_split/test_data.yml`
 `rasa test nlu --nlu data/nlu.yml --cross-validation`

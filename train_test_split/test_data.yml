@@ -1,0 +1,332 @@
+version: "3.0"
+nlu:
+- intent: unknown
+  examples: |
+    - em có biết tại sao lá cây có màu xanh
+- intent: angry
+  examples: |
+    - xàm quá
+- intent: goodbye
+  examples: |
+    - chào tạm biệt em
+    - bái bai
+- intent: affirm
+  examples: |
+    - yes.
+    - đúng rùi đó
+- intent: thank
+  examples: |
+    - cảm ơn nha
+- intent: mood_great
+  examples: |
+    - dui
+    - mừng quá á
+- intent: mood_unhappy
+  examples: |
+    - tôi chán quá
+    - tôi đang buồn
+- intent: greet
+  examples: |
+    - anh ơi
+    - xin chào
+    - hey
+- intent: deny
+  examples: |
+    - không
+    - Bệnh này có nguy hiểm không?
+    - thất vọng quá
+- intent: give_name
+  examples: |
+    - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
+    - [anh](user_gender) có tên là [Nam](user_name)
+    - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
+    - [mình](user_gender) tên là [Ngọc](user_name)
+    - xin chào, [anh](user_gender) tên là [Đạt](user_name)
+- intent: thủy đậu
+  examples: |
+    - Bị thủy đậu có khả năng bị lại không?
+    - Cách phòng ngừa bệnh thủy đậu?
+    - Phụ nữ mang thai bị thủy đậu có lây cho con không?
+    - Các loại thực phẩm nên kiêng ăn khi bị thủy đậu?
+    - Điều trị bệnh thủy đậu bằng thuốc được không?
+- intent: quai bị, sâu răng
+  examples: |
+    - Các biện pháp để ngăn ngừa quai bị lây lan là gì?
+    - Răng bị sâu có nguy hiểm không?
+    - Có vắc-xin nào để phòng bệnh quai bị không?
+    - Chết tủy là gì?
+    - Trường hợp không nên nhổ răng khôn?
+- intent: ask_bot
+  examples: |
+    - cho mình hỏi tên nhé
+    - tên của anh là gì
+    - cho em xin tên của chị ạ
+    - em tên gì
+    - vui lòng cho mình biết tên nhé
+    - bạn tên gì
+    - bạn tên là gì
+- intent: ask_func_list
+  examples: |
+    - bạn biết được những lĩnh vực gì
+    - biết gì mà nói
+    - bạn có thể làm được mấy chức năng
+    - kể cho mình biết những việc bạn có thể làm được nhé
+    - bạn giúp được mình gì nào
+    - có làm được trò gì
+    - em làm được gì
+- intent: đau mắt đỏ
+  examples: |
+    - Dấu hiệu nhận biết bệnh đau mắt đỏ?
+    - Đau mắt đỏ có tái phát không?
+    - Trong nhà có người đau mắt đỏ, làm gì để không bị lây sang người khác?
+    - Ai dễ bị đau mắt đỏ?
+    - Neomycin có dùng nhỏ mắt được không?
+    - Bệnh đau mắt đỏ bao lâu thì khỏi?
+    - Có nên dùng collydexa cho đau mắt đỏ?
+- intent: viêm xoang
+  examples: |
+    - Viêm xoang có nguy hiểm không?
+    - Bệnh viêm xoang có trị hết vĩnh viễn không?
+    - Viêm xoang lâu ngày có bị ung thư?
+    - Viêm xoang là gì?
+    - Viêm mũi vận mạch là gì?
+    - Điều trị viêm xoang bằng DNR – Plasma áp dụng trong trường hợp nào?
+    - Viêm xoang hàm trên có triệu chứng gì?
+- intent: béo phì
+  examples: |
+    - Tác hại của thừa cân, béo phì?
+    - Nguyên tắc cơ bản của eat clean là gì?
+    - Nguyên nhân gây ra bệnh béo phì và thừa cân?
+    - Béo phì ảnh hưởng đến tim như thế nào?
+    - Hậu quả sức khỏe phổ biến của thừa cân và béo phì?
+    - Bệnh gout là gì?
+    - Làm gì để giảm béo hiệu quả?
+    - Chế độ ăn eat clean là gì?
+    - Hội chứng giảm thông khí do béo phì?
+    - Tổng lượng nước cơ thể (Total Body Water Percentage) - % là gì?
+- intent: thận
+  examples: |
+    - Không nên uống sữa nếu bị sỏi thận?
+    - Bị suy thận sống được bao lâu?
+    - Bệnh cầu thận là gì?
+    - Phòng ngừa bệnh sỏi thận
+    - Suy thận giai đoạn cuối sống được bao lâu?
+    - Cách điều trị bệnh cầu thận?
+    - Các dấu hiệu và triệu chứng bệnh Suy thận
+    - Các yếu tố làm tăng nguy cơ suy thận
+    - Sỏi thận có kích thước như thế nào thì có thể tự bài tiết ra ngoài theo đường tiểu tự nhiên?
+    - Phương pháp chẩn đoán suy thận
+    - Bệnh cầu thận được chẩn đoán như thế nào?
+    - Cà phê là nguyên nhân gây bệnh sỏi thận?
+- intent: hạ canxi máu
+  examples: |
+    - Chất thiết yếu tham gia vào sự phát triển của hệ xương là gì?
+    - Mỗi ngày người mẹ bị mất bao nhiêu canxi khi đang cho con bú?
+    - Hai dạng hạ canxi máu ở trẻ sơ sinh là gì?
+    - Dấu hiệu hạ canxi máu ở trẻ sơ sinh?
+    - Hạ canxi máu là gì?
+    - Suy cận giáp là gì?
+    - Các biến chứng có thể có của hạ canxi máu là gì?
+    - Lượng canxi nạp vào cơ thể hằng ngày được sử dụng như thế nào?
+    - Điều trị hạ canxi máu ở trẻ sơ sinh?
+    - Bước thứ tư để cứu người hạ canxi máu?
+    - Người mẹ đang mang thai thì bé cần bao nhiêu canxi?
+- intent: mụn trứng cá
+  examples: |
+    - Đến độ tuổi nào thì hết mụn trứng cá?
+    - Làm sao để ngừa mụn tái phát?
+    - Môi trường ô nhiễm có gây ra mụn?
+    - Khi nào nên tham khảo ý kiến Bác sĩ về cách điều trị mụn?
+    - Khi bị mụn trứng cá có nên chăm sóc da bằng sản phẩm chuyên dụng?
+    - Da bị mụn có nên tẩy tế bào chết?
+    - Mặt nạ thiên nhiên có thực sự trị mụn hiệu quả?
+    - Có nên dùng miếng dán lột mụn?
+    - Trong thời kỳ mang thai nổi nhiều mụn trứng cá?
+    - Có thể ngăn ngừa sẹo mụn?
+    - Các bước chăm sóc da mụn
+    - Tại sao một số người lớn bị mụn trứng cá?
+    - Có phải do chạm tay vào mặt quá nhiều nên nổi mụn không?
+- intent: tay-chân-miệng
+  examples: |
+    - Làm thế nào để chẩn đoán bệnh tay chân miệng?
+    - Mức độ 4 của bệnh tay chân miêng là gì?
+    - Mức độ 2 của bệnh tay chân miêng là gì?
+    - Đồ chơi và vật dụng thường dùng của trẻ cần phải được tẩy trùng như thế nào để tránh bệnh Tay chân miệng?
+    - Giúp trẻ bớt đau đớn để ăn uống dễ dàng hơn khi bị bệnh Tay chân miệng như thế nào?
+    - Bệnh Tay chân miệng có những triệu chứng gì?
+    - Mức độ 3 của bệnh tay chân miêng là gì?
+    - Tỷ lệ tử vong của bệnh Tay, chân, miệng?
+    - Người bị lây nhiễm bệnh Tay chân miệng như thế nào?
+    - Phụ nữ mang thai có mắc bệnh Tay chân miệng không?
+    - Bao lâu thì triệu chứng xuất hiện sau khi bị nhiễm vi rút bệnh tay chân miệng?
+    - Bác sĩ có thể phân biệt bệnh tay chân miệng với các loại nhiễm trùng do vi-rút khác bằng cách nào?
+    - Bệnh Tay chân miệng có lây truyền từ người tới vật nuôi/động vật và ngược lại không?
+    - Bệnh Tay chân miệng nghiêm trọng tới mức nào?
+    - Phụ nữ mang thai cần phải lưu ý những gì để tránh bệnh tay chân miệng?
+    - Trẻ sơ sinh nhiễm bệnh tay chân miệng nguy hiểm ra sao?
+    - Đồ chơi của bé thì có thể rửa bằng xà phòng bình thường để phòng ngừa bệnh tay chân miệng được không?
+- intent: đau thần kinh tọa
+  examples: |
+    - Cách khắc phục cơn đau thần kinh tọa tại nhà bằng cách chườm lạnh hoặc chườm nóng?
+    - Đau dây thần kinh tọa có cảm giác như thế nào?
+    - Ưu điểm của chụp cắt lớp?
+    - Phác đồ điều trị đau thần kinh tọa là gì?
+    - Khi nào người bệnh cần đi khám bác sỹ?
+    - Chẩn đoán đau thần kinh tọa bằng cách kiểm tra thể chất là như thế nào?
+    - Chẩn đoán đau thần kinh tọa bằng cách xét nghiệm hình ảnh là như thế nào?
+    - Tự uống thuốc giảm đau khi đau thần kinh tọa?
+    - Quy trình chụp cắt lớp vi tính CT cắt lớp như thế nào?
+    - Đau thần kinh tọa có nguy hiểm không?
+    - Khi nào thì tôi phải tới gặp bác sĩ ?
+    - Đau thần kinh tọa xảy ra cả 2 chân cùng lúc?
+    - Khi nào nên chụp CT?
+    - Chụp CT cắt lớp có tiêm thuốc cản quang?
+    - Yếu tố nào ảnh hưởng đến thời gian phục hồi đau thần kinh tọa?
+    - Đau thần kinh tọa khám chuyên khoa nào?
+    - Chụp CT scan ở đâu?
+    - Dây thần kinh tọa là gì?
+    - Đau thần kinh tọa nên kiêng ăn gì?
+- intent: lao phổi
+  examples: |
+    - Mỗi năm có bao nhiêu người mắc bệnh lao phổi
+    - Các xét nghiệm lao phổi khác khi điều trị bệnh lao?
+    - Lao cột sống là gì?
+    - Phẩu thuật bệnh lao tuân theo chỉ định nào?
+    - Bệnh nhân điều trị lao phổi cần tuân thủ nguyên tắc gì?
+    - Phương pháp chụp X quang trong xét nghiệm bệnh lao phổi?
+    - Bệnh lao là gì?
+    - Kháng thuốc lao có nguy hiểm hay không?
+    - Chăm sóc người bệnh lao phổi ra sao?
+    - Lao và HIV có mối liên quan không?
+    - Lao sinh dục là gì?
+    - Điều trị bệnh lao có được hưởng ưu tiên gì không?
+    - Liệu pháp quan sát trực tiếp (DOT) là gì?
+    - Có thể mắc lại bệnh lao sau khi chữa khỏi không?
+    - Bệnh lao kháng thuốc trên diện rộng (XDR TB) là gì?
+    - Làm thế nào để ngăn ngừa bệnh lao đa kháng?
+    - Sau khi xuất viện, tôi có nên ở nhà và nghỉ ngơi, hay tôi có thể ra ngoài và gặp gỡ bạn bè?
+    - Lưu ý khi điều trị thuốc kháng lao
+    - Bệnh lao lây truyền như thế nào ?
+    - Bệnh lao hạch bạch huyết tuberculous (scrofula) là bệnh gì?
+- intent: tim mạch
+  examples: |
+    - Nguyên nhân dẫn đến rung nhĩ?
+    - Các biến chứng thường gặp của tăng huyết áp là?
+    - Nữ giới có thể bị bệnh động mạch vành không?
+    - Tại sao sau khi mãn kinh, nguy cơ bị bệnh động mạch vành ở nữ giới sẽ gia tăng?
+    - Cháu tôi mới đẻ ra bị tím, vậy có phải bị bệnh tim bẩm sinh không?
+    - Bệnh tim có di truyền không?
+    - Chế độ tập luyện thể dục thể thao khi bị tăng huyết áp?
+    - Điều trị bệnh thông liên thất bằng những biện pháp nào?
+    - Đặc điểm cần lưu ý ở triệu chứng bệnh mạch vành cấp ở phụ nữ là gì?
+    - Bị bệnh đái tháo đường có nguy cơ cao bị bệnh tim mạch không?
+    - Tác dụng của tiêm phòng thấp tim?
+    - Bệnh thấp tim có thể phòng ngừa bằng các cách?
+    - Tôi bị tăng huyết áp, uống thuốc huyết áp thì đo huyết áp về bình thường. Tôi có thể dừng uống thuốc không?
+    - Mắc bệnh động mạch vành, cần hoạt động thể thao như thế nào cho cải thiện sức khỏe?
+    - Làm thế nào ngăn ngừa bệnh động mạch vành?
+    - Stent động mạch vành có bao nhiêu loại?
+    - Nguyên nhân gây bệnh lý van tim thường gặp nhất ở Việt Nam là gì?
+    - Bệnh thấp tim có tái phát hay không?
+    - Khi bị rối loạn lipid máu, xin cho biết chế độ ăn uống và tập luyện như thế nào để phòng tránh?
+    - Khi mắc bệnh tim, có tập thể dục được không?
+- intent: viêm đường hô hấp
+  examples: |
+    - Các bệnh lý nhiễm trùng đường hô hấp dưới thường gặp là gì?
+    - Triệu chứng chính của viêm đường hô hấp cấp dưới có gì khác với viêm đường hô hấp cấp trên?
+    - Hiện tượng chảy dịch khi bị viêm xoang là gì?
+    - Viêm phế quản có thể lây qua những con đường nào?
+    - Viêm phế quản là gì?
+    - Viêm thanh quản ở người lớn là gì?
+    - Cách điều trị viêm đường hô hấp dưới nhẹ (tại nhà)?
+    - Các triệu chứng của bệnh viêm phổi xuất hiện vào thời gian nào?
+    - Tại sao vào mùa lạnh lại dễ bị viêm đường hô hấp hơn?
+    - Thưa bác sĩ, trên thực tế đã có nhiều ca  viêm phổi nặng phải nhập viện vì thời tiết lạnh kéo dài, nguyên nhân là do đâu?
+    - Viêm phế quản được chia thành các thể nào?
+    - Bệnh viêm tiểu phế quản thường gặp ở ai?
+    - Thời gian ủ bệnh cúm là bao lâu?
+    - Viêm đường hô hấp dưới thường do vi khuẩn nào gây ra?
+    - Triệu chứng của viêm thanh quản mạn tính là gì?
+    - Hiện tượng điếc mũi khi bị viêm xoang là gì?
+    - Nguyên nhân gây ra viêm thanh quản ở người lớn là gì?
+    - Viêm đường hô hấp cấp có nguy hiểm không?
+    - Dấu hiệu nhận biết sớm triệu chứng bệnh viêm đường hô hấp trên?
+    - Người bị bệnh cúm phục hồi trong bao lâu?
+    - Các yếu tố nguy cơ gây viêm đường hô hấp dưới
+    - Viêm xoang có mấy loại?
+- intent: covid
+  examples: |
+    - Vắc-xin COVID-19 có an toàn dù các vắc-xin này được phát triển nhanh chóng không?
+    - Có lưu ý gì khi sử dụng thuốc nếu đã nhiễm Covid-19?
+    - Khi mẹ mắc Covid-19, em bé có được bú sữa mẹ?
+    - Vacxin có nguy hiểm không?
+    - Nếu tôi đang mang thai hoặc có dự định mang thai, liệu tôi có thể tiêm vắc-xin ngừa COVID-19 không?
+    - Nếu tôi đã nhiễm COVID-19 và khỏi bệnh, tôi có cần tiêm vắc-xin COVID-19 nữa không?
+    - Những ca bệnh điều trị thành công tại Việt Nam đã sử dụng phác đồ nào?
+    - Phụ nữ mang thai nên tiêm loại vắc xin Covid-19 nào?
+    - Trẻ em có nằm trong nhóm đối tượng nguy cơ cao không?
+    - Tôi có được coi là đã tiêm chủng đầy đủ nếu tôi đã tiêm chủng ở quốc gia khác?
+    - Điều trị Covid-19 cho thai phụ có gì đặc biệt?
+    - Biến thể Omicron là gì?
+    - Ứng dụng Bluezone có vai trò gì trong truy dấu tiếp xúc ở Việt Nam?
+    - Tôi cần đợi bao lâu sau khi tiêm vắc-xin cúm hoặc vắc-xin khác trước khi tiêm vắc-xin COVID-19?
+    - Biến thể Omicron có nghiêm trọng hơn so với các biến thể COVID-19 khác không?
+    - Có thể lấy huyết tương của người bị bệnh Covid-19 đã khỏi bệnh để chữa cho người đang bị bệnh hay không?
+    - Đã có vắc xin phòng dịch bệnh viêm phổi cấp do virus corona (2019-nCoV) chưa?
+    - Hàng rào bảo vệ từ vắc-xin ngừa COVID-19 có thể kéo dài bao lâu?
+    - Dung dịch rửa tay khô phải đảm bảo điều kiện gì mới có thể sử dụng để rửa tay phòng lây nhiễm Covid-19?
+    - Làm thế nào để tôi có thể nhận được thẻ tiêm chủng ngừa COVID-19 mới?
+    - Đang sống ở khu vực “vùng dịch” có phải đã bị nhiễm Covid-19 rồi không?
+    - Những biện pháp bảo vệ và phòng ngừa tốt nhất cho mỗi cá nhân trước đại dịch virus corona (2019-nCoV)?
+- intent: tai-mũi-họng
+  examples: |
+    - Hướng điều trị nào cho bệnh quá phát cuốn mũi?
+    - Những biểu hiện cụ thể khi bị ù tai?
+    - Áp xe quanh Amydale là bệnh gì?
+    - Nguyên nhân gây bệnh viêm thanh quản cấp là gì?
+    - Nội soi tai mũi họng có tai biến không?
+    - Viêm họng do vi khuẩn nào?
+    - Các triệu chứng của bệnh viêm thanh quản cấp tính là gì?
+    - Thuốc kháng sinh nào có thể điều trị viêm thanh quản?
+    - Viêm tai giữa ở trẻ có thể dẫn tới những biến chứng gì?
+    - Kỹ thuật nội soi tai mũi họng có phát hiện bệnh ung thư không?
+    - Viêm thanh thiệt ở trẻ là gì?
+    - Viêm họng amydale (amidam) là bệnh gì?
+    - Viêm thanh quản hạ thanh môn là gì?
+    - Những triệu chứng của bệnh quá phát cuốn mũi?
+    - Phẫu thuật u nang tiền đình mũi là sao?
+    - Tôi bị viêm tai nhẹ thì điều trị thế nào?
+    - Bệnh viêm amidan có nguy hiểm không?
+    - Viêm amidan mạn tính là gì?
+    - Những triệu chứng nào giúp chẩn đoán xác định viêm amydale?
+    - Nguyên nhân bệnh sinh của viêm họng amydale cấp?
+    - Vì sao người lớn tuổi hay bị ù tai?
+    - Ù tai xuất hiện do những nguyên nhân nào?
+    - Triệu chứng của bệnh polyp mũi là gì?
+- intent: da liễu
+  examples: |
+    - Nguyên nhân của mề đay và phù mạch
+    - Cách chẩn đoán bệnh chàm
+    - Những thói quen sinh hoạt nào giúp bạn hạn chế diễn tiến của bệnh lupus ban đỏ?
+    - Triệu chứng nổi mề đay
+    - Bệnh ghẻ là bệnh gì?
+    - Bệnh chàm là gì?
+    - Bệnh mề đay có nguy hiểm không?
+    - Điều gì gây ra viêm âm đạo do nấm ?
+    - Người mắc lupus ban đỏ nên kiêng gì?
+    - Phòng ngừa bệnh chàm
+    - Các triệu chứng của nhiễm nấm âm đạo là gì?
+    - Viêm âm đạo do vi khuẩn được điều trị như thế nào?
+    - Những yếu tố nào làm tăng nguy cơ bị nhiễm nấm âm đạo ?
+    - Cách điều trị mày đay
+    - Chế độ ăn uống, sinh hoạt dành cho người bệnh vảy nến
+    - Đau thần kinh zona có nguy hiểm không
+    - Biểu hiện của lupus ban đỏ như thế nào?
+    - Nấm Candida âm đạo có tự khỏi không?
+    - Nguồn lây bệnh nấm da đầu?
+    - Nguyên nhân nhiễm nấm Candida âm đạo?
+    - Bệnh vảy nến có chữa trị được không?
+    - Biện pháp phòng bệnh nấm da đầu
+    - Nguyên nhân gây bệnh zona ở môi
+    - Bệnh vảy nến có lây không?
+    - Các loại bệnh vảy nến thường gặp
