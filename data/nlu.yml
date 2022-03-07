@@ -22,13 +22,15 @@ nlu:
 
 - intent: give_name
   examples: |
-    - [anh](user_gender) có tên là [Lộc](user_name)
+    - [anh](user_gender) có tên là [Nguyễn Lộc](user_name)
+    - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
+    - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
     - chào, [anh](user_gender) tên là [Long](user_name)
-    - xin chào, [anh](user_gender) tên là [Đạt](user_name)
-    - [anh](user_gender) tên là [Cường](user_name)
+    - xin chào, [anh](user_gender) tên là [ Văn Đạt](user_name)
+    - [anh](user_gender) tên là [Trần Cường](user_name)
     - [anh](user_gender) có tên là [Nam](user_name)
-    - Tên của [chị](user_gender) là [Ái](user_name)
-    - Tên của [chị](user_gender) là [Vy](user_name)
+    - Tên của [chị](user_gender) là [Tôn Kim Ái](user_name)
+    - Tên của [chị](user_gender) là [Ngô Vy](user_name)
     - [chị](user_gender) là [Ngọc](user_name)
     - [chị](user_gender) tên là [Linh](user_name)
     - [chị](user_gender) là [Hoa](user_name)
@@ -36,13 +38,13 @@ nlu:
     - chào [em](user_gender) là [Vy](user_name)
     - [em](user_gender) là [Nhi](user_name)
     - xin chào [cô](user_gender) là [Vân](user_name)
-    - [mình](user_gender) tên là [Ngọc](user_name)
-    - [mình](user_gender) có tên là [Ái](user_name)
-    - tên của [mình](user_gender) là [Lộc](user_name)
+    - [mình](user_gender) tên là [Nguyễn Ngọc](user_name)
+    - [mình](user_gender) có tên là [Trần Ái](user_name)
+    - tên của [mình](user_gender) là [Văn Lộc](user_name)
     - [tôi](user_gender) có tên là [Đạt](user_name)
     - [tôi](user_gender) là [Hùng](user_name)
     - [tôi](user_gender) tên là [Hương](user_name)
-    - [tôi](user_gender) là [Long](user_name)
+    - [tôi](user_gender) là [La Long](user_name)
 
 
 - intent: goodbye
@@ -1391,7 +1393,6 @@ nlu:
     - Sau khi bệnh cúm hết, có được miễn dịch không?
     - Đối tượng dễ bị cảm cúm?
     - Cách phân biệt cảm cúm với các bệnh khác do tác nhân gây bệnh hô hấp?
-    - Viêm xoang là gì?
     - Viêm xoang có mấy loại?
     - Viêm xoang có mấy dạng?
     - Viêm xoang cấp tính thường xảy ra ở đâu?
@@ -1402,7 +1403,6 @@ nlu:
     - Hiện tượng điếc mũi khi bị viêm xoang là gì?
     - Các dấu hiệu khác của viêm xoang?
     - Cách điều trị viêm xoang?
-    - Viêm thanh quản là gì?
     - Nguyên nhân gây bệnh viêm thanh quản là gì?
     - Viêm thanh quản có nguy hiểm không?
     - Vì sao trẻ em từ 1 đến 6 tuổi dễ bị viêm thanh quản?
