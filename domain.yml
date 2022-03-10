@@ -1,110 +1,152 @@
-version: "3.0"
-
-intents:
-  - greet
-  - give_name
-  - goodbye
-  - affirm
-  - deny
-  - thank
-  - mood_great
-  - mood_unhappy
-  - ask_bot
-  - ask_func_list
-  - unknown
-  - angry
-  - béo phì
-  - covid
-  - da liễu
-  - đau mắt đỏ
-  - đau thần kinh tọa
-  - hạ canxi máu
-  - lao phổi
-  - mụn trứng cá
-  - quai bị, sâu răng
-  - tai-mũi-họng
-  - tay-chân-miệng
-  - thận
-  - thủy đậu
-  - tim mạch
-  - viêm đường hô hấp
-  - viêm xoang
-  
-entities:
-  - user_gender
-  - user_name
-
-slots:
-  user_gender:
-    type: text
-    mappings:
-      - type: from_entity
-        entity: user_gender
-  user_name:
-    type: text
-    mappings:
-      - type: from_entity
-        entity: user_name
-
-actions:
-  - action_medical
-
-responses:
-  utter_greet:
-  - text: "Em xin chào ạ, anh/chị vui lòng cho em biết tên để tiện xưng hô được không ah?"
-  
-  utter_greet_with_name:
-  - text: "Kính chào {user_gender} {user_name}. Bé Sa có thể giúp gì được cho {user_gender} ạ?"
-
-  utter_mood_great:
-  - text: "Có chuyện gì vui vậy ạ"
-
-  utter_cheer_up:
-  - text: "Thui đừng buồn nữa nà, để bé Sa cho coi cái này nè:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "Ai làm cậu buồn hả, để Sa xử cho"
-  - text: "Thôi hong sao đâu"
-
-  utter_did_that_help:
-  - text: "Sao nè, thấy ok hong?"
-  
-  utter_affirm:
-  - text: "umk đúng rồi"
-
-  utter_thank:
-  - text: "Hong có chi hihi"
-  - text: "Khỏi cám ơn"
-  - text: "Cám ơn thì mua sicula cho Sa đi hehe"
-  - text: "Đó là việc của Sa mà cám ơn gì chòi"
-
-  utter_happy:
-  - text: "Yeah! Vui là được rồi hihi"
-  - text: "Yeah! Sa cũng vui lây"
-
-  utter_goodbye:
-  - text: "Bye"
-  - text: "cáo từ"
-  - text: "Bái bai"
-  - text: "vậy thôi, bái bai"
-
-  utter_unknown:
-  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
-  - text: "Sa hong hiểu câu này, xin lũi nhiều nha"
-  - text: "Là sao, chưa hiểu thông cảm nha hihi"
-
-  utter_angry:
-  - text: "Úi xin lỗi, đùa tí hoy mà"
-  - text: "kkk giận rồi hả ta"
-  - text: "Chưa gì quạo quọ ròi"
-  - text: "Chọc xíu làm gì căng"
-
-  utter_ask_bot:
-  - text: "Dạ em tên là Sa, em có thể tư vấn y tế cho anh/chị ạ"
-
-  utter_ask_func_list:
-  - text: "Em có thể tư vấn y tế cho cậu nè"
-  
-
+version: '3.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- give_name
+- give_age
+- request_save_form
+- goodbye
+- affirm
+- deny
+- thank
+- mood_great
+- mood_unhappy
+- ask_bot
+- unknown
+- angry
+- béo phì
+- covid
+- da liễu
+- đau mắt đỏ
+- đau thần kinh tọa
+- hạ canxi máu
+- lao phổi
+- mụn trứng cá
+- quai bị, sâu răng
+- tai-mũi-họng
+- tay-chân-miệng
+- thận
+- thủy đậu
+- tim mạch
+- viêm đường hô hấp
+- viêm xoang
+- cancel_form
+- give_diagnose
+- give_password
+- give_gender
+- get_data
+
+entities:
+- diagnose
+- password
+- user_age
+- user_gender
+- user_name
+slots:
+  user_gender:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: user_gender
+      conditions:
+      - active_loop: diagnose_form
+  user_name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: user_name
+      conditions:
+      - active_loop: diagnose_form
+  user_age:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: user_age
+      conditions:
+      - active_loop: diagnose_form
+  password:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: password
+      conditions:
+      - active_loop: diagnose_form
+  diagnose:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: diagnose
+      conditions:
+      - active_loop: diagnose_form
+
+forms:
+  diagnose_form:
+    required_slots:
+    - user_name
+    - user_gender
+    - user_age
+    - password
+    - diagnose
+
+responses:
+  utter_greet:
+  - text: Em xin chào ạ, em có thể giúp gì cho anh/chị ạ
+  utter_mood_great:
+  - text: Có chuyện gì vui vậy ạ
+  utter_cheer_up:
+  - text: 'Thui đừng buồn nữa nà, để bé Sa cho coi cái này nè:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  - text: Ai làm cậu buồn hả, để Sa xử cho
+  - text: Thôi hong sao đâu
+  utter_did_that_help:
+  - text: Sao nè, thấy ok hong?
+  utter_affirm:
+  - text: umk đúng rồi
+  utter_thank:
+  - text: Hong có chi hihi
+  - text: Khỏi cám ơn
+  - text: Cám ơn thì mua sicula cho Sa đi hehe
+  - text: Đó là việc của Sa mà cám ơn gì chòi
+  utter_happy:
+  - text: Yeah! Vui là được rồi hihi
+  - text: Yeah! Sa cũng vui lây
+  utter_goodbye:
+  - text: Bye
+  - text: cáo từ
+  - text: Bái bai
+  - text: vậy thôi, bái bai
+  utter_unknown:
+  - text: 'Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. '
+  - text: Sa hong hiểu câu này, xin lũi nhiều nha
+  - text: Là sao, chưa hiểu thông cảm nha hihi
+  utter_angry:
+  - text: Úi xin lỗi, đùa tí hoy mà
+  - text: kkk giận rồi hả ta
+  - text: Chưa gì quạo quọ ròi
+  - text: Chọc xíu làm gì căng
+  utter_ask_bot:
+  - text: Em là Sa, em có thể tư vấn y tế cho anh/chị ạ
+  utter_ask_user_name:
+  - text: Anh/chị vui lòng cho em xin họ tên ạ.
+  utter_ask_user_gender:
+  - text: Giới tính của anh/chị là nam hay nữ ạ.
+  utter_ask_form_user_age:
+  - text: Anh/chị bao nhiêu tuổi rồi ạ.
+  utter_ask_form_password:
+  - text: Vì lí do bảo mật, mời anh chị nhập mật khẩu ạ.
+  utter_ask_form_diagnose:
+  - text: Mời anh/chị nhập bệnh án ạ.
+  utter_ask_form_continue:
+  - text: Anh/chị có muốn tiếp tục không
+  utter_remember:
+  - text: Cảm ơn ạ, hồ sơ đã hoàn thành.
+actions:
+- action_medical
+- action_say_data

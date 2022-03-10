@@ -1,5 +1,4 @@
 version: "3.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -7,26 +6,22 @@ nlu:
     - chào bạn
     - hello
     - hi
-    - xin chào
-    - chào bạn
     - hey
     - có ai giúp mình không
     - bạn ơi
     - anh ơi
     - chị ơi
     - cháu ơi
-    - hello
     - chào
     - ê mày
     - có ai ở đây không?
-
 - intent: give_name
   examples: |
     - [anh](user_gender) có tên là [Nguyễn Lộc](user_name)
     - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
     - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
     - chào, [anh](user_gender) tên là [Long](user_name)
-    - xin chào, [anh](user_gender) tên là [ Văn Đạt](user_name)
+    - xin chào, [anh](user_gender) tên là [Văn Đạt](user_name)
     - [anh](user_gender) tên là [Trần Cường](user_name)
     - [anh](user_gender) có tên là [Nam](user_name)
     - Tên của [chị](user_gender) là [Tôn Kim Ái](user_name)
@@ -45,8 +40,44 @@ nlu:
     - [tôi](user_gender) là [Hùng](user_name)
     - [tôi](user_gender) tên là [Hương](user_name)
     - [tôi](user_gender) là [La Long](user_name)
-
-
+    - [anh](user_gender) tên là [Trí](user_name)
+    - [anh](user_gender) có tên là [Đạt](user_name)
+    - tên [anh](user_gender) là [Thành](user_name)
+    - [chị](user_gender) tên là [Ái](user_name)
+    - [chị](user_gender) có tên là [Vy](user_name)
+    - [anh](user_gender) tên là [Trí](user_name)
+- intent: give_gender
+  examples: |
+    - anh là [nam](user_gender)
+    - tôi là [nam](user_gender)
+    - giới tính của anh là [nam](user_gender)
+    - chị là [nữ](user_gender)
+    - giới tính của chị là [nữ](user_gender)
+- intent: give_age
+  examples: |
+    - anh [18](user_age) tuổi
+    - tôi [20](user_age) tuổi rồi
+    - năm nay anh [9](user_age) tuổi
+    - chị mới [26](user_age) tuổi thôi
+    - chị [45](user_age) tuổi thôi
+    - anh 23 tuổi
+- intent: give_password
+  examples: |
+    - mật khẩu là [189372](password)
+    - mật khẩu của anh là [2023141423](password)
+    - chị đặt mật khẩu là [91123](password) được không
+    - mật khẩu của chị là [2631241](password)
+    - [4521341](password)
+- intent: give_diagnose
+  examples: |
+    - tôi bị đau bụng
+    - anh bị chóng mặt, đau đầu
+    - anh bị nhanh đói bụng
+    - anh bị viêm gan
+    - chị bị tiểu đường loại 1.
+    - chú bị hoa mắt thường xuyên.
+    - em bị đau ruột thừa.
+    - chị bị nôn mửa.
 - intent: goodbye
   examples: |
     - bái bai
@@ -57,8 +88,6 @@ nlu:
     - tạm biệt em nhé
     - bye nha
     - thôi tôi đi đây
-
-
 - intent: affirm
   examples: |
     - yes.
@@ -69,15 +98,13 @@ nlu:
     - ừa nè
     - chính xác
     - cũng ok
-
-
 - intent: deny
   examples: |
     - no.
     - nô nô
     - hong phải
     - không
-    - đâu có 
+    - đâu có
     - có đâu
     - không nha
     - sai rùi
@@ -90,8 +117,34 @@ nlu:
     - thất vọng quá
     - Bệnh này có lây không?
     - Bệnh này có nguy hiểm không?
-
-
+- intent: request_save_form
+  examples: |
+    - anh muốn lưu hồ sơ bệnh án
+    - lưu hồ sơ bệnh án
+    - lưu hồ sơ
+    - em lưu hồ sơ bệnh án cho chị
+    - chị muốn em lưu hồ sơ bệnh án
+    - mình muốn bạn lưu hồ sơ bệnh án
+    - bạn hãy lưu hồ sơ bệnh án cho tôi
+    - anh muốn lập hồ sơ
+- intent: get_data
+  examples: |
+    - anh muốn lấy hồ sơ
+    - chị muốn lấy hồ sơ
+    - anh muốn lấy hồ sơ bệnh án
+    - anh muốn xem hồ sơ bệnh án
+    - chị muốn xem lại hồ sơ bệnh án của chị
+    - anh muốn kiểm tra lại hồ sơ bệnh án
+- intent: cancel_form
+  examples: |
+    - hủy
+    - hủy quá trình
+    - dừng
+    - dừng quá trình
+    - không tiếp tục
+    - dừng lại
+    - tôi không muốn tiếp tục nữa
+    - anh không muốn tiếp tục nữa
 - intent: thank
   examples: |
     - tuyệt vời
@@ -102,8 +155,6 @@ nlu:
     - mình thấy thích rồi đó
     - mình thấy tốt nè
     - cảm ơn nha
-
-
 - intent: mood_great
   examples: |
     - tao vui quá
@@ -114,8 +165,6 @@ nlu:
     - tôi đang vui
     - t đang vui
     - dui
-
-
 - intent: mood_unhappy
   examples: |
     - tôi chán quá
@@ -123,15 +172,13 @@ nlu:
     - chán ghê
     - buồn ghê á
     - chán như con gián
-    - tôi đang buồn 
+    - tôi đang buồn
     - tôi rầu ghê
-    - t đang buồn 
+    - t đang buồn
     - t rầu ghê
     - very sad
     - hỏng dui
     - hôm nay tui buồn
-
-
 - intent: ask_bot
   examples: |
     - anh có thắc mắc này
@@ -168,10 +215,6 @@ nlu:
     - bạn tên là gì
     - bạn tên gì thế
     - em tên gì
-
-
-- intent: ask_func_list
-  examples: |
     - bạn có thể làm được những gì
     - bạn giúp được gì nào
     - chức năng của bạn là gì
@@ -204,18 +247,14 @@ nlu:
     - có làm được trò gì
     - giúp giúp cái gì
     - biết gì mà nói
-    - làm được gì
     - giúp được gì
     - mày làm được gì
     - có biết gì
-
-
 - intent: unknown
   examples: |
     - giờ làm gì để có bồ đây?
     - em có biết tại sao lá cây có màu xanh
     - chừng nào hết dịch ta
-
 - intent: angry
   examples: |
     - mày tào lao quá
@@ -223,9 +262,8 @@ nlu:
     - ủa nói gì kì cục vậy
     - dô diên nha
     - nghỉ chơi
-    - xàm quá 
+    - xàm quá
     - thôi không nói nữa
-
 - intent: béo phì
   examples: |
     - Thừa cân béo phì là gì?
@@ -278,64 +316,61 @@ nlu:
     - Chỉ số mỡ nội tạng (Visceral Fat Rating) là gì?
     - Tỷ lệ trao đổi chất cơ bản (BMR) là gì?
     - Tác hại của việc giảm cân quá nhanh?
-
-
-
 - intent: covid
   examples: |
-    - Virus corona (2019-nCoV) là gì? 
-    - Tại sao bệnh viêm đường hô hấp cấp do virus corona được đặt tên là Covid-19? 
-    - Cơ chế gây bệnh và lây lan của Virus Corona SARS-CoV-2? 
-    - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát Covid-19 không? 
-    - Lây lan SARS-COV-2 trong cộng đồng là gì? 
-    - Muỗi hay ve có thể lan truyền virus gây bệnh Covid-19 không? 
-    - Các triệu chứng thường thấy khi bệnh nhân đã nhiễm (2019-nCoV)? 
-    - Khi nào cần chăm sóc khẩn cấp khi mắc Covid-19? 
-    - Có thể xảy ra trường hợp nhiễm cùng lúc cúm và Covid-19? 
-    - Những triệu chứng và biến chứng gây ra bởi virus Corona SARS-CoV-2? 
-    - Có ai có đề kháng tự nhiên với Covid-19 hay không? 
-    - Có thể lấy huyết tương của người bị bệnh Covid-19 đã khỏi bệnh để chữa cho người đang mắc bệnh hay không? 
-    - Virus corona SARS-CoV-2 có giống virus gây bệnh cúm không? 
-    - Làm thế nào để kiểm tra một người có nhiễm virus corona (2019-nCoV) hay không? 
-    - SARS-CoV-2 có giống như virus MERS hay SARS không? 
-    - Virus corona (2019-nCoV) sống được ở nhiệt độ bao nhiêu? 
-    - Virus corona (2019-nCoV) đặc biệt nguy hiểm với đối tượng nào? 
-    - Có lưu ý gì khi sử dụng thuốc nếu đã nhiễm Covid-19? 
-    - Người khuyết tật có nguy cơ cao nhiễm Covid-19 không? 
-    - Trẻ em có nằm trong nhóm đối tượng nguy cơ cao không? 
-    - Có nên cho trẻ mang khẩu trang không? 
-    - Nếu trẻ có bệnh nền thì cha mẹ cần phải làm gì? 
-    - Những biện pháp bảo vệ và phòng ngừa tốt nhất cho mỗi cá nhân trước đại dịch virus corona (2019-nCoV)? 
-    - Đeo khẩu trang y tế ở những nơi công cộng và đông người có đủ để phòng ngừa lây nhiễm virus corona (2019-nCoV)? Mang khẩu trang loại nào và như thế nào là đúng? 
-    - Tại sao người đã nhiễm Covid-19 vẫn cần phải đeo khẩu trang? 
-    - Có nên đi khám/điều trị bệnh ở bệnh viện trong giai đoạn dịch không? 
-    - Vì sao người ta gọi “viêm phổi Vũ Hán” là “viêm phổi lạ”? Có giống viêm phổi do phế cầu khuẩn không? 
-    - Rửa tay có tác dụng gì trong phòng tránh SARS-CoV-2? 
-    - Dung dịch rửa tay khô phải đảm bảo điều kiện gì mới có thể sử dụng để rửa tay phòng lây nhiễm Covid-19? 
-    - Ngoài việc rửa tay sạch, cần thực hiện thêm thói quen gì với đôi tay để hạn chế lây nhiễm Covid-19? 
-    - Phải làm gì để phòng bệnh trong công sở? 
+    - Virus corona (2019-nCoV) là gì?
+    - Tại sao bệnh viêm đường hô hấp cấp do virus corona được đặt tên là Covid-19?
+    - Cơ chế gây bệnh và lây lan của Virus Corona SARS-CoV-2?
+    - Thời tiết ấm hơn có thể ngăn chặn việc bùng phát Covid-19 không?
+    - Lây lan SARS-COV-2 trong cộng đồng là gì?
+    - Muỗi hay ve có thể lan truyền virus gây bệnh Covid-19 không?
+    - Các triệu chứng thường thấy khi bệnh nhân đã nhiễm (2019-nCoV)?
+    - Khi nào cần chăm sóc khẩn cấp khi mắc Covid-19?
+    - Có thể xảy ra trường hợp nhiễm cùng lúc cúm và Covid-19?
+    - Những triệu chứng và biến chứng gây ra bởi virus Corona SARS-CoV-2?
+    - Có ai có đề kháng tự nhiên với Covid-19 hay không?
+    - Có thể lấy huyết tương của người bị bệnh Covid-19 đã khỏi bệnh để chữa cho người đang mắc bệnh hay không?
+    - Virus corona SARS-CoV-2 có giống virus gây bệnh cúm không?
+    - Làm thế nào để kiểm tra một người có nhiễm virus corona (2019-nCoV) hay không?
+    - SARS-CoV-2 có giống như virus MERS hay SARS không?
+    - Virus corona (2019-nCoV) sống được ở nhiệt độ bao nhiêu?
+    - Virus corona (2019-nCoV) đặc biệt nguy hiểm với đối tượng nào?
+    - Có lưu ý gì khi sử dụng thuốc nếu đã nhiễm Covid-19?
+    - Người khuyết tật có nguy cơ cao nhiễm Covid-19 không?
+    - Trẻ em có nằm trong nhóm đối tượng nguy cơ cao không?
+    - Có nên cho trẻ mang khẩu trang không?
+    - Nếu trẻ có bệnh nền thì cha mẹ cần phải làm gì?
+    - Những biện pháp bảo vệ và phòng ngừa tốt nhất cho mỗi cá nhân trước đại dịch virus corona (2019-nCoV)?
+    - Đeo khẩu trang y tế ở những nơi công cộng và đông người có đủ để phòng ngừa lây nhiễm virus corona (2019-nCoV)? Mang khẩu trang loại nào và như thế nào là đúng?
+    - Tại sao người đã nhiễm Covid-19 vẫn cần phải đeo khẩu trang?
+    - Có nên đi khám/điều trị bệnh ở bệnh viện trong giai đoạn dịch không?
+    - Vì sao người ta gọi “viêm phổi Vũ Hán” là “viêm phổi lạ”? Có giống viêm phổi do phế cầu khuẩn không?
+    - Rửa tay có tác dụng gì trong phòng tránh SARS-CoV-2?
+    - Dung dịch rửa tay khô phải đảm bảo điều kiện gì mới có thể sử dụng để rửa tay phòng lây nhiễm Covid-19?
+    - Ngoài việc rửa tay sạch, cần thực hiện thêm thói quen gì với đôi tay để hạn chế lây nhiễm Covid-19?
+    - Phải làm gì để phòng bệnh trong công sở?
     - Ai được coi là tiếp xúc gần với người nhiễm Covid-19 Nên làm gì khi có tiếp xúc gần với người bệnh Viêm đường hô hấp cấp do Covid-19?
-    - Người từng tiếp xúc với bệnh nhân dương tính với SARS-CoV-2 thì có cách ly không? 
-    - Truy dấu người tiếp xúc là gì? 
-    - Có được coi là tiếp xúc gần không nếu có mang khẩu trang? 
-    - Nếu có tiếp xúc gần thì có cần đi xét nghiệm Covid-19 không? 
-    - Nếu có tiếp xúc gần nhưng xét nghiệm âm tính thì có phải cách ly 14 ngày không? 
-    - Cần phải làm khai báo y tế không? 
-    - Ứng dụng Bluezone có vai trò gì trong truy dấu tiếp xúc ở Việt Nam? 
-    - Vệ sinh khử trùng trên xe ô tô như thế nào trong mùa dịch Covid-19? 
-    - Làm sạch và khử trùng khác nhau như nào? 
-    - Nên vệ sinh cá nhân như thế nào để đề phòng lây nhiễm Covid-19? 
-    - Việt Nam đã khống chế thành công dịch MERS và dịch SARS Vậy chúng ta có thể phòng chống được dịch viêm phổi cấp do SARS-CoV-2 không? 
-    - Làm sao để tăng sức đề kháng, phòng bệnh viêm phổi cấp do virus corona chủng mới SARS-CoV-2? 
-    - Đang sống ở khu vực “vùng dịch” có phải đã bị nhiễm Covid-19 rồi không? 
-    - Chúng ta làm gì khi nghi ngờ nhiễm SARS-CoV-2? Chúng ta có nên chủ động test SARS-CoV-2 hay không? 
-    - Những xét nghiệm nào cho covid-19 và ý nghĩa của kết quả xét nghiệm? 
-    - Vì sao Covid-19 dương tính trở lại? 
-    - Những ca bệnh điều trị thành công tại Việt Nam đã sử dụng phác đồ nào? 
-    - Người bị nhiễm Covid-19 đã khỏi có nguy cơ mắc bệnh lại nữa không? 
-    - Đã có vắc xin phòng dịch bệnh viêm phổi cấp do virus corona (2019-nCoV) chưa? 
-    - Đã có loại thuốc đặc hiệu nào để phòng và điều trị bệnh viêm đường hô hấp cấp do SARS-CoV-2 gây ra chưa? 
-    - Vắc xin tái tổ hợp dựa trên Adenovirus là gì? 
+    - Người từng tiếp xúc với bệnh nhân dương tính với SARS-CoV-2 thì có cách ly không?
+    - Truy dấu người tiếp xúc là gì?
+    - Có được coi là tiếp xúc gần không nếu có mang khẩu trang?
+    - Nếu có tiếp xúc gần thì có cần đi xét nghiệm Covid-19 không?
+    - Nếu có tiếp xúc gần nhưng xét nghiệm âm tính thì có phải cách ly 14 ngày không?
+    - Cần phải làm khai báo y tế không?
+    - Ứng dụng Bluezone có vai trò gì trong truy dấu tiếp xúc ở Việt Nam?
+    - Vệ sinh khử trùng trên xe ô tô như thế nào trong mùa dịch Covid-19?
+    - Làm sạch và khử trùng khác nhau như nào?
+    - Nên vệ sinh cá nhân như thế nào để đề phòng lây nhiễm Covid-19?
+    - Việt Nam đã khống chế thành công dịch MERS và dịch SARS Vậy chúng ta có thể phòng chống được dịch viêm phổi cấp do SARS-CoV-2 không?
+    - Làm sao để tăng sức đề kháng, phòng bệnh viêm phổi cấp do virus corona chủng mới SARS-CoV-2?
+    - Đang sống ở khu vực “vùng dịch” có phải đã bị nhiễm Covid-19 rồi không?
+    - Chúng ta làm gì khi nghi ngờ nhiễm SARS-CoV-2? Chúng ta có nên chủ động test SARS-CoV-2 hay không?
+    - Những xét nghiệm nào cho covid-19 và ý nghĩa của kết quả xét nghiệm?
+    - Vì sao Covid-19 dương tính trở lại?
+    - Những ca bệnh điều trị thành công tại Việt Nam đã sử dụng phác đồ nào?
+    - Người bị nhiễm Covid-19 đã khỏi có nguy cơ mắc bệnh lại nữa không?
+    - Đã có vắc xin phòng dịch bệnh viêm phổi cấp do virus corona (2019-nCoV) chưa?
+    - Đã có loại thuốc đặc hiệu nào để phòng và điều trị bệnh viêm đường hô hấp cấp do SARS-CoV-2 gây ra chưa?
+    - Vắc xin tái tổ hợp dựa trên Adenovirus là gì?
     - Các thành phần trong vắc-xin COVID-19 bao gồm những gì?
     - Nếu tôi đang mang thai hoặc có dự định mang thai, liệu tôi có thể tiêm vắc-xin ngừa COVID-19 không?
     - Tôi có cần tiêm vắc-xin để được làm việc không?
@@ -361,15 +396,15 @@ nlu:
     - Nếu đã chích ngừa, tôi có được an toàn không?
     - Biến thể Omicron là gì?
     - Biến thể Omicron có nguy hiểm không?
-    - Vắc xin Covid-19 có hiệu quả với biến thể Omicron không?  
+    - Vắc xin Covid-19 có hiệu quả với biến thể Omicron không?
     - Cần làm gì để bảo vệ mình trước biến thể Omicron?
-    - Biến thể Omicron phát triển như thế nào? 
-    - Biến thể Omicron xuất hiện ở đâu? 
-    - Biến thể Omicron có nghiêm trọng hơn so với các biến thể COVID-19 khác không? 
+    - Biến thể Omicron phát triển như thế nào?
+    - Biến thể Omicron xuất hiện ở đâu?
+    - Biến thể Omicron có nghiêm trọng hơn so với các biến thể COVID-19 khác không?
     - Biến thể Omicron có lây lan nhanh hơn không?
     - Bị nhiễm COVID-19 từ trước có hiệu quả đối với biến thể Omicron?
-    - Trẻ em có nguy cơ mắc biến thể Omicron cao hơn không? 
-    -  Bắt tay có làm lây Covid-19 không?
+    - Trẻ em có nguy cơ mắc biến thể Omicron cao hơn không?
+    - Bắt tay có làm lây Covid-19 không?
     - Hôn nhau có làm lây Covid-19 không?
     - Sinh hoạt tình dục có làm lây Covid-19 không?
     - Covid-19 có lây qua thức ăn không?
@@ -391,11 +426,9 @@ nlu:
     - Tiêm vắc xin Covid-19 xong mới biết mình có thai thì phải làm sao?
     - Đang muốn có thai tiêm được không?
     - Thẻ vàng Covid là gì?
-    - Thẻ xanh Covid là gì?       
+    - Thẻ xanh Covid là gì?
     - Đi máy bay mùa dịch cần giấy tờ gì?
     - Vùng xanh vùng đỏ là gì?
-
-
 - intent: da liễu
   examples: |
     - Nhiễm nấm Candida là bệnh gì?
@@ -456,7 +489,6 @@ nlu:
     - Đối tượng nguy cơ bệnh Bệnh vảy nến
     - Phòng ngừa bệnh Bệnh vảy nến
     - Các biện pháp chẩn đoán bệnh Bệnh vảy nến
-    - Bệnh vảy nến có chữa trị được không?
     - Chế độ ăn uống, sinh hoạt dành cho người bệnh vảy nến
     - Các loại bệnh vảy nến thường gặp
     - Bệnh vảy nến có lây không?
@@ -475,7 +507,7 @@ nlu:
     - Cách điều trị mày đay
     - Các thuốc được dùng để điều trị mề đay và phù mạch
     - Các tình huống cấp cứu của mề đay?
-    - Bệnh chàm là gì? 
+    - Bệnh chàm là gì?
     - Phân loại bệnh chàm da
     - Nguyên nhân bị chàm
     - Dấu hiệu bệnh chàm
@@ -524,8 +556,6 @@ nlu:
     - Những kỹ thuật y tế nào dùng để chẩn đoán nốt ruồi?
     - Làm sao để biết nốt ruồi có phải là ung thư hay không
     - Những phương pháp nào dùng để điều trị nốt ruồi?
-
-
 - intent: đau mắt đỏ
   examples: |
     - Đau mắt đỏ là bệnh gì?
@@ -563,11 +593,9 @@ nlu:
     - Bị đau mắt đỏ có nên nhỏ V-rohto hay không?
     - Đau mắt đỏ có tái phát không?
     - Neomycin có dùng nhỏ mắt được không?
-
-
 - intent: đau thần kinh tọa
   examples: |
-    - Đau thần kinh tọa là gì? 
+    - Đau thần kinh tọa là gì?
     - Đau thần kinh tọa có nguy hiểm không?
     - Đau thần kinh tọa có tính di truyền?
     - Đau thần kinh tọa xảy ra cả 2 chân cùng lúc?
@@ -666,8 +694,6 @@ nlu:
     - Điều trị đau thần kinh tọa bằng Laser?
     - Điều trị đau thần kinh tọa bằng Sóng radio cao tần như thế nào?
     - Những điều nên làm và không nên làm khi bị đau thần kinh tọa?
-
-
 - intent: hạ canxi máu
   examples: |
     - Hạ canxi máu là gì?
@@ -697,7 +723,6 @@ nlu:
     - Đối tượng cần bổ sung canxi?
     - Uống canxi vào thời điểm nào là tốt nhất?
     - Một số lưu ý khi sử dụng canxi?
-    - Uống canxi vào thời điểm nào là tốt nhất? 
     - Triệu chứng ở người lớn?
     - Điều trị hạ canxi máu nặng có triệu chứng?
     - Điều trị hạ canxi máu không có triệu chứng?
@@ -728,11 +753,9 @@ nlu:
     - Bệnh suy thận có thể bị hạ canxi không?
     - Tăng phản xạ gân xương khi bị hạ canxi máu được kiểm tra như thế nào?
     - Co rút cơ khi bị hạ canxi máu được kiểm tra như thế nào?
-
-
 - intent: lao phổi
   examples: |
-    - Bệnh lao là gì? 
+    - Bệnh lao là gì?
     - Bệnh lao phổi có thể gặp ở những bộ phận cơ thể nào?
     - Một người mắc bệnh lao phổi có thể lây cho bao nhiêu người khác trong 1 năm
     - Mỗi năm có bao nhiêu người mắc bệnh lao phổi
@@ -743,13 +766,13 @@ nlu:
     - Có những loại lao nào?
     - Có biểu hiện của bệnh lao là có thể lây truyền bệnh sang mọi người xung quanh?
     - Những biểu hiện ban đầu của bệnh lao phổi là gì?
-    - Khi thấy những biểu hiện của bệnh lao thì cần làm gì? 
+    - Khi thấy những biểu hiện của bệnh lao thì cần làm gì?
     - Khi nghi ngờ bị bệnh lao bác sĩ sẽ làm gì?
     - Tôi có thể phòng bệnh lao không?
     - Lao và HIV có mối liên quan không?
-    - Lao có thể chữa khỏi hoàn toàn không? 
+    - Lao có thể chữa khỏi hoàn toàn không?
     - Có thể mắc lại bệnh lao sau khi chữa khỏi không?
-    - Điều trị bệnh lao ở đâu? 
+    - Điều trị bệnh lao ở đâu?
     - Điều trị bệnh lao có được hưởng ưu tiên gì không?
     - Nguồn truyền nhiễm bệnh lao phổi?
     - Có phải ai bị lây nhiễm vi khuẩn lao cũng mắc lao phổi?
@@ -823,7 +846,7 @@ nlu:
     - Khi nào tác dụng phụ giảm đi hoặc biến mất?
     - Các tác dụng phụ thường gặp nhất của thuốc đặc trị lao là?
     - Một tuần nọ, khi uống thuốc tại nhà, tôi buồn nôn và nôn cả thuốc ra ngoài. Nếu nôn thuốc ra ngoài, tôi phải uống lại thuốc, tôi có thể lấy thuốc ở đâu?
-    - Tôi cảm thấy chóng mặt sau khi uống thuốc một lúc. Tại sao? Có cách nào khắc phục không? 
+    - Tôi cảm thấy chóng mặt sau khi uống thuốc một lúc. Tại sao? Có cách nào khắc phục không?
     - Tại sao nước tiểu đỏ khi uống thuốc điều trị bệnh lao?
     - Lời khuyên giúp giảm tiêu chảy khi dùng thuốc điều trị lao?
     - Lời khuyên của bệnh nhân và nhân viên y tế giúp giảm ngứa khi dùng thuốc điều trị lao?
@@ -831,8 +854,6 @@ nlu:
     - Sau khi xuất viện, tôi có nên ở nhà và nghỉ ngơi, hay tôi có thể ra ngoài và gặp gỡ bạn bè?
     - Tôi có thể trở lại trường sau khi xuất viện?
     - Tôi có thể chơi thể thao sau khi mắc bệnh lao hay không?
-
-
 - intent: mụn trứng cá
   examples: |
     - Vì sao điều trị mụn lại cảm giác nổi mụn nhiều hơn?
@@ -851,7 +872,7 @@ nlu:
     - Các bước chăm sóc da mụn
     - Tại sao chúng ta bị mụn?
     - Mụn trứng cá là gì?
-    - Mụn trứng cá không viêm là gì 
+    - Mụn trứng cá không viêm là gì
     - Mụn trứng ca viêm là gì
     - Nguyên nhân gây mụn trứng cá?
     - Hormone nào gây ra mụn?
@@ -860,7 +881,7 @@ nlu:
     - Có phải rửa mặt càng nhiều càng tốt?
     - Mồ hôi có gây mụn không?
     - Thuốc men có gây ra mụn?
-    -  Mỹ phẩm và các sản phẩm chăm sóc da có gây mụn?
+    - Mỹ phẩm và các sản phẩm chăm sóc da có gây mụn?
     - Cuộc sống văn minh có gây ra mụn?
     - Môi trường ô nhiễm có gây ra mụn?
     - Còn những tác nhân nào có thể gây ra mụn nữa?
@@ -899,8 +920,6 @@ nlu:
     - Sẹo do mụn đầu đen để lại có lành được không?
     - Nguyên nhân gây vết thâm mụn?
     - Cần tránh ánh nắng mặt trời khi nào và tránh làm sao để giảm thâm mụn?
-
-
 - intent: quai bị, sâu răng
   examples: |
     - Quai bị là bệnh gì?
@@ -911,7 +930,7 @@ nlu:
     - Có vắc-xin nào để phòng bệnh quai bị không?
     - Tôi đã tiêm vắc-xin nhưng vẫn bị quai bị. Có phải là vắc xin quai bị không hiệu quả?
     - Bệnh quai bị có nguy hiểm không?
-    - Phụ nữ có bị quai bị không? 
+    - Phụ nữ có bị quai bị không?
     - Bị quai bị có thể bị vô sinh có đúng không?
     - Tỉ lệ người bị viêm tinh hoàn khi bị quai bị?
     - Tỉ lệ người bị viêm buồng trứng khi bị quai bị?
@@ -925,13 +944,11 @@ nlu:
     - Viêm tủy là gì?
     - Chết tủy là gì?
     - Nguyên nhân gây sâu răng là gì?
-    - Răng bị sâu có nguy hiểm không? 
+    - Răng bị sâu có nguy hiểm không?
     - Chữa sâu răng bằng kem đánh răng có được không?
     - Có nên nhổ răng khôn không?
     - Trường hợp không nên nhổ răng khôn?
     - Nhổ răng khôn có nguy hiểm không?
-
-
 - intent: tai-mũi-họng
   examples: |
     - Ngứa lỗ tai là triệu chứng của bệnh gì?
@@ -1000,7 +1017,7 @@ nlu:
     - Viêm thanh quản hạ thanh môn là gì?
     - Viêm thanh thiệt ở trẻ là gì?
     - Viêm thanh quản bạch hầu là gì?
-    - Điều trị viêm thanh quản không có khó thở? 
+    - Điều trị viêm thanh quản không có khó thở?
     - Thuốc kháng sinh nào có thể điều trị viêm thanh quản?
     - Tiến triển và biến chứng nếu không điều trị viêm thanh quản là gì?
     - Phòng bệnh viêm thanh quản cấp tính bằng cách nào?
@@ -1025,7 +1042,7 @@ nlu:
     - Những chú ý khi chích rạch áp xe là gì?
     - Bệnh Polyp mũi là bệnh gì?
     - Triệu chứng của bệnh polyp mũi là gì?
-    - Dấu hiệu nhận biết polyp mũi? 
+    - Dấu hiệu nhận biết polyp mũi?
     - Điều trị bệnh polyp mũi hiệu quả bằng cách nào?
     - Nguyên nhân bị chảy máu mũi?
     - Chảy máu mũi có thể là triệu chứng của bệnh gì?
@@ -1046,9 +1063,7 @@ nlu:
     - Thế nào là nội soi tai mũi họng?
     - Khi nào nên tiến hành kỹ thuật nội soi tai mũi họng?
     - Kỹ thuật nội soi tai mũi họng có phát hiện bệnh ung thư không?
-    - Nội soi tai mũi họng có tai biến không? 
-
-
+    - Nội soi tai mũi họng có tai biến không?
 - intent: tay-chân-miệng
   examples: |
     - Bệnh Tay chân miệng là gì?
@@ -1084,7 +1099,7 @@ nlu:
     - Giúp trẻ bớt đau đớn để ăn uống dễ dàng hơn khi bị bệnh Tay chân miệng như thế nào?
     - Giảm ngứa cho trẻ do bệnh tay chân miệng như thế nào?
     - Đồ chơi và vật dụng thường dùng của trẻ cần phải được tẩy trùng như thế nào để tránh bệnh Tay chân miệng?
-    - Bệnh tay chân miệng lây lan như thế nào? 
+    - Bệnh tay chân miệng lây lan như thế nào?
     - Làm thế nào để chẩn đoán bệnh tay chân miệng?
     - Bác sĩ có thể phân biệt bệnh tay chân miệng với các loại nhiễm trùng do vi-rút khác bằng cách nào?
     - Bệnh thường gặp ở mùa nào ?
@@ -1135,7 +1150,6 @@ nlu:
     - Truyền nước cho trẻ bị tay chân miệng như thế nào?
     - Sử dụng thuốc kháng sinh thế nào cho trẻ bị tay chân miệng?
     - Kiêng khem cho trẻ bị tay chân miệng thế nào là hợp lí?
-
 - intent: thận
   examples: |
     - Suy thận là gì?
@@ -1171,22 +1185,22 @@ nlu:
     - Cà phê là nguyên nhân gây bệnh sỏi thận?
     - Uống ly bia buổi tối có thể ngừa sỏi thận?
     - Béo phì là yếu tố giúp sỏi thận hình thành?
-    - Lạm dụng sinh tố có thể dẫn đến bệnh sỏi thận? 
+    - Lạm dụng sinh tố có thể dẫn đến bệnh sỏi thận?
     - Ăn nhiều pho mát có thể sinh bệnh sỏi thận?
     - Không nên uống sữa nếu bị sỏi thận?
     - Đổ mồ hôi quá nhiều dễ bị bệnh sỏi thận?
     - Một số dược thảo có thể làm tan sỏi thận?
     - Có thể tiểu ra sỏi?
     - Thế nào là sỏi tiết niệu?
-    - Sỏi tiết liệu có những loại nào? 
-    - Sỏi tiết niệu gây ra những hậu quả gì? 
+    - Sỏi tiết liệu có những loại nào?
+    - Sỏi tiết niệu gây ra những hậu quả gì?
     - Chẩn đoán sỏi tiết niệu như thế nào?
     - Cách xử trí sỏi tiết niệu ra sao?
     - Người bị sỏi tiết niệu khi nào cần tới bệnh viện?
     - Nguyên nhân gây bệnh sỏi thận
     - Điều trị bệnh sỏi thận
     - Phòng ngừa bệnh sỏi thận
-    -  Phẫu thuật có thể ngăn ngừa được sự tiến triển của suy thận không?
+    - Phẫu thuật có thể ngăn ngừa được sự tiến triển của suy thận không?
     - Bệnh cầu thận là gì?
     - Các bệnh lý gây nên bệnh cầu thận
     - Các triệu chứng của bệnh cầu thận là gì?
@@ -1194,7 +1208,6 @@ nlu:
     - Bệnh cầu thận được chẩn đoán như thế nào?
     - Cách điều trị bệnh cầu thận?
     - Phòng ngừa bệnh cầu thận
-
 - intent: thủy đậu
   examples: |
     - Bệnh thủy đậu là gì?
@@ -1223,19 +1236,18 @@ nlu:
     - Virus trong vắc xin thủy đậu có thể lây truyền từ một người đã tiêm vắc xin hay không?
     - Bị thủy đậu bao lâu thì khỏi?
     - Có người nói khi bị trái rạ dùng thuốc tiêu ban lộ thì bệnh mau hết có đúng không
-
 - intent: tim mạch
   examples: |
-    - Bệnh tim mạch là gì? 
+    - Bệnh tim mạch là gì?
     - Các biểu hiện cảnh báo bệnh tim mạch cần cấp cứu là gì? Xin cho biết cách phát hiện và đối phó khi gặp tình huống đó?
-    - Bị hồi hộp đánh trống ngực, đó có phải là bị bệnh tim mạch không? 
+    - Bị hồi hộp đánh trống ngực, đó có phải là bị bệnh tim mạch không?
     - Những biểu hiện thường gặp của bệnh tim mạch?
     - Bệnh tim có di truyền không?
     - Động mạch vành là gì? Chức năng của nó ra sao?
     - Tôi 30 tuổi, nhịp tim thường xuyên 90 nhịp/phút, vậy có làm sao không?
     - Những nguyên nhân nào gây ra bệnh tim mạch?
     - Tôi 57 tuổi, nam giới, cao 167 cm nặng 75 kg. Như vậy có béo quá không? ảnh hưởng đến bệnh tim mạch không?
-    - Hút thuốc lá ảnh hưởng đến tim mạch như thế nào? 
+    - Hút thuốc lá ảnh hưởng đến tim mạch như thế nào?
     - Tại sao và Nên tập thể dục như thế nào là tốt cho tim mạch?
     - Chế độ ăn uống như thế nào là tốt cho bệnh tim mạch?
     - Uống rượu có ảnh hưởng đến tim mạch không?
@@ -1275,7 +1287,6 @@ nlu:
     - Van tim là gì?
     - Bệnh van tim là gì?
     - Nguyên nhân gây bệnh lý van tim thường gặp nhất ở Việt Nam là gì?
-    - Bệnh van tim là gì?
     - Bệnh van động mạch chủ là gì?
     - Bệnh van động mạch phổi là gì ?
     - Bệnh van ba lá là gì?
@@ -1303,7 +1314,7 @@ nlu:
     - Các bệnh lý cột cơ liên quan hở van hai lá?
     - Hở van tim có phải phẫu thuật không ?
     - Tôi đang dùng thuốc chống đông máu, vậy cần phải lưu ý những gì?
-    -  Rung nhĩ có nguy hiểm không?
+    - Rung nhĩ có nguy hiểm không?
     - Các triệu chứng của rung nhĩ?
     - Nguyên nhân dẫn đến rung nhĩ?
     - Bệnh rung nhĩ là gì?
@@ -1326,8 +1337,6 @@ nlu:
     - Bệnh thông liên thất là gì?
     - Có bao nhiêu loại thông liên thất?
     - Điều trị bệnh thông liên thất bằng những biện pháp nào?
-
-
 - intent: viêm đường hô hấp
   examples: |
     - Bệnh viêm đường hô hấp là gì?
@@ -1371,7 +1380,7 @@ nlu:
     - Cách điều trị viêm đường hô hấp dưới nhẹ (tại nhà)?
     - Cách điều trị viêm đường hô hấp dưới nặng?
     - Cách điều trị viêm đường hô hấp dưới nghiêm trọng?
-    -  Đối tượng viêm đường hô hấp dưới cần theo dõi chặt chẽ?
+    - Đối tượng viêm đường hô hấp dưới cần theo dõi chặt chẽ?
     - Các đối tượng khi viêm đường hô hấp dưới cần khuyến khích nhập viện?
     - Thời gian phục hồi của viêm đường hô hấp trên là gì?
     - Tình trạng nhiễm trùng đường hô hấp dưới có nguy hiểm không?
@@ -1440,8 +1449,6 @@ nlu:
     - Viêm phổi thường gặp ở những đối tượng nào?
     - Làm gì khi nghi trẻ bị viêm phổi?
     - Viêm phổi có lây không?
-
-
 - intent: viêm xoang
   examples: |
     - Viêm xoang là gì?
@@ -1465,7 +1472,7 @@ nlu:
     - Những đối tượng nào dễ mắc viêm xoang?
     - Trẻ em có bị viêm xoang không?
     - Viêm xoang có lây không?
-    - Viêm xoang chia làm các dạng nào? 
+    - Viêm xoang chia làm các dạng nào?
     - Ô nhiễm không khí có phải nguyên nhân bị viêm xoang không?
     - Tôi là tiếp viên hàng không nên thường có lịch đi máy bay dày đặc, đó có phải làm bị viêm xoang không?
     - Hút thuốc lá có bị viêm xoang không?
@@ -1475,9 +1482,14 @@ nlu:
     - Địa chỉ nào khám viêm xoang uy tín?
     - Viêm xoang hàm trên có triệu chứng gì?
     - Điều trị viêm xoang bằng DNR – Plasma áp dụng trong trường hợp nào?
-    - DNR – Plasma là gì? 
+    - DNR – Plasma là gì?
     - Viêm xoang cấp tính là gì?
     - Viêm xoang mạn tính là gì?
     - Thuốc thảo dược có giúp điều trị bệnh viêm mũi xoang an toàn, lâu dài?
     - Cần làm gì khi viêm mũi xoang tái phát trong thời kỳ dịch bệnh covid?
-
+- regex: password
+  examples: |
+    - \d{4,10}
+- regex: user_age
+  examples: |
+    - \d{1,3}

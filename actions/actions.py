@@ -11,27 +11,12 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-import requests
-import json
 import re
 import string
 from sentence_transformers import SentenceTransformer, util
 
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
 
 bert = SentenceTransformer('sentence-transformers/multi-qa-MiniLM-L6-cos-v1')
-print('init')
 
 
 class ActionMedical(Action):
@@ -106,7 +91,7 @@ class ActionMedical(Action):
             'viêm đường hô hấp': '__viem_duong_ho_hap.yml',
             'viêm xoang': '__viem_xoang.yml',
         }
-        return switcher.get(x, "nothing.yml")
+        return switcher.get(x, "nothing")
 
     def get_answer(self, input, filename):
         with open(filename, encoding='utf-8') as f:
@@ -122,50 +107,39 @@ class ActionMedical(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # get intent
+
         intent = tracker.latest_message.get("intent").get("name")
+        print(intent)
         # get message input
         message = tracker.latest_message.get("text")
-        # get filename
-        filename = './data/medical/'+self.get_file(intent)
-        # get answer
-        answer = self.get_answer(message, filename)
-        dispatcher.utter_message(text=answer)
+
+        temp = self.get_file(intent)
+        if temp != 'nothing':
+            # get filename
+            filename = './data/medical/'+temp
+            # get answer
+            answer = self.get_answer(message, filename)
+            dispatcher.utter_message(text=answer)
+        else:
+            dispatcher.utter_message(text='vler')
         return []
 
 # -------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 
-# def name_cap(text):
-#     tarr = text.split()
-#     for idx in range(len(tarr)):
-#         tarr[idx] = tarr[idx].capitalize()
-#     return ' '.join(tarr)
 
+class ActionSayData(Action):
 
-# class action_save_user_info(Action):
-#     def name(self):
-#         return 'action_save_user_info'
+    def name(self) -> Text:
+        return "action_say_data"
 
-#     def run(self, dispatcher, tracker, domain):
-#         # user_id = (tracker.current_state())["sender_id"]
-#         # print(user_id)
-#         # cust_name = next(tracker.get_latest_entity_values("cust_name"), None)
-#         # cust_sex = next(tracker.get_latest_entity_values("cust_sex"), None)
-#         # bot_position = "SHB"
-
-#         # if (cust_sex is None):
-#         #     cust_sex = "Quý khách"
-
-#         # if (cust_sex == "anh") | (cust_sex == "chị"):
-#         #     bot_position = "em"
-#         # elif (cust_sex == "cô") | (cust_sex == "chú"):
-#         #     bot_position = "cháu"
-#         # else:
-#         #     cust_sex = "Quý khách"
-#         #     bot_position = "Sa"
-
-#         if not cust_name:
-#             return []
-
-#         print(name_cap(cust_name))
-#         return []
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        """Define what the form has to do after all required slots are filled"""
+        user_name = tracker.get_slot("user_name")
+        if not user_name:
+            dispatcher.utter_message(text="Tôi không biết tên của bạn")
+        else:
+            dispatcher.utter_message(text=f"Tên bạn là {user_name}!")
+        return []

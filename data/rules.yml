@@ -17,3 +17,32 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_unknown
+
+- rule: Activate form
+  steps:
+  - intent: request_save_form
+  - action: diagnose_form
+  - active_loop: diagnose_form
+
+- rule: Submit form
+  condition:
+  - active_loop: diagnose_form
+  steps:
+  - action: diagnose_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_remember
+
+# - rule: Example of an unhappy path
+#   condition:
+#   # Condition that form is active.
+#   - active_loop: diagnose_form
+#   steps:
+#   # This unhappy path handles the case of an intent `chitchat`.
+#   - intent: da liễu
+#   - action: action_medical
+#   # Return to form after handling the `chitchat` intent
+#   - action: diagnose_form
+#   - active_loop: diagnose_form
+

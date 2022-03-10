@@ -6,8 +6,6 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: give_name
-  - action: utter_greet_with_name
 
 - story: happy
   steps:
@@ -27,28 +25,22 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: give_name
-  - action: utter_greet_with_name
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
 
-- story: ask_bot
-  steps:
-  - intent: ask_bot
-  - action: utter_ask_bot
 
 - story: thank
   steps:
   - intent: thank
   - action: utter_thank
 
-- story: ask_func_list
+- story: ask_bot
   steps:
-  - intent: ask_func_list
-  - action: utter_ask_func_list
+  - intent: ask_bot
+  - action: utter_ask_bot
 
 - story: unknown
   steps:
@@ -65,37 +57,136 @@ stories:
   - intent: affirm
   - action: utter_affirm
 
-- story: ask_disease
+- story: ask_disease 1
   steps:
   - intent: béo phì
   - action: action_medical
+
+- story: ask_disease 2
+  steps:
   - intent: covid
   - action: action_medical
+
+- story: ask_disease 3
+  steps:
   - intent: da liễu
   - action: action_medical
+
+- story: ask_disease 4
+  steps:
   - intent: đau mắt đỏ
   - action: action_medical
+
+- story: ask_disease 5
+  steps:
   - intent: đau thần kinh tọa
   - action: action_medical
+
+- story: ask_disease 6
+  steps:
   - intent: hạ canxi máu
   - action: action_medical
+
+- story: ask_disease 7
+  steps:
   - intent: lao phổi
   - action: action_medical
+
+- story: ask_disease 8
+  steps:
   - intent: mụn trứng cá
   - action: action_medical
+
+- story: ask_disease 9
+  steps:
   - intent: quai bị, sâu răng
   - action: action_medical
+
+- story: ask_disease 10
+  steps:
   - intent: tai-mũi-họng
   - action: action_medical
+
+- story: ask_disease 11
+  steps:
   - intent: tay-chân-miệng
   - action: action_medical
+
+- story: ask_disease 12
+  steps:
   - intent: thận
   - action: action_medical
+
+- story: ask_disease 13
+  steps:
   - intent: thủy đậu
   - action: action_medical
+
+- story: ask_disease 14
+  steps:
   - intent: tim mạch
   - action: action_medical
+
+- story: ask_disease 15
+  steps:
   - intent: viêm đường hô hấp
   - action: action_medical
+
+- story: ask_disease 16
+  steps:
   - intent: viêm xoang
   - action: action_medical
+
+
+# - story: interactive story 1
+#   steps:
+#   - intent: request_save_form
+#   - action: diagnose_form
+#   - active_loop: diagnose_form
+
+#   - slot_was_set:
+#     - requested_slot: user_name
+#   - slot_was_set:
+#     - user_name: Long
+  
+#   - slot_was_set:
+#     - requested_slot: user_gender
+#   - slot_was_set:
+#     - user_gender: nam
+  
+#   - slot_was_set:
+#     - requested_slot: user_age
+#   - slot_was_set:
+#     - user_age: 23
+  
+#   - slot_was_set:
+#     - requested_slot: password
+#   - slot_was_set:
+#     - password: 123456
+  
+#   - slot_was_set:
+#     - requested_slot: diagnose
+#   - slot_was_set:
+#     - diagnose: Tôi bị tiểu đường
+
+#   - slot_was_set:
+#     - requested_slot: null
+  
+#   - active_loop: null
+#   - action: utter_remember
+  
+- story: Get data
+  steps:
+  - intent: get_data
+  - action: action_say_data
+
+# - story: User interrupts the form and doesn't want to continue
+#   steps:
+#   - intent: request_save_form
+#   - action: diagnose_form
+#   - active_loop: diagnose_form
+#   - intent: cancel_form
+#   - action: utter_ask_continue
+#   - intent: cancel_form
+#   - action: action_deactivate_loop
+#   - active_loop: null
