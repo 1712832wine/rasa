@@ -138,42 +138,42 @@ stories:
   - action: action_medical
 
 
-# - story: interactive story 1
-#   steps:
-#   - intent: request_save_form
-#   - action: diagnose_form
-#   - active_loop: diagnose_form
+- story: interactive story 1
+  steps:
+  - intent: request_save_form
+  - action: diagnose_form
+  - active_loop: diagnose_form
+  - slot_was_set:
+    - requested_slot: user_name
+  - slot_was_set:
+    - user_name: Trí
 
-#   - slot_was_set:
-#     - requested_slot: user_name
-#   - slot_was_set:
-#     - user_name: Long
-  
-#   - slot_was_set:
-#     - requested_slot: user_gender
-#   - slot_was_set:
-#     - user_gender: nam
-  
-#   - slot_was_set:
-#     - requested_slot: user_age
-#   - slot_was_set:
-#     - user_age: 23
-  
-#   - slot_was_set:
-#     - requested_slot: password
-#   - slot_was_set:
-#     - password: 123456
-  
-#   - slot_was_set:
-#     - requested_slot: diagnose
-#   - slot_was_set:
-#     - diagnose: Tôi bị tiểu đường
+  - slot_was_set:
+    - requested_slot: user_gender
+  - slot_was_set:
+    - user_gender: nam
 
-#   - slot_was_set:
-#     - requested_slot: null
+  - slot_was_set:
+    - requested_slot: user_age
+  - slot_was_set:
+    - user_age: 23
   
-#   - active_loop: null
-#   - action: utter_remember
+  - slot_was_set:
+    - requested_slot: password
+  - slot_was_set:
+    - password: 123456
+  
+  - slot_was_set:
+    - requested_slot: diagnose
+  - slot_was_set:
+    - diagnose: Tôi bị nhức đầu
+
+
+  - slot_was_set:
+    - requested_slot: null
+
+  - active_loop: null
+  - action: action_submit
   
 - story: Get data
   steps:

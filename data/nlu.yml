@@ -60,7 +60,7 @@ nlu:
     - năm nay anh [9](user_age) tuổi
     - chị mới [26](user_age) tuổi thôi
     - chị [45](user_age) tuổi thôi
-    - anh 23 tuổi
+    - anh [23](user_age) tuổi
 - intent: give_password
   examples: |
     - mật khẩu là [189372](password)

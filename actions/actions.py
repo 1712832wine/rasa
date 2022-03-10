@@ -10,7 +10,6 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-
 import re
 import string
 from sentence_transformers import SentenceTransformer, util
@@ -142,4 +141,23 @@ class ActionSayData(Action):
             dispatcher.utter_message(text="Tôi không biết tên của bạn")
         else:
             dispatcher.utter_message(text=f"Tên bạn là {user_name}!")
+        return []
+
+
+class ActionSubmit(Action):
+
+    def name(self) -> Text:
+        return "action_submit"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        """Define what the form has to do after all required slots are filled"""
+        user_name = tracker.get_slot("user_name")
+        user_gender = tracker.get_slot("user_gender")
+        user_age = tracker.get_slot("user_age")
+        password = tracker.get_slot("password")
+        diagnose = tracker.get_slot("diagnose")
+        dispatcher.utter_message(
+            text=f"{user_name}-{user_gender}-{user_age}-{password}-{diagnose}")
         return []

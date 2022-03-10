@@ -53,6 +53,7 @@ slots:
       entity: user_gender
       conditions:
       - active_loop: diagnose_form
+        requested_slot: user_gender
   user_name:
     type: text
     influence_conversation: true
@@ -61,6 +62,7 @@ slots:
       entity: user_name
       conditions:
       - active_loop: diagnose_form
+        requested_slot: user_name
   user_age:
     type: text
     influence_conversation: true
@@ -69,6 +71,7 @@ slots:
       entity: user_age
       conditions:
       - active_loop: diagnose_form
+        requested_slot: user_age
   password:
     type: text
     influence_conversation: true
@@ -77,6 +80,7 @@ slots:
       entity: password
       conditions:
       - active_loop: diagnose_form
+        requested_slot: password
   diagnose:
     type: text
     influence_conversation: true
@@ -85,6 +89,7 @@ slots:
       entity: diagnose
       conditions:
       - active_loop: diagnose_form
+        requested_slot: diagnose
 
 forms:
   diagnose_form:
@@ -101,7 +106,7 @@ responses:
   utter_mood_great:
   - text: Có chuyện gì vui vậy ạ
   utter_cheer_up:
-  - text: 'Thui đừng buồn nữa nà, để bé Sa cho coi cái này nè:'
+  - text: 'Thui đừng buồn nữa nà, cho coi cái này nè:'
     image: https://i.imgur.com/nGF1K8f.jpg
   - text: Ai làm cậu buồn hả, để Sa xử cho
   - text: Thôi hong sao đâu
@@ -123,7 +128,7 @@ responses:
   - text: Bái bai
   - text: vậy thôi, bái bai
   utter_unknown:
-  - text: 'Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. '
+  - text: Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách.
   - text: Sa hong hiểu câu này, xin lũi nhiều nha
   - text: Là sao, chưa hiểu thông cảm nha hihi
   utter_angry:
@@ -134,19 +139,18 @@ responses:
   utter_ask_bot:
   - text: Em là Sa, em có thể tư vấn y tế cho anh/chị ạ
   utter_ask_user_name:
-  - text: Anh/chị vui lòng cho em xin họ tên ạ.
+  - text: Anh/chị vui lòng cho em xin tên ạ.
   utter_ask_user_gender:
   - text: Giới tính của anh/chị là nam hay nữ ạ.
-  utter_ask_form_user_age:
+  utter_ask_user_age:
   - text: Anh/chị bao nhiêu tuổi rồi ạ.
-  utter_ask_form_password:
+  utter_ask_password:
   - text: Vì lí do bảo mật, mời anh chị nhập mật khẩu ạ.
-  utter_ask_form_diagnose:
+  utter_ask_diagnose:
   - text: Mời anh/chị nhập bệnh án ạ.
-  utter_ask_form_continue:
-  - text: Anh/chị có muốn tiếp tục không
-  utter_remember:
-  - text: Cảm ơn ạ, hồ sơ đã hoàn thành.
+  utter_ask_continue:
+  - text: Anh/chị có muốn tiếp tục không.
 actions:
 - action_medical
 - action_say_data
+- action_submit

@@ -22,6 +22,10 @@ pipeline:
     epochs: 100
     constrain_similarities: true
   - name: EntitySynonymMapper
+  - name: RegexEntityExtractor
+    use_lookup_tables: True
+    use_regexes: True
+    "use_word_boundaries": True
   - name: ResponseSelector
     epochs: 100
     constrain_similarities: true
