@@ -164,9 +164,9 @@ stories:
     - password: 123456
   
   - slot_was_set:
-    - requested_slot: diagnose
+    - requested_slot: note
   - slot_was_set:
-    - diagnose: Tôi bị nhức đầu
+    - note: Tôi bị nhức đầu
 
 
   - slot_was_set:

@@ -157,7 +157,7 @@ class ActionSubmit(Action):
         user_gender = tracker.get_slot("user_gender")
         user_age = tracker.get_slot("user_age")
         password = tracker.get_slot("password")
-        diagnose = tracker.get_slot("diagnose")
+        note = tracker.get_slot("note")
         dispatcher.utter_message(
-            text=f"{user_name}-{user_gender}-{user_age}-{password}-{diagnose}")
+            text=f"{user_name}-{user_gender}-{user_age}-{password}-{note}")
         return []

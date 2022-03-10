@@ -39,7 +39,7 @@ intents:
 - get_data
 
 entities:
-- diagnose
+- note
 - password
 - user_age
 - user_gender
@@ -81,15 +81,15 @@ slots:
       conditions:
       - active_loop: diagnose_form
         requested_slot: password
-  diagnose:
+  note:
     type: text
     influence_conversation: true
     mappings:
-    - type: from_entity
-      entity: diagnose
+    - type: from_text
+      intent: give_diagnose
       conditions:
       - active_loop: diagnose_form
-        requested_slot: diagnose
+        requested_slot: note
 
 forms:
   diagnose_form:
@@ -98,7 +98,7 @@ forms:
     - user_gender
     - user_age
     - password
-    - diagnose
+    - note
 
 responses:
   utter_greet:
@@ -146,7 +146,7 @@ responses:
   - text: Anh/chị bao nhiêu tuổi rồi ạ.
   utter_ask_password:
   - text: Vì lí do bảo mật, mời anh chị nhập mật khẩu ạ.
-  utter_ask_diagnose:
+  utter_ask_note:
   - text: Mời anh/chị nhập bệnh án ạ.
   utter_ask_continue:
   - text: Anh/chị có muốn tiếp tục không.
