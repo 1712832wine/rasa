@@ -90,33 +90,34 @@ nlu:
     - thôi tôi đi đây
 - intent: affirm
   examples: |
+    - có
+    - đúng rồi
+    - ừm
+    - ừ
     - yes.
-    - okkkk
+    - ok
     - đúng
-    - đúng vậyyyy
+    - đúng vậy
     - đúng rùi đó
     - ừa nè
     - chính xác
     - cũng ok
 - intent: deny
   examples: |
-    - no.
-    - nô nô
-    - hong phải
+    - no
+    - không phải
     - không
     - đâu có
     - có đâu
     - không nha
     - sai rùi
     - không đúng
-    - Sa trả lời sai rồi
-    - sai rồi Sa ơi
+    - trả lời sai rồi
+    - sai rồi
     - sai
     - kém
     - vậy cũng không trả lời được
     - thất vọng quá
-    - Bệnh này có lây không?
-    - Bệnh này có nguy hiểm không?
 - intent: request_save_form
   examples: |
     - anh muốn lưu hồ sơ bệnh án
@@ -127,6 +128,9 @@ nlu:
     - mình muốn bạn lưu hồ sơ bệnh án
     - bạn hãy lưu hồ sơ bệnh án cho tôi
     - anh muốn lập hồ sơ
+    - lập hồ sơ
+    - tạo hồ sơ
+    - anh muốn tạo hồ sơ
 - intent: get_data
   examples: |
     - anh muốn lấy hồ sơ
@@ -145,6 +149,7 @@ nlu:
     - dừng lại
     - tôi không muốn tiếp tục nữa
     - anh không muốn tiếp tục nữa
+    - thoát
 - intent: thank
   examples: |
     - tuyệt vời

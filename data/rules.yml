@@ -40,8 +40,8 @@ rules:
 #   - active_loop: diagnose_form
 #   steps:
 #   # This unhappy path handles the case of an intent `chitchat`.
-#   - intent: da liễu
-#   - action: action_medical
+#   - intent: greeting
+#   - action: utter_greet
 #   # Return to form after handling the `chitchat` intent
 #   - action: diagnose_form
 #   - active_loop: diagnose_form

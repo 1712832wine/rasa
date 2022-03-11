@@ -180,13 +180,14 @@ stories:
   - intent: get_data
   - action: action_say_data
 
-# - story: User interrupts the form and doesn't want to continue
-#   steps:
-#   - intent: request_save_form
-#   - action: diagnose_form
-#   - active_loop: diagnose_form
-#   - intent: cancel_form
-#   - action: utter_ask_continue
-#   - intent: cancel_form
-#   - action: action_deactivate_loop
-#   - active_loop: null
+- story: User interrupts the form and doesn't want to continue
+  steps:
+  - intent: request_save_form
+  - action: diagnose_form
+  - active_loop: diagnose_form
+  - intent: cancel_form
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
+  - active_loop: null
+
