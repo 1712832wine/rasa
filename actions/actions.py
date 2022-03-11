@@ -13,7 +13,10 @@ from rasa_sdk.executor import CollectingDispatcher
 import re
 import string
 from sentence_transformers import SentenceTransformer, util
-
+import sqlite3
+from datetime import datetime
+import hashlib
+from rasa_sdk.events import AllSlotsReset
 
 bert = SentenceTransformer('sentence-transformers/multi-qa-MiniLM-L6-cos-v1')
 
@@ -108,7 +111,6 @@ class ActionMedical(Action):
         # get intent
 
         intent = tracker.latest_message.get("intent").get("name")
-        print(intent)
         # get message input
         message = tracker.latest_message.get("text")
 
@@ -153,11 +155,27 @@ class ActionSubmit(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         """Define what the form has to do after all required slots are filled"""
+
         user_name = tracker.get_slot("user_name")
         user_gender = tracker.get_slot("user_gender")
         user_age = tracker.get_slot("user_age")
         password = tracker.get_slot("password")
         note = tracker.get_slot("note")
+
+        now = datetime.now()
+        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+        # hashpassword
+        password_hashed = hashlib.md5(password.encode()).hexdigest()
+        # save to db
+        con = sqlite3.connect('database.sqlite3')
+        cur = con.cursor()
+        cur.execute("INSERT INTO medical_records VALUES (?,?,?,?,?,?)", (user_name, user_gender, user_age,
+                                                                         password_hashed, note, dt_string))
+        con.commit()
+        con.close()
+
+        # reset all slot
+
         dispatcher.utter_message(
-            text=f"{user_name}-{user_gender}-{user_age}-{password}-{note}")
-        return []
+            text=f"Hồ sơ đã hoàn thành, lưu các thông tin sau: {user_name}-{user_gender}-{user_age}-{password}-{note}")
+        return [AllSlotsReset()]
