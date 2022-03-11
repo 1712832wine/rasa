@@ -17,6 +17,12 @@ nlu:
     - có ai ở đây không?
 - intent: give_name
   examples: |
+    - [anh](user_gender) tên Nam
+    - [anh](user_gender) là Toàn
+    - [chị](user_gender) tên Hoa
+    - [chị](user_gender) là Mai
+    - em là Thúy
+    - [chị](user_gender) là Tuyền
     - [anh](user_gender) có tên là [Nguyễn Lộc](user_name)
     - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
     - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
@@ -29,17 +35,17 @@ nlu:
     - [chị](user_gender) là [Ngọc](user_name)
     - [chị](user_gender) tên là [Linh](user_name)
     - [chị](user_gender) là [Hoa](user_name)
-    - [em](user_gender) là [Trang](user_name)
-    - chào [em](user_gender) là [Vy](user_name)
-    - [em](user_gender) là [Nhi](user_name)
+    - em là [Trang](user_name)
+    - chào em là [Vy](user_name)
+    - em là [Nhi](user_name)
     - xin chào [cô](user_gender) là [Vân](user_name)
     - [mình](user_gender) tên là [Nguyễn Ngọc](user_name)
     - [mình](user_gender) có tên là [Trần Ái](user_name)
     - tên của [mình](user_gender) là [Văn Lộc](user_name)
-    - [tôi](user_gender) có tên là [Đạt](user_name)
-    - [tôi](user_gender) là [Hùng](user_name)
-    - [tôi](user_gender) tên là [Hương](user_name)
-    - [tôi](user_gender) là [La Long](user_name)
+    - tôi có tên là [Đạt](user_name)
+    - tôi là [Hùng](user_name)
+    - tôi tên là [Hương](user_name)
+    - tôi là [La Long](user_name)
     - [anh](user_gender) tên là [Trí](user_name)
     - [anh](user_gender) có tên là [Đạt](user_name)
     - tên [anh](user_gender) là [Thành](user_name)
@@ -52,6 +58,8 @@ nlu:
     - tôi là [nam](user_gender)
     - giới tính của anh là [nam](user_gender)
     - chị là [nữ](user_gender)
+    - em là [nam](user_gender)
+    - em là [nữ](user_gender)
     - giới tính của chị là [nữ](user_gender)
 - intent: give_age
   examples: |
@@ -71,13 +79,13 @@ nlu:
 - intent: give_diagnose
   examples: |
     - tôi bị đau bụng
-    - anh bị chóng mặt, đau đầu
-    - anh bị nhanh đói bụng
-    - anh bị viêm gan
-    - chị bị tiểu đường loại 1.
-    - chú bị hoa mắt thường xuyên.
+    - [anh](user_gender) bị chóng mặt, đau đầu
+    - [anh](user_gender) bị nhanh đói bụng
+    - [anh](user_gender) bị viêm gan
+    - [chị](user_gender) bị tiểu đường loại 1.
+    - [chú](user_gender) bị hoa mắt thường xuyên.
     - em bị đau ruột thừa.
-    - chị bị nôn mửa.
+    - [chị](user_gender) bị nôn mửa.
 - intent: goodbye
   examples: |
     - bái bai
@@ -120,25 +128,25 @@ nlu:
     - thất vọng quá
 - intent: request_save_form
   examples: |
-    - anh muốn lưu hồ sơ bệnh án
+    - [anh](user_gender) muốn lưu hồ sơ bệnh án
     - lưu hồ sơ bệnh án
     - lưu hồ sơ
-    - em lưu hồ sơ bệnh án cho chị
-    - chị muốn em lưu hồ sơ bệnh án
+    - em lưu hồ sơ bệnh án cho [chị](user_gender)
+    - [chị](user_gender) muốn em lưu hồ sơ bệnh án
     - mình muốn bạn lưu hồ sơ bệnh án
     - bạn hãy lưu hồ sơ bệnh án cho tôi
-    - anh muốn lập hồ sơ
+    - [anh](user_gender) muốn lập hồ sơ
     - lập hồ sơ
     - tạo hồ sơ
-    - anh muốn tạo hồ sơ
+    - [anh](user_gender) muốn tạo hồ sơ
 - intent: get_data
   examples: |
-    - anh muốn lấy hồ sơ
-    - chị muốn lấy hồ sơ
-    - anh muốn lấy hồ sơ bệnh án
-    - anh muốn xem hồ sơ bệnh án
-    - chị muốn xem lại hồ sơ bệnh án của chị
-    - anh muốn kiểm tra lại hồ sơ bệnh án
+    - [anh](user_gender) muốn lấy hồ sơ
+    - [chị](user_gender) muốn lấy hồ sơ
+    - [anh](user_gender) muốn lấy hồ sơ bệnh án
+    - [anh](user_gender) muốn xem hồ sơ bệnh án
+    - [chị](user_gender) muốn xem lại hồ sơ bệnh án của chị
+    - [anh](user_gender) muốn kiểm tra lại hồ sơ bệnh án
 - intent: cancel_form
   examples: |
     - hủy
@@ -148,7 +156,7 @@ nlu:
     - không tiếp tục
     - dừng lại
     - tôi không muốn tiếp tục nữa
-    - anh không muốn tiếp tục nữa
+    - [anh](user_gender) không muốn tiếp tục nữa
     - thoát
 - intent: thank
   examples: |
@@ -260,7 +268,57 @@ nlu:
     - giờ làm gì để có bồ đây?
     - em có biết tại sao lá cây có màu xanh
     - chừng nào hết dịch ta
-- intent: angry
+    - Người ta dùng dụng cụ gì để đo nhiệt độ?
+    - Tại sao thả trái dưa hấu vào nước thì trái dưa hấu lại nổi?
+    - Phải chăng ban ngày bầu trời không có các ngôi sao?
+    - rong các vụ hỏa hoạn cháy xăng dầu, tại sao các chiến sĩ chữa cháy không sử dụng nước để dập lửa?
+    - Vì sao băng lại nổi trên mặt nước?
+    - Vì sao giọt nước rơi vào chảo mỡ đang sôi lại nổ tung tóe?
+    -  Vì sao cốc thủy tinh dễ bị nứt vỡ khi ta đổ nước sôi vào?
+    - Vì sao đồng hồ đặt bên cạnh nam châm thì chạy không chính xác nữa?
+    - Khi ánh sáng đi vào môi trường khác và bị lệch hướng gọi là hiện tượng gì?
+    - Kính lúp là loại thấu kính gì?
+    - Kim loại giãn nở khi nóng lên và thế nào khi nguội đi?
+    - Họ của nhà bác học phát minh ra 3 định luật Newton là gì?
+    - Tên của kính thiên văn vũ trụ Hubble được đặt theo ai?
+    - Dây kim loại trong bóng đèn điện được gọi là gì?
+    - Nhà vật lý thiên tài Albert Einstein được sinh ra ở nước nào?
+    - Hiện tượng gì xảy ra khi mặt trăng ở giữa Mặt Trời và Trái Đất?
+    - Trái Đất nằm trong thiên hà nào?
+    - Nếu bạn ném một quả bóng lên không trung, nó sẽ theo đường cong nào?
+    -  Ảnh của một vật khi soi qua gương được gọi là gì?
+    - Loại điện năng được tạo ra nào khi cọ xát hai quả bóng bay, rồi chúng hút vào nhau?
+    - Chất lỏng thường được dùng làm nhiên liệu cho các loại xe cộ là gì?
+    - Thuyền buồm sử dụng loại năng lượng nào?
+    - Để đo sức gió và ảnh hưởng của một cơn bão, người ta dùng thang độ gì?
+    - Tốc độ của ánh sáng truyền đi là bao nhiêu trong một giây?
+    - Khi dòng điện chạy qua bỏ qua một phần của mạch điện sẽ gây nên hiện tượng gì?
+    - Dòng điện thường được đo bằng đơn vị gì?
+    - Đúng hay sai? Sắt bị hút bởi nam châm?
+    - Tia hồng ngoại có bước sóng quá ngắn hay quá dài so với khả năng nhìn được của mắt người?
+    - Lý thuyết phổ biến nhất diễn tả sự hình thành của vũ trụ có tên là gì?
+    - Điện trở được tính bằng đơn vị gì?
+    - Câu nói nổi tiếng “dù sao Trái Đất vẫn quay” khi đứng trước giàn hỏa thiêu của tòa án tôn giáo là của nhà bác học nào?
+    - Thủy điện là gì?
+    - đo thể tích hòn đá bằng cách nào?
+    - Nên tìm người đàn ông như thế nào để yêu?
+    - Lãng mạn trong tình yêu là gì? 
+    - Ngoại hình và tính cách cái nào quan trọng hơn?
+    - Lãng mạn hay hiện thực, cái nào quan trọng hơn?
+    - Đoàn TNCS Hồ Chí Minh được thành lập vào ngày tháng năm nào?
+    - Liệu loài người có đơn độc trong vũ trụ?
+    - Khi nào có thuốc chữa bệnh ung thư?
+    - Chúa trời có tồn tại hay không?
+    - Vũ trụ lớn như thế nào?
+    - Sự sống bắt đầu ở đâu và như thế nào trên Trái đất?
+    - Có thể đi xuyên thời gian hay không?
+    - Loài người sẽ xâm chiếm vũ trụ?
+    - Nguồn năng lượng nào sẽ thay thế dầu mỏ?
+    - Vũ trụ sẽ biến mất như thế nào?
+    - Loài người có thể sống thọ đến bao nhiêu tuổi?
+    - Việt vị là gì?
+    - Ai là người đầu tiên tìm ra châu Mỹ?
+  - intent: angry
   examples: |
     - mày tào lao quá
     - khùng hả

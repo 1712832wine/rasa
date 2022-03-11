@@ -7,8 +7,9 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
+from rasa_sdk.types import DomainDict
 from typing import Any, Text, Dict, List
-from rasa_sdk import Action, Tracker
+from rasa_sdk import Action, Tracker, FormValidationAction
 from rasa_sdk.executor import CollectingDispatcher
 import re
 import string
@@ -179,3 +180,84 @@ class ActionSubmit(Action):
         dispatcher.utter_message(
             text=f"Hồ sơ đã hoàn thành, lưu các thông tin sau: {user_name}-{user_gender}-{user_age}-{password}-{note}")
         return [AllSlotsReset()]
+
+
+class ValidateDiagnoseForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_diagnose_form"
+
+    @staticmethod
+    def cuisine_db() -> List[Text]:
+        """Database of supported cuisines"""
+
+        return ["caribbean", "chinese", "french"]
+
+    def validate_user_name(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if slot_value.lower():
+            return {"user_name": slot_value}
+        else:
+            return {"user_name": None}
+
+    def validate_user_gender(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if slot_value.lower():
+            return {"user_gender": slot_value}
+        else:
+            return {"user_gender": None}
+
+    def validate_user_age(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if slot_value.lower():
+            return {"user_name": slot_value}
+        else:
+            return {"user_name": None}
+
+    def validate_password(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if slot_value.lower():
+            return {"user_name": slot_value}
+        else:
+            return {"user_name": None}
+
+    def validate_note(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if slot_value.lower():
+            return {"user_name": slot_value}
+        else:
+            return {"user_name": None}

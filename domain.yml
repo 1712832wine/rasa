@@ -51,45 +51,30 @@ slots:
     mappings:
     - type: from_entity
       entity: user_gender
-      conditions:
-      - active_loop: diagnose_form
-        requested_slot: user_gender
   user_name:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: user_name
-      conditions:
-      - active_loop: diagnose_form
-        requested_slot: user_name
   user_age:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: user_age
-      conditions:
-      - active_loop: diagnose_form
-        requested_slot: user_age
   password:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: password
-      conditions:
-      - active_loop: diagnose_form
-        requested_slot: password
   note:
     type: text
     influence_conversation: true
     mappings:
     - type: from_text
       intent: give_diagnose
-      conditions:
-      - active_loop: diagnose_form
-        requested_slot: note
 
 forms:
   diagnose_form:
@@ -99,6 +84,9 @@ forms:
     - user_age
     - password
     - note
+  get_data_form:
+    required_slots:
+    - password
 
 responses:
   utter_greet:
@@ -137,20 +125,22 @@ responses:
   - text: Chưa gì quạo quọ ròi
   - text: Chọc xíu làm gì căng
   utter_ask_bot:
-  - text: Em là Sa, em có thể tư vấn y tế cho anh/chị ạ
+  - text: Em là Sa, em có thể tư vấn y tế cho {user_gender} ạ
   utter_ask_user_name:
-  - text: Anh/chị vui lòng cho em xin tên ạ.
+  - text: '{user_gender} vui lòng cho em xin tên ạ.'
   utter_ask_user_gender:
-  - text: Giới tính của anh/chị là nam hay nữ ạ.
+  - text: Giới tính của {user_gender} là nam hay nữ ạ.
   utter_ask_user_age:
-  - text: Anh/chị bao nhiêu tuổi rồi ạ.
+  - text: '{user_gender} bao nhiêu tuổi rồi ạ.'
   utter_ask_password:
   - text: Vì lí do bảo mật, mời anh chị nhập mật khẩu ạ.
   utter_ask_note:
-  - text: Mời anh/chị nhập bệnh án ạ.
+  - text: Mời {user_gender} nhập bệnh án ạ.
   utter_ask_continue:
-  - text: Anh/chị có muốn tiếp tục không.
+  - text: '{user_gender} có muốn tiếp tục không.'
 actions:
 - action_medical
 - action_say_data
 - action_submit
+- validate_diagform_form
+- validate_get_data_from
