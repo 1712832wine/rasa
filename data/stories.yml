@@ -168,17 +168,31 @@ stories:
   - slot_was_set:
     - note: Tôi bị nhức đầu
 
-
   - slot_was_set:
     - requested_slot: null
 
   - active_loop: null
   - action: action_submit
   
-- story: Get data
+
+- story: interactive story 2
   steps:
   - intent: get_data
-  - action: action_say_data
+  - action: get_data_form
+  - active_loop: get_data_form
+
+  
+  - slot_was_set:
+    - requested_slot: password
+  - slot_was_set:
+    - password: 123456
+
+
+  - slot_was_set:
+    - requested_slot: null
+
+  - active_loop: null
+  - action: action_get_data
 
 - story: User interrupts the form and doesn't want to continue
   steps:
@@ -190,4 +204,16 @@ stories:
   - intent: deny
   - action: action_deactivate_loop
   - active_loop: null
+
+- story: User interrupts the form and doesn't want to continue 2
+  steps:
+  - intent: get_data
+  - action: get_data_form
+  - active_loop: get_data_form
+  - intent: cancel_form
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
+  - active_loop: null
+
 

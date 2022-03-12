@@ -17,12 +17,12 @@ nlu:
     - có ai ở đây không?
 - intent: give_name
   examples: |
-    - [anh](user_gender) tên Nam
-    - [anh](user_gender) là Toàn
-    - [chị](user_gender) tên Hoa
-    - [chị](user_gender) là Mai
-    - em là Thúy
-    - [chị](user_gender) là Tuyền
+    - [anh](user_gender) tên [Nam](user_name)
+    - [anh](user_gender) là [Toàn](user_name)
+    - [chị](user_gender) tên [Hoa](user_name)
+    - [chị](user_gender) là [Mai](user_name)
+    - em là [Thúy](user_name)
+    - [chị](user_gender) là [Tuyền](user_name)
     - [anh](user_gender) có tên là [Nguyễn Lộc](user_name)
     - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
     - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
@@ -274,7 +274,7 @@ nlu:
     - rong các vụ hỏa hoạn cháy xăng dầu, tại sao các chiến sĩ chữa cháy không sử dụng nước để dập lửa?
     - Vì sao băng lại nổi trên mặt nước?
     - Vì sao giọt nước rơi vào chảo mỡ đang sôi lại nổ tung tóe?
-    -  Vì sao cốc thủy tinh dễ bị nứt vỡ khi ta đổ nước sôi vào?
+    - Vì sao cốc thủy tinh dễ bị nứt vỡ khi ta đổ nước sôi vào?
     - Vì sao đồng hồ đặt bên cạnh nam châm thì chạy không chính xác nữa?
     - Khi ánh sáng đi vào môi trường khác và bị lệch hướng gọi là hiện tượng gì?
     - Kính lúp là loại thấu kính gì?
@@ -286,7 +286,7 @@ nlu:
     - Hiện tượng gì xảy ra khi mặt trăng ở giữa Mặt Trời và Trái Đất?
     - Trái Đất nằm trong thiên hà nào?
     - Nếu bạn ném một quả bóng lên không trung, nó sẽ theo đường cong nào?
-    -  Ảnh của một vật khi soi qua gương được gọi là gì?
+    - Ảnh của một vật khi soi qua gương được gọi là gì?
     - Loại điện năng được tạo ra nào khi cọ xát hai quả bóng bay, rồi chúng hút vào nhau?
     - Chất lỏng thường được dùng làm nhiên liệu cho các loại xe cộ là gì?
     - Thuyền buồm sử dụng loại năng lượng nào?
@@ -298,7 +298,7 @@ nlu:
     - Tia hồng ngoại có bước sóng quá ngắn hay quá dài so với khả năng nhìn được của mắt người?
     - Lý thuyết phổ biến nhất diễn tả sự hình thành của vũ trụ có tên là gì?
     - Điện trở được tính bằng đơn vị gì?
-    - Câu nói nổi tiếng “dù sao Trái Đất vẫn quay” khi đứng trước giàn hỏa thiêu của tòa án tôn giáo là của nhà bác học nào?
+    - Câu nói nổi tiếng "dù sao Trái Đất vẫn quay" khi đứng trước giàn hỏa thiêu của tòa án tôn giáo là của nhà bác học nào?
     - Thủy điện là gì?
     - đo thể tích hòn đá bằng cách nào?
     - Nên tìm người đàn ông như thế nào để yêu?
@@ -318,7 +318,7 @@ nlu:
     - Loài người có thể sống thọ đến bao nhiêu tuổi?
     - Việt vị là gì?
     - Ai là người đầu tiên tìm ra châu Mỹ?
-  - intent: angry
+- intent: angry
   examples: |
     - mày tào lao quá
     - khùng hả

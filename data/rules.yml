@@ -34,6 +34,22 @@ rules:
     - requested_slot: null
   - action: action_submit
 
+- rule: Activate form 2
+  steps:
+  - intent: get_data
+  - action: get_data_form
+  - active_loop: get_data_form
+
+- rule: Submit form 2
+  condition:
+  - active_loop: get_data_form
+  steps:
+  - action: get_data_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_get_data
+
 # - rule: Example of an unhappy path
 #   condition:
 #   # Condition that form is active.

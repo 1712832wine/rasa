@@ -130,20 +130,30 @@ class ActionMedical(Action):
 # -------------------------------------------------------------------------
 
 
-class ActionSayData(Action):
+class ActionGetData(Action):
 
     def name(self) -> Text:
-        return "action_say_data"
+        return "action_get_data"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         """Define what the form has to do after all required slots are filled"""
-        user_name = tracker.get_slot("user_name")
-        if not user_name:
-            dispatcher.utter_message(text="Tôi không biết tên của bạn")
+        password = tracker.get_slot("password")
+        con = sqlite3.connect('database.sqlite3')
+        cur = con.cursor()
+        password_hashed = hashlib.md5(password.encode()).hexdigest()
+        cur.execute(
+            'SELECT * FROM medical_records WHERE password=:password', {'password': password_hashed})
+        result = cur.fetchall()
+        con.close()
+        if len(result) > 0:
+            dispatcher.utter_message(
+                text=f"Hồ sơ của bạn là: {result[0][0]}{result[0][1]}{result[0][2]}{result[0][4]}{result[0][5]}!")
         else:
-            dispatcher.utter_message(text=f"Tên bạn là {user_name}!")
+            dispatcher.utter_message(
+                text=f"Không có hồ sơ của bạn trong danh sách!")
+        tracker.slots['password'] = None
         return []
 
 
@@ -182,15 +192,37 @@ class ActionSubmit(Action):
         return [AllSlotsReset()]
 
 
+class ValidateGetDataForm(FormValidationAction):
+    def name(self) -> Text:
+        return "validate_get_data_form"
+
+    @staticmethod
+    def password_db() -> List[Text]:
+        con = sqlite3.connect('database.sqlite3')
+        cur = con.cursor()
+        cur.execute(
+            'SELECT password FROM medical_records')
+        result = cur.fetchall()
+        con.close()
+        return result
+
+    def validate_password(
+        self,
+        slot_value: Any,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: DomainDict,
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+        if slot_value:
+            return {'password': slot_value}
+        else:
+            return {'password': None}
+
+
 class ValidateDiagnoseForm(FormValidationAction):
     def name(self) -> Text:
         return "validate_diagnose_form"
-
-    @staticmethod
-    def cuisine_db() -> List[Text]:
-        """Database of supported cuisines"""
-
-        return ["caribbean", "chinese", "french"]
 
     def validate_user_name(
         self,
@@ -201,7 +233,7 @@ class ValidateDiagnoseForm(FormValidationAction):
     ) -> Dict[Text, Any]:
         """Validate cuisine value."""
 
-        if slot_value.lower():
+        if slot_value:
             return {"user_name": slot_value}
         else:
             return {"user_name": None}
@@ -214,8 +246,7 @@ class ValidateDiagnoseForm(FormValidationAction):
         domain: DomainDict,
     ) -> Dict[Text, Any]:
         """Validate cuisine value."""
-
-        if slot_value.lower():
+        if slot_value:
             return {"user_gender": slot_value}
         else:
             return {"user_gender": None}
@@ -229,10 +260,10 @@ class ValidateDiagnoseForm(FormValidationAction):
     ) -> Dict[Text, Any]:
         """Validate cuisine value."""
 
-        if slot_value.lower():
-            return {"user_name": slot_value}
+        if slot_value:
+            return {"user_age": slot_value}
         else:
-            return {"user_name": None}
+            return {"user_age": None}
 
     def validate_password(
         self,
@@ -242,11 +273,22 @@ class ValidateDiagnoseForm(FormValidationAction):
         domain: DomainDict,
     ) -> Dict[Text, Any]:
         """Validate cuisine value."""
+        if slot_value:
+            password_hashed = hashlib.md5(slot_value.encode()).hexdigest()
+            # save to db
+            con = sqlite3.connect('database.sqlite3')
+            cur = con.cursor()
+            cur.execute("SELECT password FROM medical_records")
+            result = cur.fetchall()
+            con.commit()
+            con.close()
 
-        if slot_value.lower():
-            return {"user_name": slot_value}
+            for password in result:
+                if password[0] == password_hashed:
+                    return {"password": None}
+            return {"password": slot_value}
         else:
-            return {"user_name": None}
+            return {"password": None}
 
     def validate_note(
         self,
@@ -257,7 +299,7 @@ class ValidateDiagnoseForm(FormValidationAction):
     ) -> Dict[Text, Any]:
         """Validate cuisine value."""
 
-        if slot_value.lower():
-            return {"user_name": slot_value}
+        if slot_value:
+            return {"note": slot_value}
         else:
-            return {"user_name": None}
+            return {"note": None}

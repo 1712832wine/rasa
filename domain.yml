@@ -90,7 +90,7 @@ forms:
 
 responses:
   utter_greet:
-  - text: Em xin chào ạ, em có thể giúp gì cho anh/chị ạ
+  - text: Em xin chào ạ, em có thể giúp gì cho {user_gender} ạ
   utter_mood_great:
   - text: Có chuyện gì vui vậy ạ
   utter_cheer_up:
@@ -140,7 +140,7 @@ responses:
   - text: '{user_gender} có muốn tiếp tục không.'
 actions:
 - action_medical
-- action_say_data
+- action_get_data
 - action_submit
 - validate_diagform_form
 - validate_get_data_from
