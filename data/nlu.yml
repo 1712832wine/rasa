@@ -73,9 +73,10 @@ nlu:
   examples: |
     - mật khẩu là [189372](password)
     - mật khẩu của anh là [2023141423](password)
-    - chị đặt mật khẩu là [91123](password) được không
+    - chị đặt mật khẩu là [91123](password)
     - mật khẩu của chị là [2631241](password)
-    - [4521341](password)
+    - id của [anh](user_gender) là [1238938](password)
+    - id là [17826927](password)
 - intent: give_diagnose
   examples: |
     - tôi bị đau bụng

@@ -57,7 +57,6 @@ rules:
 #   steps:
 #   # This unhappy path handles the case of an intent `chitchat`.
 #   - intent: greeting
-#   - action: utter_greet
 #   # Return to form after handling the `chitchat` intent
 #   - action: diagnose_form
 #   - active_loop: diagnose_form
