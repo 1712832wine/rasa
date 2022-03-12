@@ -123,7 +123,8 @@ class ActionMedical(Action):
             answer = self.get_answer(message, filename)
             dispatcher.utter_message(text=answer)
         else:
-            dispatcher.utter_message(text='vler')
+            dispatcher.utter_message(
+                text='Xin lỗi mình không biết trả lời câu này')
         return []
 
 # -------------------------------------------------------------------------

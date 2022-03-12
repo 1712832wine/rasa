@@ -12,6 +12,10 @@ stories:
   - intent: mood_great
   - action: utter_mood_great
 
+- story: story hello
+  steps:
+  - intent: give_name
+  - action: utter_greet
 
 - story: unhappy 1
   steps:
@@ -138,41 +142,41 @@ stories:
   - action: action_medical
 
 
-- story: interactive story 1
-  steps:
-  - intent: request_save_form
-  - action: diagnose_form
-  - active_loop: diagnose_form
-  - slot_was_set:
-    - requested_slot: user_name
-  - slot_was_set:
-    - user_name: Trí
+# - story: interactive story 1
+#   steps:
+#   - intent: request_save_form
+#   - action: diagnose_form
+#   - active_loop: diagnose_form
+#   - slot_was_set:
+#     - requested_slot: user_name
+#   - slot_was_set:
+#     - user_name: Trí
 
-  - slot_was_set:
-    - requested_slot: user_gender
-  - slot_was_set:
-    - user_gender: nam
+#   - slot_was_set:
+#     - requested_slot: user_gender
+#   - slot_was_set:
+#     - user_gender: nam
 
-  - slot_was_set:
-    - requested_slot: user_age
-  - slot_was_set:
-    - user_age: 23
+#   - slot_was_set:
+#     - requested_slot: user_age
+#   - slot_was_set:
+#     - user_age: 23
   
-  - slot_was_set:
-    - requested_slot: password
-  - slot_was_set:
-    - password: 123456
+#   - slot_was_set:
+#     - requested_slot: password
+#   - slot_was_set:
+#     - password: 123456
   
-  - slot_was_set:
-    - requested_slot: note
-  - slot_was_set:
-    - note: Tôi bị nhức đầu
+#   - slot_was_set:
+#     - requested_slot: note
+#   - slot_was_set:
+#     - note: Tôi bị nhức đầu
 
-  - slot_was_set:
-    - requested_slot: null
+#   - slot_was_set:
+#     - requested_slot: null
 
-  - active_loop: null
-  - action: action_submit
+#   - active_loop: null
+#   - action: action_submit
   
 
 - story: interactive story 2
