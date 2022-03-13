@@ -57,7 +57,7 @@ class ActionMedical(Action):
 
     def get_questions(self, text):
         questions = []
-        pattern = re.compile(r'- -.*\?')
+        pattern = re.compile(r'- -.*\n')
         matches = pattern.finditer(text)
         for match in matches:
             s = match.group(0)
@@ -71,7 +71,6 @@ class ActionMedical(Action):
         matches = pattern.finditer(text)
         for match in matches:
             s = match.group(0)
-            s = self.normalize_text(s)
             answers.append(s)
         return answers
 
