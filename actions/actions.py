@@ -25,7 +25,6 @@ bert = SentenceTransformer('sentence-transformers/multi-qa-MiniLM-L6-cos-v1')
 class ActionMedical(Action):
 
     def name(self) -> Text:
-
         return "action_medical"
 
     def normalize_text(self, text):
