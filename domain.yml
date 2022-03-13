@@ -94,8 +94,10 @@ responses:
       - type: slot
         name: user_gender
         value: Null
+    image: 'https://i.imgur.com/GOzdNWa_d.webp?maxwidth=760&fidelity=grand'
     text: "Xin chào anh/chị, em có thể giúp gì ạ"
-  - text: "Xin chào {user_gender}, em có thể giúp gì cho {user_gender} ạ"
+  - image: 'https://i.imgur.com/GOzdNWa_d.webp?maxwidth=760&fidelity=grand'
+    text: "Xin chào {user_gender}, em có thể giúp gì cho {user_gender} ạ"
   utter_mood_great:
   - text: Có chuyện gì vui vậy ạ
   utter_cheer_up:

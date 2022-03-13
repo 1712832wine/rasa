@@ -21,7 +21,7 @@ nlu:
     - [anh](user_gender) là [Toàn](user_name)
     - [chị](user_gender) tên [Hoa](user_name)
     - [chị](user_gender) là [Mai](user_name)
-    - em là [Thúy](user_name)
+    - xin chào,em là [Thúy](user_name)
     - [chị](user_gender) là [Tuyền](user_name)
     - [anh](user_gender) có tên là [Nguyễn Lộc](user_name)
     - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
@@ -30,7 +30,7 @@ nlu:
     - xin chào, [anh](user_gender) tên là [Văn Đạt](user_name)
     - [anh](user_gender) tên là [Trần Cường](user_name)
     - [anh](user_gender) có tên là [Nam](user_name)
-    - Tên của [chị](user_gender) là [Tôn Kim Ái](user_name)
+    - chào em, tên của [chị](user_gender) là [Tôn Kim Ái](user_name)
     - Tên của [chị](user_gender) là [Ngô Vy](user_name)
     - [chị](user_gender) là [Ngọc](user_name)
     - [chị](user_gender) tên là [Linh](user_name)
@@ -45,7 +45,7 @@ nlu:
     - tôi có tên là [Đạt](user_name)
     - tôi là [Hùng](user_name)
     - tôi tên là [Hương](user_name)
-    - tôi là [La Long](user_name)
+    - chào, tôi là [La Long](user_name)
     - [anh](user_gender) tên là [Trí](user_name)
     - [anh](user_gender) có tên là [Đạt](user_name)
     - tên [anh](user_gender) là [Thành](user_name)
@@ -61,6 +61,11 @@ nlu:
     - em là [nam](user_gender)
     - em là [nữ](user_gender)
     - giới tính của chị là [nữ](user_gender)
+
+- regex: user_age
+  examples: |
+    - \d{1,3}
+
 - intent: give_age
   examples: |
     - anh [18](user_age) tuổi
@@ -69,6 +74,11 @@ nlu:
     - chị mới [26](user_age) tuổi thôi
     - chị [45](user_age) tuổi thôi
     - anh [23](user_age) tuổi
+    - anh [46](user_age)
+    - chị [78](user_age)
+- regex: password
+  examples: |
+    - \d{4,10}
 - intent: give_password
   examples: |
     - mật khẩu là [189372](password)
@@ -1551,9 +1561,3 @@ nlu:
     - Viêm xoang mạn tính là gì?
     - Thuốc thảo dược có giúp điều trị bệnh viêm mũi xoang an toàn, lâu dài?
     - Cần làm gì khi viêm mũi xoang tái phát trong thời kỳ dịch bệnh covid?
-- regex: password
-  examples: |
-    - \d{4,10}
-- regex: user_age
-  examples: |
-    - \d{1,3}

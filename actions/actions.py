@@ -118,7 +118,7 @@ class ActionMedical(Action):
         temp = self.get_file(intent)
         if temp != 'nothing':
             # get filename
-            filename = './data/medical/'+temp
+            filename = './data/medical/' + temp
             # get answer
             answer = self.get_answer(message, filename)
             dispatcher.utter_message(text=answer)
