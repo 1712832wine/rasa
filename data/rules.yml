@@ -15,6 +15,7 @@ rules:
   - action: diagnose_form
   - active_loop: diagnose_form
 
+
 - rule: Submit form
   condition:
   - active_loop: diagnose_form
@@ -25,12 +26,6 @@ rules:
     - requested_slot: null
   - action: action_submit
 
-- rule: Activate form 2
-  steps:
-  - intent: get_data
-  - action: get_data_form
-  - active_loop: get_data_form
-
 - rule: Submit form 2
   condition:
   - active_loop: get_data_form
@@ -40,6 +35,16 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: action_get_data
+
+- rule: Activate form 2
+  steps:
+  - intent: get_data
+  - action: get_data_form
+  - active_loop: get_data_form
+
+
+
+
 
 # - rule: Example of an unhappy path
 #   condition:

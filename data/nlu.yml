@@ -15,8 +15,6 @@ nlu:
     - chào
     - ê mày
     - có ai ở đây không?
-- intent: give_name
-  examples: |
     - [anh](user_gender) tên [Nam](user_name)
     - [anh](user_gender) là [Toàn](user_name)
     - [chị](user_gender) tên [Hoa](user_name)
@@ -34,14 +32,14 @@ nlu:
     - Tên của [chị](user_gender) là [Ngô Vy](user_name)
     - [chị](user_gender) là [Ngọc](user_name)
     - [chị](user_gender) tên là [Linh](user_name)
-    - [chị](user_gender) là [Hoa](user_name)
+    - chào em, [chị](user_gender) là [Hoa](user_name)
     - em là [Trang](user_name)
     - chào em là [Vy](user_name)
-    - em là [Nhi](user_name)
+    - chào anh, em là [Nhi](user_name)
     - xin chào [cô](user_gender) là [Vân](user_name)
-    - [mình](user_gender) tên là [Nguyễn Ngọc](user_name)
-    - [mình](user_gender) có tên là [Trần Ái](user_name)
-    - tên của [mình](user_gender) là [Văn Lộc](user_name)
+    - mình tên là [Nguyễn Ngọc Vân Nhi](user_name)
+    - mình có tên là [Trần Ái](user_name)
+    - tên của mình là [Văn Lộc](user_name)
     - tôi có tên là [Đạt](user_name)
     - tôi là [Hùng](user_name)
     - tôi tên là [Hương](user_name)
@@ -52,6 +50,7 @@ nlu:
     - [chị](user_gender) tên là [Ái](user_name)
     - [chị](user_gender) có tên là [Vy](user_name)
     - [anh](user_gender) tên là [Trí](user_name)
+
 - intent: give_gender
   examples: |
     - anh là [nam](user_gender)
@@ -109,6 +108,8 @@ nlu:
     - chị bị nôn mửa.
 - intent: goodbye
   examples: |
+    - bye
+    - goodbye
     - bái bai
     - tạm biệt
     - chào tạm biệt
@@ -122,6 +123,7 @@ nlu:
     - có
     - đúng rồi
     - ừm
+    - ừa
     - ừ
     - yes.
     - ok
@@ -181,14 +183,18 @@ nlu:
     - thoát
 - intent: thank
   examples: |
+    - cảm ơn
+    - cảm ơn em
+    - cảm ơn anh
     - tuyệt vời
     - xịn xò ta
     - vui ghê
     - tôi vui quá
-    - t vui quá
+    - anh vui quá
     - mình thấy thích rồi đó
     - mình thấy tốt nè
     - cảm ơn nha
+    - thank you
 - intent: mood_great
   examples: |
     - tao vui quá
@@ -197,12 +203,14 @@ nlu:
     - vui quá trời
     - hên thiệt chứ
     - tôi đang vui
-    - t đang vui
+    - anh đang vui
+    - hôm nay anh có chuyện vui
+    - dui quá
     - dui
 - intent: mood_unhappy
   examples: |
     - tôi chán quá
-    - t chán quá
+    - anh chán quá
     - chán ghê
     - buồn ghê á
     - chán như con gián
@@ -213,6 +221,7 @@ nlu:
     - very sad
     - hỏng dui
     - hôm nay tui buồn
+    - hôm nay chị buồn quá
 - intent: ask_bot
   examples: |
     - anh có thắc mắc này
@@ -303,6 +312,10 @@ nlu:
     - nghỉ chơi
     - xàm quá
     - thôi không nói nữa
+    - xàm quá
+    - bực mình
+    - cộc rồi đó
+    - giận
 - intent: béo phì
   examples: |
     - Thừa cân béo phì là gì?

@@ -1,0 +1,2771 @@
+[
+  {
+    "text": "anh đang có chuyện buồn",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 12,
+        "end": 18,
+        "value": "chuyện",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "anh tên là Mai Hồng Bửu Long",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 11,
+        "end": 28,
+        "value": "Mai Hồng Bửu Long",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9054451584815979,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.8435282111167908,
+        "value": "Mai",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.6494221687316895,
+        "value": "Bửu Long",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chị là Hảo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "chị",
+        "entity": "user_gender"
+      },
+      {
+        "start": 7,
+        "end": 10,
+        "value": "Hảo",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.6830121278762817,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.8426566123962402,
+        "value": "Hảo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh có tên là Đạt",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "value": "Đạt",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9977583885192871,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.9960429668426514,
+        "value": "Đạt",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chào em, chị là Mai",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "chị",
+        "entity": "user_gender"
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "value": "Mai",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.8760154247283936,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9969081282615662,
+        "value": "Mai",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "xin chào, anh tên Bảo",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 18,
+        "end": 21,
+        "value": "Bảo",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.927354633808136,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.8404743671417236,
+        "value": "Bảo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chào em, chị là Hân",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "chị",
+        "entity": "user_gender"
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "value": "Hân",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.9953920841217041,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9885048270225525,
+        "value": "Hân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "xin chào anh tên là Ngô Đức Huy",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 20,
+        "end": 31,
+        "value": "Ngô Đức Huy",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.996154248714447,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.9135695695877075,
+        "value": "Ngô Đức Huy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh có tên là Nam",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "value": "Nam",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9961509704589844,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.9791679382324219,
+        "value": "Nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh tên là Trà Văn Toàn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 11,
+        "end": 23,
+        "value": "Trà Văn Toàn",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9988101720809937,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 11,
+        "end": 23,
+        "confidence_entity": 0.9349254369735718,
+        "value": "Trà Văn Toàn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mình tên là Ngọc",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "Ngọc",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_name",
+        "start": 12,
+        "end": 16,
+        "confidence_entity": 0.9967453479766846,
+        "value": "Ngọc",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "xin chào, anh tên là Thành",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "value": "Thành",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.9934906959533691,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.9884482026100159,
+        "value": "Thành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh là nam",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9791573882102966,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tôi là nam",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.987558126449585,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "giới tính của anh là nam",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9919742941856384,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chị là nữ",
+    "entities": [
+      {
+        "start": 7,
+        "end": 9,
+        "value": "nữ",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9895480871200562,
+        "value": "nữ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em là nam",
+    "entities": [
+      {
+        "start": 6,
+        "end": 9,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 6,
+        "end": 9,
+        "confidence_entity": 0.9905372262001038,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em là nữ",
+    "entities": [
+      {
+        "start": 6,
+        "end": 8,
+        "value": "nữ",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 6,
+        "end": 8,
+        "confidence_entity": 0.9947116374969482,
+        "value": "nữ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "giới tính của chị là nữ",
+    "entities": [
+      {
+        "start": 21,
+        "end": 23,
+        "value": "nữ",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 21,
+        "end": 23,
+        "confidence_entity": 0.9981649518013,
+        "value": "nữ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh bị tiểu đường loại 2",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_age",
+        "start": 23,
+        "end": 24,
+        "value": "2",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "chị bị tiểu đường 2 năm rồi",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_age",
+        "start": 18,
+        "end": 19,
+        "value": "2",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Thủy đậu có thể bị lại không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 23,
+        "end": 29,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phụ nữ mang thai bị thủy đậu có lây cho con không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 44,
+        "end": 50,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bị thủy đậu có lây không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 19,
+        "end": 25,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phụ nữ mang bầu bị thủy đậu có lây cho con không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 43,
+        "end": 49,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có cách nào để phòng ngừa bệnh thủy đậu không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 40,
+        "end": 46,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các nguyên nhân gây sâu răng là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 4,
+        "end": 10,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Kem đánh răng có thể chữa được sâu răng hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 44,
+        "end": 50,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các trường hợp nào không nên nhổ răng khôn?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 4,
+        "end": 10,
+        "value": "trường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có vắc-xin nào có thể phòng bệnh quai bị hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 3,
+        "end": 10,
+        "value": "vắc-xin",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 45,
+        "end": 51,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phụ nữ có thể bị quai bị hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 29,
+        "end": 35,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Đau mắt đỏ lây không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 15,
+        "end": 21,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phụ nữ mang thai bị đau mắt đỏ có nguy hiểm không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 44,
+        "end": 50,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Vì sao bệnh đau mắt đỏ thường bùng phát vào mùa hè?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 23,
+        "end": 29,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có nên khóc khi đau mắt đỏ không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 27,
+        "end": 33,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "đau mắt đỏ có kiêng vận động mạnh không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 34,
+        "end": 40,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Đau mắt đỏ có tái phát không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 23,
+        "end": 29,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Viêm xoang có nguy hiểm không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 24,
+        "end": 30,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh viêm xoang có trị hết vĩnh viễn không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 37,
+        "end": 43,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân dẫn đến bệnh viêm xoang?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Nguyên",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 30,
+        "end": 36,
+        "value": "xoang?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Khói thuốc có ảnh hưởng đến bệnh viêm xoang không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 44,
+        "end": 50,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Polype mũi là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Polype",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Chẩn đoán bệnh viêm xoang?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 20,
+        "end": 26,
+        "value": "xoang?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "BMI béo phì là bao nhiêu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 19,
+        "end": 25,
+        "value": "nhiêu?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân gây ra béo phì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Béo phì có thể giảm không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 20,
+        "end": 26,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "cà tím có tác dụng giảm béo không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 28,
+        "end": 34,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nghệ có thể giúp giảm béo không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Thiếu ngủ có gây tăng cân không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Béo phì có gây ra tăng huyết áp không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 32,
+        "end": 38,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Béo phì có ảnh hưởng đến tim không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 29,
+        "end": 35,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Béo phì có gây tiểu đường không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Béo phì có tăng khả năng đột quỵ không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 33,
+        "end": 39,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Béo phì có làm tiến triển bệnh xương khớp không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 42,
+        "end": 48,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "có nên uống sữa nếu bị sỏi thận không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 32,
+        "end": 38,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phương pháp chẩn đoán suy thận là gì",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Phương",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cà phê có gây bệnh sỏi thận không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 28,
+        "end": 34,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có nên uống sữa nếu bị sỏi thận hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 36,
+        "end": 42,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân gây suy thận là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "nguyên nhân gây ra hạ canxi máu",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Mẹ đang mang thai thì bé cần bao nhiêu canxi?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 39,
+        "end": 45,
+        "value": "canxi?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Sau khi sinh người mẹ có bị mất canxi nhiều không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 44,
+        "end": 50,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Khối lượng xương sụt giảm của người mẹ đang cho con bú là bao nhiêu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 62,
+        "end": 68,
+        "value": "nhiêu?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Chế độ ăn phù hợp bổ sung canxi?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "canxi?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Sự chuyển hóa canxi trong cơ thể diễn ra như thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 3,
+        "end": 9,
+        "value": "chuyển",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có thể ngăn ngừa sẹo mụn hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 29,
+        "end": 35,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Môi trường ô nhiễm có gây ra mụn không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 4,
+        "end": 10,
+        "value": "trường",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 33,
+        "end": 39,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "có nên chăm sóc da bằng sản phẩm chuyên dụng khi bị mụn trứng cá không",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 33,
+        "end": 39,
+        "value": "chuyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "nguyên nhân của bệnh Tay chân miệng?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 30,
+        "end": 36,
+        "value": "miệng?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh Tay chân miệng có lây truyền từ người tới vật nuôi và ngược lại không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 27,
+        "end": 33,
+        "value": "truyền",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 69,
+        "end": 75,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ai có nguy cơ mắc bệnh Tay chân miệng?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 32,
+        "end": 38,
+        "value": "miệng?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tại sao trẻ em dễ bị lây nhiễm tay chân miệng?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 40,
+        "end": 46,
+        "value": "miệng?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh Tay chân miệng nghiêm trọng tới mức nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 20,
+        "end": 26,
+        "value": "nghiêm",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cách để phát hiện sớm bệnh tay chân miệng?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 36,
+        "end": 42,
+        "value": "miệng?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Triệu chứng bệnh tay chân miệng?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "miệng?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phụ nữ mang thai có khả năng bệnh tay chân miệng không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 49,
+        "end": 55,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Cách phòng bệnh Tay chân miệng?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 25,
+        "end": 31,
+        "value": "miệng?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Sử dụng thuốc xanh methylen lên các vết loét bệnh tay chân miệng có được không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 19,
+        "end": 27,
+        "value": "methylen",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 73,
+        "end": 79,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tại sao lại gọi là bệnh tay chân miệng?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 33,
+        "end": 39,
+        "value": "miệng?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phương pháp phẫu thuật lấy nhân đệm là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Phương",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phương pháp phẫu thuật cắt cung sau đốt sống là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Phương",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Do đâu chúng ta thường đau thần kinh tọa điển hình?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 16,
+        "end": 22,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tập yoga trong khi bị đau thần kinh tọa có được hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 52,
+        "end": 58,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bơi lội trong khi bị đau thần kinh tọa có được hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 51,
+        "end": 57,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Đau thần kinh tọa không do bệnh lý nguyên nhân là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 35,
+        "end": 41,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phương pháp điều trị nội khoa trong phương pháp điều trị đau thần kinh tọa là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Phương",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 36,
+        "end": 42,
+        "value": "phương",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Khám chuyên khoa nào khi đau thần kinh tọa?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 5,
+        "end": 11,
+        "value": "chuyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Khi đau thần kinh tọa có nên tự uống thuốc giảm đau không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 52,
+        "end": 58,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Số tiền khi chụp CT là bao nhiêu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 27,
+        "end": 33,
+        "value": "nhiêu?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tiêm máu tự thân vào trong đĩa đệm là phương pháp gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 38,
+        "end": 44,
+        "value": "phương",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Trong 1 năm, người mắc bệnh lao phổi có thể lây cho bao nhiêu người khác?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_age",
+        "start": 6,
+        "end": 7,
+        "value": "1",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh lao có thể phòng không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 22,
+        "end": 28,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "HIV và Lao có mối liên quan không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 28,
+        "end": 34,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có thể chữa khỏi hoàn toàn bệnh lao không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 36,
+        "end": 42,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Sau khi chữa khỏi có thể mắc lại bệnh lao  không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 43,
+        "end": 49,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Truyền nhiễm bệnh lao phổi khởi nguồn do đâu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Truyền",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh đau thắt ngực ổn định nguyên nhân gây ra do dâu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 27,
+        "end": 33,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Sau khi bị bệnh thấp tim người bệnh có tái phát hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 52,
+        "end": 58,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh lý van tim nguyên nhân gây ra thường gặp nhất ở Việt Nam là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 16,
+        "end": 22,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 35,
+        "end": 41,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh lý hẹp van hai lá có phải là bệnh di truyền không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 42,
+        "end": 48,
+        "value": "truyền",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 49,
+        "end": 55,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh hẹp van hai lá có nguyên nhân do đâu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 23,
+        "end": 29,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có phải phẫu thuật khi hở van tim không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 34,
+        "end": 40,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Độ nguy hiểm của rung nhĩ không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các nguyên nhân dẫn đến rung nhĩ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 4,
+        "end": 10,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "một số bệnh đường hô hấp thường gặp",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 25,
+        "end": 31,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân gây ra viêm đường hô hấp?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Vì sao trẻ thường bị viêm đường hô hấp khi trời trở lạnh?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 11,
+        "end": 17,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "yếu tố tác động đến hệ hô hấp của trẻ nhỏ khi chuyển mùa?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 46,
+        "end": 52,
+        "value": "chuyển",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân nhập viện do viêm phổi khi thời tiết lạnh kéo dài.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tại sao các bệnh đường hô hấp thường gặp vào lúc giao mùa?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 30,
+        "end": 36,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Viêm đường hô hấp cấp có dẫn đến tử vong không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 41,
+        "end": 47,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Viêm đường hô hấp cấp có nguy hiểm không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 35,
+        "end": 41,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân gây ra các bệnh viêm đường hô hấp trên?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các bệnh nhiễm trùng đường hô hấp trên thường gặp?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 39,
+        "end": 45,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các bệnh nhiễm trùng đường hô hấp dưới thường gặp?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 39,
+        "end": 45,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Virus corona là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 6,
+        "end": 12,
+        "value": "corona",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tại sao bệnh do virus corona được đặt tên là Covid-19?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 22,
+        "end": 28,
+        "value": "corona",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 45,
+        "end": 54,
+        "value": "Covid-19?",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_age",
+        "start": 51,
+        "end": 53,
+        "value": "19",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Thời tiết ấm hơn có thể ngăn chặn Covid-19 không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 34,
+        "end": 42,
+        "value": "Covid-19",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 43,
+        "end": 49,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_age",
+        "start": 40,
+        "end": 42,
+        "value": "19",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Muỗi có thể lan truyền virus gây bệnh Covid không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 16,
+        "end": 22,
+        "value": "truyền",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 44,
+        "end": 50,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các triệu chứng thường thấy khi bệnh nhân đã nhiễm covid?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 16,
+        "end": 22,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 51,
+        "end": 57,
+        "value": "covid?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào cần chăm sóc khẩn cấp khi mắc covid?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 38,
+        "end": 44,
+        "value": "covid?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có thể nhiễm cùng lúc cúm và Covid-19 không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 29,
+        "end": 37,
+        "value": "Covid-19",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 38,
+        "end": 44,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_age",
+        "start": 35,
+        "end": 37,
+        "value": "19",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có ai có đề kháng tự nhiên với Covid không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 37,
+        "end": 43,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có thể lấy huyết tương của người bị Covid đã khỏi bệnh để chữa cho người đang mắc bệnh hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 91,
+        "end": 97,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Virus corona có giống virus gây bệnh cúm không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 6,
+        "end": 12,
+        "value": "corona",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 41,
+        "end": 47,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Làm sao để kiểm tra có nhiễm virus corona hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 35,
+        "end": 41,
+        "value": "corona",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 46,
+        "end": 52,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "virus sars-cov2 có giống như virus MERS hay SARS không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 6,
+        "end": 15,
+        "value": "sars-cov2",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 49,
+        "end": 55,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_age",
+        "start": 14,
+        "end": 15,
+        "value": "2",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Virus corona sống được ở nhiệt độ bao nhiêu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 6,
+        "end": 12,
+        "value": "corona",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 38,
+        "end": 44,
+        "value": "nhiêu?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Virus corona nguy hiểm với những người nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 6,
+        "end": 12,
+        "value": "corona",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Người khuyết tật có thể bị nhiễm Covid-19 không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 6,
+        "end": 12,
+        "value": "khuyết",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 33,
+        "end": 41,
+        "value": "Covid-19",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 42,
+        "end": 48,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_age",
+        "start": 39,
+        "end": 41,
+        "value": "19",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Trẻ em có trong nhóm đối tượng nguy cơ cao với covid không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 53,
+        "end": 59,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nên cho trẻ mang khẩu trang khi mắc covid không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 42,
+        "end": 48,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Những biện pháp bảo vệ và phòng ngừa tốt nhất trước đại dịch corona?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 61,
+        "end": 68,
+        "value": "corona?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Đeo khẩu trang ở nơi công cộng có đủ để phòng ngừa lây nhiễm corona?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 61,
+        "end": 68,
+        "value": "corona?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tại sao người đã nhiễm Covid vẫn cần phải đeo khẩu trang?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 51,
+        "end": 57,
+        "value": "trang?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có nên đi khám bệnh ở bệnh viện trong giai đoạn dịch không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 53,
+        "end": 59,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nếu tôi đã nhiễm COVID và khỏi bệnh, tôi có cần tiêm vắc-xin COVID nữa không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 53,
+        "end": 60,
+        "value": "vắc-xin",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 71,
+        "end": 77,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tôi có thể tiêm ngừa COVID khi tôi hiện đang bị COVID không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 54,
+        "end": 60,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "vaccine ngừa covid kéo dài bao lâu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 7,
+        "value": "vaccine",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tôi có thể chọn loại vắc-xin COVID không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 21,
+        "end": 28,
+        "value": "vắc-xin",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 35,
+        "end": 41,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tôi có cần đeo khẩu trang nếu đã được tiêm chủng đầy đủ không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 56,
+        "end": 62,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tôi có thể tiêm vắc-xin covid nếu mắc bệnh nền không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 16,
+        "end": 23,
+        "value": "vắc-xin",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 47,
+        "end": 53,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nếu tôi đang mang thai mang thai, tôi có thể tiêm vaccine ngừa covid không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 50,
+        "end": 57,
+        "value": "vaccine",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 69,
+        "end": 75,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần phải tiêm bao nhiêu mũi vắc-xin covid?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 32,
+        "end": 39,
+        "value": "vắc-xin",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 40,
+        "end": 46,
+        "value": "covid?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tại sao con tôi nên tiêm chủng ngừa covid?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 36,
+        "end": 42,
+        "value": "covid?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "vaccine covid có an toàn không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 7,
+        "value": "vaccine",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 25,
+        "end": 31,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần đợi bao lâu sau khi tiêm vaccine khác trước khi tiêm vaccine covid-19?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 33,
+        "end": 40,
+        "value": "vaccine",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 61,
+        "end": 68,
+        "value": "vaccine",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 69,
+        "end": 78,
+        "value": "covid-19?",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_age",
+        "start": 75,
+        "end": 77,
+        "value": "19",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ngứa lỗ tai có bệnh gì không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 23,
+        "end": 29,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tôi bị ù tai kéo dài sau khi đi máy bay thì có cách nào chữa không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 61,
+        "end": 67,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tai của tôi bị đau và có mùi hôi có nguy hiểm không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 46,
+        "end": 52,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nghe tiếng dế kêu trong tai có phải bệnh gì không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 44,
+        "end": 50,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Triệu chứng viêm amydale?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 17,
+        "end": 25,
+        "value": "amydale?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phân biệt viêm họng amydale cấp với những bệnh nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 20,
+        "end": 27,
+        "value": "amydale",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh viêm amidan có gây nguy hiểm không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 10,
+        "end": 16,
+        "value": "amidan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 34,
+        "end": 40,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Viêm amidan có lây không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 5,
+        "end": 11,
+        "value": "amidan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 19,
+        "end": 25,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Có cách nào chữa bệnh viêm amidan không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 27,
+        "end": 33,
+        "value": "amidan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 34,
+        "end": 40,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ngoài dùng thuốc để chữa amidan ra thì còn cách nào khác không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 25,
+        "end": 31,
+        "value": "amidan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 57,
+        "end": 63,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Viêm amidan mạn tính là tình trạng gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 5,
+        "end": 11,
+        "value": "amidan",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bị áp xe quanh Amydale là bệnh gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 15,
+        "end": 22,
+        "value": "Amydale",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Vì sao sưng amiđan lại bị áp-xe?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 12,
+        "end": 18,
+        "value": "amiđan",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "áp-xe?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Những nguyên nhân gây ra ù tai?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 6,
+        "end": 12,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh lý ù tai có tự khỏi hay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 29,
+        "end": 35,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân do đâu tự nhiên đau tai trái?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 0,
+        "end": 6,
+        "value": "Nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh lý viêm tai ngoài có thường gặp không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 26,
+        "end": 32,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "password",
+        "start": 37,
+        "end": 43,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh viêm ống tai ngoài do nguyên nhân nào gây ra?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 27,
+        "end": 33,
+        "value": "nguyên",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bị viêm ống tai ngoài triệu chứng thường gặp khi là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 34,
+        "end": 40,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh chàm có lây không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 17,
+        "end": 23,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh ghẻ thường xuất hiện ở đâu trên cơ thể?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 9,
+        "end": 15,
+        "value": "thường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bệnh mày đay có tự khỏi không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "password",
+        "start": 24,
+        "end": 30,
+        "value": "không?",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  }
+]

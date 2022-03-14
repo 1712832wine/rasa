@@ -22,11 +22,6 @@ stories:
   - intent: mood_great
   - action: utter_mood_great
 
-- story: story hello
-  steps:
-  - intent: give_name
-  - action: utter_greet
-
 - story: unhappy 1
   steps:
   - intent: mood_unhappy

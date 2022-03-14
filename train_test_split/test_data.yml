@@ -12,6 +12,26 @@ nlu:
     - dân số Việt Nam là bao nhiêu
     - giá vàng hôm nay bao nhiêu
     - giá xăng hôm nay bao nhiêu
+    - mặt trời mọc ở hướng nào
+    - xe ô tô có mấy bánh
+    - con bò ăn gì
+    - con rắn để trứng hay con
+    - tại sao kim sắt lại chìm dưới nước
+    - thuyết tiến hóa như thế nào
+    - nước nào đông dân nhất thế giới
+    - nước nào có GDP cao nhất thế giới
+    - lạm phát là gì
+    - tại sao Nga lại tấn công Ukraina
+    - bún bò có phải là bún bò Huế không
+    - Tinanic chìm ở đâu
+    - Nên nuôi mèo hay chó
+    - Cách dạy trẻ không nghịch ngợm
+    - Tại sao khủng long tuyệt chủng
+    - Cá mập có phải bá chủ đại dương không
+    - Tại sao con người không thể ăn thịt sống
+    - Đi lạc trong rừng làm sao để thoát nạn
+    - Kĩ thuật bơi lội
+    - Cách sản xuất muối ăn
 - intent: angry
   examples: |
     - xàm quá
@@ -22,7 +42,7 @@ nlu:
   examples: |
     - chào tạm biệt em
     - bái bai
-    - tạm biệt
+    - tạm biệt em
     - bye nha
 - intent: affirm
   examples: |
@@ -33,8 +53,8 @@ nlu:
     - ừ
 - intent: thank
   examples: |
-    - cảm ơn nha
-    - cảm ơn
+    - cảm ơn anh nha
+    - cảm ơn nhiều
     - thank you
 - intent: mood_great
   examples: |
@@ -54,9 +74,21 @@ nlu:
     - anh ơi
     - xin chào
     - hey
+    - hi
+    - hello
+    - chào anh
     - chào em
+    - [anh](user_gender) tên là [Mai Hồng Bửu Long](user_name)
+    - [chị](user_gender) là [Hảo](user_name)
+    - [anh](user_gender) có tên là [Đạt](user_name)
+    - chào em, [chị](user_gender) là [Mai](user_name)
     - xin chào, [anh](user_gender) tên [Bảo](user_name)
     - chào em, [chị](user_gender) là [Hân](user_name)
+    - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
+    - [anh](user_gender) có tên là [Nam](user_name)
+    - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
+    - mình tên là [Ngọc](user_name)
+    - xin chào, [anh](user_gender) tên là [Thành](user_name)
 - intent: deny
   examples: |
     - không
@@ -65,13 +97,46 @@ nlu:
     - sai rồi
     - sai
     - không đúng
-- intent: give_name
+
+- intent: ask_bot
   examples: |
-    - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
-    - [anh](user_gender) có tên là [Nam](user_name)
-    - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
-    - [mình](user_gender) tên là [Ngọc](user_name)
-    - xin chào, [anh](user_gender) tên là [Đạt](user_name)
+    - em làm gì được
+    - em có những chức năng gì
+    - em có thể làm được những gì
+    - em giúp gì được cho anh
+    - em có những chức năng gì
+
+- intent: give_gender
+  examples: |
+    - anh là [nam](user_gender)
+    - tôi là [nam](user_gender)
+    - giới tính của anh là [nam](user_gender)
+    - chị là [nữ](user_gender)
+    - em là [nam](user_gender)
+    - em là [nữ](user_gender)
+    - giới tính của chị là [nữ](user_gender)
+
+- intent: give_diagnose
+  examples: |
+    - anh bị đau bụng nhẹ
+    - anh hơi chóng mặt
+    - em bị covid biến chủng mới
+    - anh bị tiểu đường loại 2
+    - em bị cận thi
+    - chị bị tiểu đường 2 năm rồi
+    - chị bị viêm gan B
+    - anh bị say nắng
+    - em bị suy thận, buồn nôn
+    - chị bị cận thị
+    - anh bị chóng mặt, đau đầu, buồn nôn
+    - anh bị nhanh đói bụng
+    - anh bị béo phì
+    - chị bị tim mạch
+    - chú bị hạ canxi máu
+    - em bị mang thai
+    - chị bị đau ruột thừa.
+    - em bị nôn mửa.
+
 - intent: thủy đậu
   examples: |
     - Thủy đậu có thể bị lại không?
@@ -110,20 +175,7 @@ nlu:
     - Vì sao cần cách ly người bị bệnh quai bị?
     - Để ngăn ngừa quai bị lây lan ta có các biện pháp nào?
     - Người bệnh nên làm gì khi bị quai bị?
-- intent: ask_bot
-  examples: |
-    - em tên là gì
-    - em tên gì
-    - vui lòng cho mình biết tên nhé
-    - bạn tên gì
-    - bạn tên là gì
-- intent: ask_func_list
-  examples: |
-    - bạn làm gì được
-    - bạn có chức năng gì
-    - kể cho mình biết những việc bạn có thể làm được nhé
-    - bạn giúp được mình gì nào
-    - em làm được gì
+
 - intent: đau mắt đỏ
   examples: |
     - Đau mắt đỏ là gì?

@@ -1,0 +1,130 @@
+[
+  {
+    "text": "tính cách người cung Bảo Bình",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "đau thần kinh tọa",
+      "confidence": 0.7886042594909668
+    }
+  },
+  {
+    "text": "tại sao biển xanh lại mặn",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "covid",
+      "confidence": 0.8967942595481873
+    }
+  },
+  {
+    "text": "cá heo ăn gì",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "mụn trứng cá",
+      "confidence": 0.4217686057090759
+    }
+  },
+  {
+    "text": "dân số Việt Nam là bao nhiêu",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "hạ canxi máu",
+      "confidence": 0.1117113009095192
+    }
+  },
+  {
+    "text": "giá vàng hôm nay bao nhiêu",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.2765452265739441
+    }
+  },
+  {
+    "text": "giá xăng hôm nay bao nhiêu",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.4171700179576874
+    }
+  },
+  {
+    "text": "anh vui quá",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "thank",
+      "confidence": 0.8697226643562317
+    }
+  },
+  {
+    "text": "em bị suy thận, buồn nôn",
+    "intent": "give_diagnose",
+    "intent_prediction": {
+      "name": "thận",
+      "confidence": 0.9743629097938538
+    }
+  },
+  {
+    "text": "anh bị béo phì",
+    "intent": "give_diagnose",
+    "intent_prediction": {
+      "name": "béo phì",
+      "confidence": 0.8680639266967773
+    }
+  },
+  {
+    "text": "chị bị tim mạch",
+    "intent": "give_diagnose",
+    "intent_prediction": {
+      "name": "tim mạch",
+      "confidence": 0.9998125433921814
+    }
+  },
+  {
+    "text": "chú bị hạ canxi máu",
+    "intent": "give_diagnose",
+    "intent_prediction": {
+      "name": "hạ canxi máu",
+      "confidence": 0.9987291693687439
+    }
+  },
+  {
+    "text": "Nguyên nhân dẫn đến bệnh viêm xoang?",
+    "intent": "viêm xoang",
+    "intent_prediction": {
+      "name": "viêm đường hô hấp",
+      "confidence": 0.9935517311096191
+    }
+  },
+  {
+    "text": "Những ưu tiên gì được hưởng khi điều trị?",
+    "intent": "lao phổi",
+    "intent_prediction": {
+      "name": "tai-mũi-họng",
+      "confidence": 0.6879836916923523
+    }
+  },
+  {
+    "text": "Chụp X Quang là gì?",
+    "intent": "tim mạch",
+    "intent_prediction": {
+      "name": "đau thần kinh tọa",
+      "confidence": 0.8347777128219604
+    }
+  },
+  {
+    "text": "vaccine ngừa covid kéo dài bao lâu?",
+    "intent": "covid",
+    "intent_prediction": {
+      "name": "thủy đậu",
+      "confidence": 0.14191150665283203
+    }
+  },
+  {
+    "text": "vaccine covid có an toàn không?",
+    "intent": "covid",
+    "intent_prediction": {
+      "name": "mụn trứng cá",
+      "confidence": 0.18113672733306885
+    }
+  }
+]
