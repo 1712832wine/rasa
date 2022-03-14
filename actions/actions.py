@@ -27,22 +27,22 @@ class ActionMedical(Action):
     def name(self) -> Text:
         return "action_medical"
 
-    def normalize_text(self, text):
-        text = re.sub("&\w+;", "", text)  # remove punctuation encoding
-        text = re.sub("&#\d+;", "", text)
+    def remove_numbers(self, text):
+        result = re.sub(r'\d+', '', text)
+        return result
 
-        text = re.sub("gt", "", text)  # remove punctuation encoding
-        text = re.sub("em", "", text)
-        text = re.sub("lt", "", text)
+    def remove_whitespace(self, text):
+        return " ".join(text.split())
 
-        text = text.lower()  # lowercase
-        text = text.replace(r"http\S+", "URL")  # remove URL addresses
-        text = text.translate(str.maketrans(
-            '', '', string.punctuation))  # remove punctuations
-        text = re.sub(r"\s{2,}", " ", text)  # replace >= 2 spaces
-        text = re.sub(r"^\s", "", text)  # remove starting spaces
-        text = re.sub(r"\s$", "", text)  # remove ending spaces
+    def remove_punctuation(self, text):
+        translator = str.maketrans('', '', string.punctuation)
+        return text.translate(translator)
 
+    def preprocess(self, text):
+        text = self.remove_numbers(text)
+        text = self.remove_whitespace(text)
+        text = self.remove_punctuation(
+            text.strip().lower().rstrip('\n').replace(" ", ""))
         return text
 
     def compare(self, input, data_src):
@@ -59,8 +59,8 @@ class ActionMedical(Action):
         pattern = re.compile(r'- -.*\n')
         matches = pattern.finditer(text)
         for match in matches:
-            s = match.group(0)
-            s = self.normalize_text(s)
+            s = match.group(0)[4:]
+            s = self.preprocess(s)
             questions.append(s)
         return questions
 
@@ -69,7 +69,7 @@ class ActionMedical(Action):
         pattern = re.compile(r'  - .*\n')
         matches = pattern.finditer(text)
         for match in matches:
-            s = match.group(0)
+            s = match.group(0)[4:]
             answers.append(s)
         return answers
 

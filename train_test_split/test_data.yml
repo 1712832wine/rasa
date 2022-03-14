@@ -2,8 +2,8 @@ version: "3.0"
 nlu:
 - intent: unknown
   examples: |
-    - em có biết tại sao lá cây có màu xanh
-    - ai là người tìm ra châu Mỹ
+    - tại sao lá cây có màu xanh lá
+    - ai là người đầu tiên tìm ra châu Mỹ
     - tính cách người cung Bảo Bình
     - đơn vị đo cường độ dòng điện
     - người ta đo chiều dài bằng đơn vị gì
@@ -55,6 +55,7 @@ nlu:
     - xin chào
     - hey
     - chào em
+    - xin chào, [anh](user_gender) tên [Bảo](user_name)
     - chào em, [chị](user_gender) là [Hân](user_name)
 - intent: deny
   examples: |
@@ -73,35 +74,31 @@ nlu:
     - xin chào, [anh](user_gender) tên là [Đạt](user_name)
 - intent: thủy đậu
   examples: |
-    - Bị thủy đậu có khả năng bị lại không?
-    - Cách phòng ngừa bệnh thủy đậu?
+    - Thủy đậu có thể bị lại không?
+    - Cách phòng bệnh thủy đậu?
     - Phụ nữ mang thai bị thủy đậu có lây cho con không?
-    - Các loại thực phẩm nên kiêng ăn khi bị thủy đậu?
-    - Điều trị bệnh thủy đậu bằng thuốc được không?
+    - Bị thủy đậu kiêng ăn gì?
+    - Điều trị thủy đậu bằng thuốc được không
 - intent: quai bị, sâu răng
   examples: |
-    - Các biện pháp để ngăn ngừa quai bị lây lan là gì?
+    - Cách để ngăn chặn quai bị lây lan là gì?
     - Răng bị sâu có nguy hiểm không?
-    - Có vắc-xin nào để phòng bệnh quai bị không?
+    - Có vắc-xin quai bị không?
     - Chết tủy là gì?
-    - Trường hợp không nên nhổ răng khôn?
+    - Trường hợp nào không nên nhổ răng khôn?
 - intent: ask_bot
   examples: |
-    - cho mình hỏi tên nhé
-    - tên của anh là gì
-    - cho em xin tên của chị ạ
+    - em tên là gì
     - em tên gì
     - vui lòng cho mình biết tên nhé
     - bạn tên gì
     - bạn tên là gì
 - intent: ask_func_list
   examples: |
-    - bạn biết được những lĩnh vực gì
-    - biết gì mà nói
-    - bạn có thể làm được mấy chức năng
+    - bạn làm gì được
+    - bạn có chức năng gì
     - kể cho mình biết những việc bạn có thể làm được nhé
     - bạn giúp được mình gì nào
-    - có làm được trò gì
     - em làm được gì
 - intent: đau mắt đỏ
   examples: |
