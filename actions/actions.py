@@ -39,10 +39,10 @@ class ActionMedical(Action):
         return text.translate(translator)
 
     def preprocess(self, text):
+        text = text.strip().lower().rstrip('\n')
         text = self.remove_numbers(text)
         text = self.remove_whitespace(text)
-        text = self.remove_punctuation(
-            text.strip().lower().rstrip('\n').replace(" ", ""))
+        text = self.remove_punctuation(text)
         return text
 
     def compare(self, input, data_src):
@@ -108,12 +108,11 @@ class ActionMedical(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # get intent
-
         intent = tracker.latest_message.get("intent").get("name")
         # get message input
         message = tracker.latest_message.get("text")
-
         temp = self.get_file(intent)
+
         if temp != 'nothing':
             # get filename
             filename = './data/medical/' + temp
