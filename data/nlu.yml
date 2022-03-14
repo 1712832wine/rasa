@@ -65,7 +65,9 @@ nlu:
 - regex: user_age
   examples: |
     - \d{1,3}
-
+- regex: password
+  examples: |
+    - \S{6,9}
 - intent: give_age
   examples: |
     - anh [18](user_age) tuổi
@@ -76,17 +78,15 @@ nlu:
     - anh [23](user_age) tuổi
     - anh [46](user_age)
     - chị [78](user_age)
-- regex: password
-  examples: |
-    - \d{4,10}
+
 - intent: give_password
   examples: |
-    - mật khẩu là [189372](password)
-    - mật khẩu của anh là [2023141423](password)
-    - chị đặt mật khẩu là [91123](password)
-    - mật khẩu của chị là [2631241](password)
-    - id của [anh](user_gender) là [1238938](password)
-    - id là [17826927](password)
+    - mật khẩu là [abcxyz](password)
+    - mật khẩu của anh là [password](password)
+    - chị đặt mật khẩu là [okela](password)
+    - mật khẩu của chị là [26ddsss](password)
+    - id của [anh](user_gender) là [conbodkjkd](password)
+    - id là [123457896](password)
 - intent: give_diagnose
   examples: |
     - tôi bị đau bụng

@@ -176,6 +176,13 @@ class ActionSubmit(Action):
         dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
         # hashpassword
         password_hashed = hashlib.md5(password.encode()).hexdigest()
+        # gender
+        man = ['anh', 'chú']
+        woman = ['chị', 'cô', 'dì']
+        if user_gender in man:
+            user_gender = 'nam'
+        if user_gender in woman:
+            user_gender = 'nữ'
         # save to db
         con = sqlite3.connect('database.sqlite3')
         cur = con.cursor()
