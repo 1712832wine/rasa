@@ -7,6 +7,7 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
+import json
 from rasa_sdk.types import DomainDict
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker, FormValidationAction
@@ -183,7 +184,6 @@ class ActionSubmit(Action):
         user_age = tracker.get_slot("user_age")
         password = tracker.get_slot("password")
         note = tracker.get_slot("note")
-
         now = datetime.now()
         dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
         # hashpassword
@@ -199,7 +199,7 @@ class ActionSubmit(Action):
         con = sqlite3.connect('database.sqlite3')
         cur = con.cursor()
         cur.execute("INSERT INTO medical_records VALUES (?,?,?,?,?,?)", (user_name, user_gender, user_age,
-                                                                         password_hashed, note, dt_string))
+                                                                         password_hashed, json.dumps(note), dt_string))
         con.commit()
         con.close()
 

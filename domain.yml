@@ -77,11 +77,11 @@ slots:
           requested_slot: password
     
   note:
-    type: text
+    type: list
     influence_conversation: true
     mappings:
-    - type: from_text
-      intent: give_diagnose
+    - type: from_entity
+      entity: note
       conditions:
         - active_loop: diagnose_form
           requested_slot: note
@@ -189,5 +189,5 @@ actions:
 - action_medical
 - action_get_data
 - action_submit
-- validate_diagform_form
-- validate_get_data_from
+- validate_diagnose_form
+- validate_get_data_form

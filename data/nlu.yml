@@ -15,42 +15,52 @@ nlu:
     - chào
     - ê mày
     - có ai ở đây không?
-    - [anh](user_gender) tên [Nam](user_name)
-    - [anh](user_gender) là [Toàn](user_name)
-    - [chị](user_gender) tên [Hoa](user_name)
-    - [chị](user_gender) là [Mai](user_name)
-    - xin chào,em là [Thúy](user_name)
-    - [chị](user_gender) là [Tuyền](user_name)
-    - [anh](user_gender) có tên là [Nguyễn Lộc](user_name)
-    - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
-    - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
-    - chào, [anh](user_gender) tên là [Long](user_name)
-    - xin chào, [anh](user_gender) tên là [Văn Đạt](user_name)
-    - [anh](user_gender) tên là [Trần Cường](user_name)
-    - [anh](user_gender) có tên là [Nam](user_name)
-    - chào em, tên của [chị](user_gender) là [Tôn Kim Ái](user_name)
-    - Tên của [chị](user_gender) là [Ngô Vy](user_name)
-    - [chị](user_gender) là [Ngọc](user_name)
-    - [chị](user_gender) tên là [Linh](user_name)
-    - chào em, [chị](user_gender) là [Hoa](user_name)
-    - em là [Trang](user_name)
-    - chào em là [Vy](user_name)
-    - chào anh, em là [Nhi](user_name)
-    - xin chào [cô](user_gender) là [Vân](user_name)
-    - mình tên là [Nguyễn Ngọc Vân Nhi](user_name)
-    - mình có tên là [Trần Ái](user_name)
-    - tên của mình là [Văn Lộc](user_name)
-    - tôi có tên là [Đạt](user_name)
-    - tôi là [Hùng](user_name)
-    - tôi tên là [Hương](user_name)
-    - chào, tôi là [La Long](user_name)
-    - [anh](user_gender) tên là [Trí](user_name)
-    - [anh](user_gender) có tên là [Đạt](user_name)
-    - tên [anh](user_gender) là [Thành](user_name)
-    - [chị](user_gender) tên là [Ái](user_name)
-    - [chị](user_gender) có tên là [Vy](user_name)
-    - [anh](user_gender) tên là [Trí](user_name)
-
+    - [anh](user_gender) tên [Trí](user_name)
+    - [anh](user_gender) là [Ái](user_name)
+    - [chị](user_gender) tên [Vy](user_name)
+    - [chị](user_gender) là [Đạt](user_name)
+    - xin chào,em là [Thành](user_name)
+    - [chị](user_gender) là [Long](user_name)
+    - [anh](user_gender) có tên là [Đức](user_name)
+    - xin chào [anh](user_gender) tên là [Nhân](user_name)
+    - [anh](user_gender) tên là [Trân](user_name)
+    - chào, [anh](user_gender) tên là [Cường](user_name)
+    - xin chào, [anh](user_gender) tên là [Vân](user_name)
+    - [anh](user_gender) tên là [Duy](user_name)
+    - [anh](user_gender) có tên là [Huy](user_name)
+    - chào em, tên của [chị](user_gender) là [Vỹ](user_name)
+    - Tên của [chị](user_gender) là [Vũ](user_name)
+    - [chị](user_gender) là [Trung](user_name)
+    - [chị](user_gender) tên là [Toàn](user_name)
+    - chào em, [chị](user_gender) là [Anh](user_name)
+    - em là [Hân](user_name)
+    - chào em là [Hảo](user_name)
+    - chào anh, em là [Như Ý](user_name)
+    - xin chào [cô](user_gender) là [Văn Cơ](user_name)
+    - mình tên là [Đức Huy](user_name)
+    - mình có tên là [Gia Huy](user_name)
+    - tên của mình là [Gia Linh](user_name)
+    - tôi có tên là [Quang Trung](user_name)
+    - tôi là [Quang Toản](user_name)
+    - tôi tên là [Đức Duy](user_name)
+    - chào, tôi là [Trương Bao](user_name)
+    - [anh](user_gender) tên là [Kim Ngân](user_name)
+    - [anh](user_gender) có tên là [Ngọc Tuyền](user_name)
+    - tên [anh](user_gender) là [Cát Tường](user_name)
+    - [chị](user_gender) tên là [Gia Hân](user_name)
+    - [chị](user_gender) có tên là [Bảo Trang](user_name)
+    - [anh](user_gender) tên là [Văn Tú](user_name)
+    - tên của [anh](user_gender) là [Minh Ánh](user_name)
+    - [anh](user_gender) có tên là [Phương Trang](user_name)
+    - em là [Trí Nguyễn](user_name)
+    - [anh](user_gender) tên là [Nhã Duyên](user_name)
+    - chào, em là [Thủy Tiên](user_name)
+    - [anh](user_gender) tên là [Nguyễn Minh Quang](user_name)
+    - [chị](user_gender) có tên là [Trần Vinh Quang](user_name)
+    - tên [anh](user_gender) là [Mai Phương Vy](user_name)
+    - [chị](user_gender) tên là [Hồ Ngọc Mai](user_name)
+    - [anh](user_gender) có tên là [Văn Yến Ngọc](user_name)
+    - [chị](user_gender) tên là [Hồng Kim Yến](user_name)
 - intent: give_gender
   examples: |
     - anh là [nam](user_gender)
@@ -66,7 +76,24 @@ nlu:
     - \d{1,3}
 - regex: password
   examples: |
-    - \S{6,9}
+    - \d{6,9}
+- lookup: note
+  examples: |
+    - nhức đầu
+    - chóng mặt
+    - đau bụng
+    - khó tiêu
+    - đầy hơi
+    - tiêu chảy
+    - khó thở
+    - thị lực kém
+    - tiểu đường
+    - suy thận
+    - đau đầu
+    - nhanh đói bụng
+    - đau ruột thừa
+    - nôn mửa
+    
 - intent: give_age
   examples: |
     - anh [18](user_age) tuổi
@@ -80,32 +107,20 @@ nlu:
 
 - intent: give_password
   examples: |
-    - mật khẩu là [abcxyz](password)
-    - mật khẩu của anh là [password](password)
-    - chị đặt mật khẩu là [okela](password)
-    - mật khẩu của chị là [26ddsss](password)
-    - id của anh là [conbodkjkd](password)
-    - id là [123457896](password)
+    - mật khẩu là [123456789](password)
+    - mật khẩu của anh là [987654321](password)
+    - mật khẩu của chị [987654321](password)
 - intent: give_diagnose
   examples: |
-    - tôi bị đau bụng
-    - anh bị chóng mặt
-    - anh bị covid
-    - anh bị tiểu đường loại 2
-    - anh bị thị lực kém
-    - chị bị tiểu đường
-    - chị bị viêm gan B
-    - chị bị say nắng
-    - chị bị suy thận
-    - em bị cận thị
-    - anh bị chóng mặt, đau đầu
-    - anh bị nhanh đói bụng
-    - anh bị viêm gan
-    - chị bị tiểu đường loại 1.
-    - chú bị hoa mắt thường xuyên.
-    - em bị sỏi thận
-    - em bị đau ruột thừa.
-    - chị bị nôn mửa.
+    - tôi bị [đau bụng](note)
+    - anh bị [chóng mặt](note)
+    - anh bị [khó thở](note)
+    - anh bị [thị lực kém](note)
+    - chị bị [tiểu đường](note)
+    - chị bị [suy thận](note)
+    - em bị [cận thị](note)
+    - anh bị [chóng mặt](note), [đau đầu](note)
+    - anh bị [nhanh đói bụng](note)
 - intent: goodbye
   examples: |
     - bye

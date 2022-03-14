@@ -2,7 +2,16 @@ version: "3.0"
 
 rules:
 
+- rule: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
 
+
+- rule: thank
+  steps:
+  - intent: thank
+  - action: utter_thank
 
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:

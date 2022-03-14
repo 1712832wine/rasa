@@ -78,15 +78,15 @@ nlu:
     - hello
     - chào anh
     - chào em
-    - [anh](user_gender) tên là [Mai Hồng Bửu Long](user_name)
+    - [anh](user_gender) tên là [Long](user_name)
     - [chị](user_gender) là [Hảo](user_name)
     - [anh](user_gender) có tên là [Đạt](user_name)
     - chào em, [chị](user_gender) là [Mai](user_name)
     - xin chào, [anh](user_gender) tên [Bảo](user_name)
     - chào em, [chị](user_gender) là [Hân](user_name)
-    - xin chào [anh](user_gender) tên là [Ngô Đức Huy](user_name)
+    - xin chào [anh](user_gender) tên là [Huy](user_name)
     - [anh](user_gender) có tên là [Nam](user_name)
-    - [anh](user_gender) tên là [Trà Văn Toàn](user_name)
+    - [anh](user_gender) tên là [Toàn](user_name)
     - mình tên là [Ngọc](user_name)
     - xin chào, [anh](user_gender) tên là [Thành](user_name)
 - intent: deny
@@ -176,6 +176,26 @@ nlu:
     - Để ngăn ngừa quai bị lây lan ta có các biện pháp nào?
     - Người bệnh nên làm gì khi bị quai bị?
 
+- intent: cancel_form
+  examples: |
+    - thoát
+    - hủy
+    - thoát quá trình
+    - dừng
+    - anh không muốn tiếp tục nữa
+    - chị muốn thoát
+    - chị không muốn tiếp tục nữa
+
+- intent: give_age
+  examples: |
+    - anh [18](user_age) tuổi
+    - chị [19](user_age)
+    - chị năm nay [20](user_age) tuổi
+    - chị [21](user_age) tuổi
+    - anh [23](user_age)
+    - tuổi của anh là [18](user_age)
+    - tuổi của chị là [29](user_age)
+    
 - intent: đau mắt đỏ
   examples: |
     - Đau mắt đỏ là gì?
