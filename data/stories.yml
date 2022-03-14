@@ -1,6 +1,16 @@
 version: "3.0"
 
 stories:
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: thank
+  steps:
+  - intent: thank
+  - action: utter_thank
 
 - story: greet
   steps:
@@ -179,24 +189,24 @@ stories:
 #   - action: action_submit
   
 
-- story: interactive story 2
-  steps:
-  - intent: get_data
-  - action: get_data_form
-  - active_loop: get_data_form
+# - story: interactive story 2
+#   steps:
+#   - intent: get_data
+#   - action: get_data_form
+#   - active_loop: get_data_form
 
   
-  - slot_was_set:
-    - requested_slot: password
-  - slot_was_set:
-    - password: 123456
+#   - slot_was_set:
+#     - requested_slot: password
+#   - slot_was_set:
+#     - password: 123456
 
 
-  - slot_was_set:
-    - requested_slot: null
+#   - slot_was_set:
+#     - requested_slot: null
 
-  - active_loop: null
-  - action: action_get_data
+#   - active_loop: null
+#   - action: action_get_data
 
 - story: User interrupts the form and doesn't want to continue
   steps:

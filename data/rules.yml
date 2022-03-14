@@ -2,16 +2,7 @@ version: "3.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
 
-
-- rule: Say thank anytime the user says thank
-  steps:
-  - intent: thank
-  - action: utter_thank
 
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:

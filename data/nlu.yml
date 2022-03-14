@@ -85,18 +85,28 @@ nlu:
     - mật khẩu của anh là [password](password)
     - chị đặt mật khẩu là [okela](password)
     - mật khẩu của chị là [26ddsss](password)
-    - id của [anh](user_gender) là [conbodkjkd](password)
+    - id của anh là [conbodkjkd](password)
     - id là [123457896](password)
 - intent: give_diagnose
   examples: |
     - tôi bị đau bụng
-    - [anh](user_gender) bị chóng mặt, đau đầu
-    - [anh](user_gender) bị nhanh đói bụng
-    - [anh](user_gender) bị viêm gan
-    - [chị](user_gender) bị tiểu đường loại 1.
-    - [chú](user_gender) bị hoa mắt thường xuyên.
+    - anh bị chóng mặt
+    - anh bị covid
+    - anh bị tiểu đường loại 2
+    - anh bị thị lực kém
+    - chị bị tiểu đường
+    - chị bị viêm gan B
+    - chị bị say nắng
+    - chị bị suy thận
+    - em bị cận thị
+    - anh bị chóng mặt, đau đầu
+    - anh bị nhanh đói bụng
+    - anh bị viêm gan
+    - chị bị tiểu đường loại 1.
+    - chú bị hoa mắt thường xuyên.
+    - em bị sỏi thận
     - em bị đau ruột thừa.
-    - [chị](user_gender) bị nôn mửa.
+    - chị bị nôn mửa.
 - intent: goodbye
   examples: |
     - bái bai
@@ -167,7 +177,7 @@ nlu:
     - không tiếp tục
     - dừng lại
     - tôi không muốn tiếp tục nữa
-    - [anh](user_gender) không muốn tiếp tục nữa
+    - anh không muốn tiếp tục nữa
     - thoát
 - intent: thank
   examples: |
@@ -206,74 +216,29 @@ nlu:
 - intent: ask_bot
   examples: |
     - anh có thắc mắc này
+    - chị có một số câu hỏi muốn hỏi em
+    - anh có một số thắc mắc
     - anh có câu hỏi
     - Anh muốn hỏi em một số câu hỏi
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
     - tôi đang nói chuyện với người hay máy đây?
-    - bạn tên gì
-    - tên gì
-    - chị tên gì
-    - anh tên gì
-    - tên của bạn là gì
-    - tên của chị là gì
-    - tên của anh là gì
-    - cho mình hỏi tên nhé
-    - mình muốn biết tên bạn
-    - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
-    - để tiện xưng hộ thì tên bạn là gì
-    - cho em xin tên của anh ạ
-    - cho em xin tên của chị ạ
-    - được biết tên bạn thì tốt nhỉ
-    - vui lòng cho mình biết tên nhé
-    - xin phép hỏi tên của bạn
-    - vậy thì tên bạn là gì
-    - tên bạn trong tiếng việt là gì
-    - bạn có vui lòng cho mình biết tên được không
-    - chúng ta nên biết tên nhau nhỉ?
-    - em tên là gì thế
-    - tên em là gì
-    - tên em
-    - tên bạn
-    - bạn tên là gì
-    - bạn tên gì thế
-    - em tên gì
     - bạn có thể làm được những gì
     - bạn giúp được gì nào
     - chức năng của bạn là gì
     - bạn có thể làm được mấy chức năng
     - bạn giỏi nhất làm gì
     - bạn có tư vấn giúp mình được không
+    - bạn có thể tư vấn cho mình không
     - việc gì bạn làm được
     - kể xem bạn làm được gì
-    - cho mình biết bạn làm được gì nhé
-    - bạn hữu dụng như thế nào
-    - bạn có ích trong những việc gì
-    - lĩnh vực gì bạn giỏi nhất
-    - mình tò mò về những việc bạn làm được
-    - chẳng biết bạn làm được gì
-    - bạn tệ nhất trong việc gì
-    - bạn biết được những lĩnh vực gì
-    - bạn giỏi hỗ trợ nhất trong lĩnh vực gì
     - kể cho mình biết những việc bạn có thể làm được nhé
-    - nói cho mình về những việc bạn giúp được mình
     - bạn giúp được mình gì nào
     - bạn có thể làm gì
-    - em giúp được gì
     - em làm được gì
     - mày biết làm gì
     - em biết làm gì
     - bạn biết làm gì
     - biết làm gì
     - làm được gì
-    - có làm được gì
-    - có làm được trò gì
-    - giúp giúp cái gì
-    - biết gì mà nói
-    - giúp được gì
-    - mày làm được gì
-    - có biết gì
 - intent: unknown
   examples: |
     - giờ làm gì để có bồ đây?

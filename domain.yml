@@ -63,18 +63,28 @@ slots:
     mappings:
     - type: from_entity
       entity: user_age
+      conditions:
+        - active_loop: diagnose_form
+          requested_slot: user_age
   password:
     type: text
     influence_conversation: true
     mappings:
     - type: from_entity
       entity: password
+      conditions:
+        - active_loop: diagnose_form
+          requested_slot: password
+    
   note:
     type: text
     influence_conversation: true
     mappings:
     - type: from_text
       intent: give_diagnose
+      conditions:
+        - active_loop: diagnose_form
+          requested_slot: note
 
 forms:
   diagnose_form:
@@ -132,8 +142,8 @@ responses:
       - type: slot
         name: user_gender
         value: Null
-    text: "Em có thể tư vấn y tế cho anh/chị ạ"
-  - text: "Em có thể tư vấn y tế cho {user_gender} ạ"
+    text: "Em có thể tư vấn y tế, lập hồ sơ bệnh án cho anh/chị ạ"
+  - text: "Em có thể tư vấn y tế, lập hồ sơ bệnh án cho {user_gender} ạ"
   utter_ask_user_name:
   - condition:
       - type: slot

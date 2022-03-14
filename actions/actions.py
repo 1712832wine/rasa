@@ -18,6 +18,8 @@ import sqlite3
 from datetime import datetime
 import hashlib
 from rasa_sdk.events import AllSlotsReset
+from underthesea import word_tokenize
+from nltk.corpus import stopwords
 
 bert = SentenceTransformer('sentence-transformers/multi-qa-MiniLM-L6-cos-v1')
 
@@ -38,11 +40,22 @@ class ActionMedical(Action):
         translator = str.maketrans('', '', string.punctuation)
         return text.translate(translator)
 
+    def remove_stopwords(self, text):
+        stop_words = set(stopwords.words("vietnamese"))
+        word_tokens = word_tokenize(text, format='text').split(' ')
+        filtered_text = [word.replace('_', ' ')
+                         for word in word_tokens if word not in stop_words]
+        if filtered_text:
+            return ' '.join(filtered_text)
+        else:
+            return text
+
     def preprocess(self, text):
         text = text.strip().lower().rstrip('\n')
         text = self.remove_numbers(text)
         text = self.remove_whitespace(text)
         text = self.remove_punctuation(text)
+        text = self.remove_stopwords(text)
         return text
 
     def compare(self, input, data_src):
