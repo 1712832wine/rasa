@@ -56,7 +56,7 @@ class ActionMedical(Action):
         text = self.remove_numbers(text)
         text = self.remove_whitespace(text)
         text = self.remove_punctuation(text)
-        text = self.remove_stopwords(text)
+        # text = self.remove_stopwords(text)
         return text
 
     def compare(self, input, data_src):
@@ -113,7 +113,7 @@ class ActionMedical(Action):
             text = f.read()
         data_src = self.get_questions(text)
         data_dest = self.get_answers(text)
-        scores = self.compare(input, data_src)
+        scores = self.compare(self.preprocess(input), data_src)
         max_value = max(scores[0])
         max_index = scores[0].tolist().index(max_value)
         return data_dest[max_index]
