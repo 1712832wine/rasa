@@ -1,0 +1,55 @@
+{
+  "user_name": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 11,
+    "confused_with": {}
+  },
+  "note": {
+    "precision": 0.6206896551724138,
+    "recall": 1.0,
+    "f1-score": 0.7659574468085107,
+    "support": 18,
+    "confused_with": {}
+  },
+  "password": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "user_gender": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 22,
+    "confused_with": {}
+  },
+  "user_age": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333333,
+    "support": 7,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.7,
+    "recall": 0.45901639344262296,
+    "f1-score": 0.5544554455445544,
+    "support": 61
+  },
+  "macro avg": {
+    "precision": 0.49913793103448273,
+    "recall": 0.6,
+    "f1-score": 0.5398581560283688,
+    "support": 61
+  },
+  "weighted avg": {
+    "precision": 0.3327444884115319,
+    "recall": 0.45901639344262296,
+    "f1-score": 0.38230438321125454,
+    "support": 61
+  }
+}

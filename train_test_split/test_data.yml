@@ -32,12 +32,33 @@ nlu:
     - Đi lạc trong rừng làm sao để thoát nạn
     - Kĩ thuật bơi lội
     - Cách sản xuất muối ăn
+
+- intent: give_password
+  examples: |
+    - mật khẩu là [98754321](password)
+    - mật khẩu của anh là [12345413](password)
+    - mật khẩu của chị [13456789](password)
+  
 - intent: angry
   examples: |
     - xàm quá
     - bực mình
     - cộc rồi đó
     - giận
+- intent: request_save_form
+  examples: |
+    - [anh](user_gender) muốn lưu hồ sơ bệnh án
+    - lưu hồ sơ bệnh án
+    - lưu hồ sơ
+    - em lưu hồ sơ bệnh án cho [chị](user_gender)
+    - [chị](user_gender) muốn em lưu hồ sơ bệnh án
+    - mình muốn bạn lưu hồ sơ bệnh án
+    - bạn hãy lưu hồ sơ bệnh án cho tôi
+    - [anh](user_gender) muốn lập hồ sơ
+    - lập hồ sơ
+    - tạo hồ sơ
+    - [anh](user_gender) muốn tạo hồ sơ
+
 - intent: goodbye
   examples: |
     - chào tạm biệt em
@@ -118,24 +139,15 @@ nlu:
 
 - intent: give_diagnose
   examples: |
-    - anh bị đau bụng nhẹ
-    - anh hơi chóng mặt
-    - em bị covid biến chủng mới
-    - anh bị tiểu đường loại 2
-    - em bị cận thi
-    - chị bị tiểu đường 2 năm rồi
-    - chị bị viêm gan B
-    - anh bị say nắng
-    - em bị suy thận, buồn nôn
-    - chị bị cận thị
-    - anh bị chóng mặt, đau đầu, buồn nôn
-    - anh bị nhanh đói bụng
-    - anh bị béo phì
-    - chị bị tim mạch
-    - chú bị hạ canxi máu
-    - em bị mang thai
-    - chị bị đau ruột thừa.
-    - em bị nôn mửa.
+    - anh bị [đau bụng](note) nhẹ
+    - anh hơi [chóng mặt](note)
+    - em bị [nôn mửa](note)
+    - chị bị [cận thị](note), [nhức đầu](note)
+    - anh bị [chóng mặt](note), [đau đầu](note), [nôn mửa](note)
+    - em bị [nhanh đói bụng](note)
+    - anh bị [đầy hơi](note)
+    - [đầy hơi](note), [khó tiêu](note), [tiêu chảy](note) 
+    - em bị [nôn mửa](note).
 
 - intent: thủy đậu
   examples: |
@@ -188,13 +200,13 @@ nlu:
 
 - intent: give_age
   examples: |
-    - anh [18](user_age) tuổi
-    - chị [19](user_age)
-    - chị năm nay [20](user_age) tuổi
-    - chị [21](user_age) tuổi
-    - anh [23](user_age)
-    - tuổi của anh là [18](user_age)
-    - tuổi của chị là [29](user_age)
+    - anh [27](user_age) tuổi
+    - chị [28](user_age)
+    - chị năm nay [29](user_age) tuổi
+    - chị [30](user_age) tuổi
+    - anh [31](user_age)
+    - tuổi của anh là [31](user_age)
+    - tuổi của chị là [32](user_age)
     
 - intent: đau mắt đỏ
   examples: |

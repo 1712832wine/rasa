@@ -1,0 +1,202 @@
+[
+  {
+    "text": "tính cách người cung Bảo Bình",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "đau thần kinh tọa",
+      "confidence": 0.3784056603908539
+    }
+  },
+  {
+    "text": "tại sao biển xanh lại mặn",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "thank",
+      "confidence": 0.21175460517406464
+    }
+  },
+  {
+    "text": "dân số Việt Nam là bao nhiêu",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "give_gender",
+      "confidence": 0.27431103587150574
+    }
+  },
+  {
+    "text": "giá vàng hôm nay bao nhiêu",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "hạ canxi máu",
+      "confidence": 0.34075117111206055
+    }
+  },
+  {
+    "text": "giá xăng hôm nay bao nhiêu",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.314106285572052
+    }
+  },
+  {
+    "text": "mặt trời mọc ở hướng nào",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "mụn trứng cá",
+      "confidence": 0.20374421775341034
+    }
+  },
+  {
+    "text": "xe ô tô có mấy bánh",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "viêm đường hô hấp",
+      "confidence": 0.997407853603363
+    }
+  },
+  {
+    "text": "con bò ăn gì",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "request_save_form",
+      "confidence": 0.16222912073135376
+    }
+  },
+  {
+    "text": "nước nào có GDP cao nhất thế giới",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "viêm xoang",
+      "confidence": 0.33306530117988586
+    }
+  },
+  {
+    "text": "lạm phát là gì",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.17143306136131287
+    }
+  },
+  {
+    "text": "tại sao Nga lại tấn công Ukraina",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "mụn trứng cá",
+      "confidence": 0.6707034707069397
+    }
+  },
+  {
+    "text": "bún bò có phải là bún bò Huế không",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.25998106598854065
+    }
+  },
+  {
+    "text": "Cách dạy trẻ không nghịch ngợm",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "covid",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Tại sao khủng long tuyệt chủng",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "thank",
+      "confidence": 0.3198539912700653
+    }
+  },
+  {
+    "text": "Đi lạc trong rừng làm sao để thoát nạn",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "cancel_form",
+      "confidence": 0.4066917300224304
+    }
+  },
+  {
+    "text": "Kĩ thuật bơi lội",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "đau thần kinh tọa",
+      "confidence": 0.35448673367500305
+    }
+  },
+  {
+    "text": "Cách sản xuất muối ăn",
+    "intent": "unknown",
+    "intent_prediction": {
+      "name": "viêm đường hô hấp",
+      "confidence": 0.40535858273506165
+    }
+  },
+  {
+    "text": "anh vui quá",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "thank",
+      "confidence": 0.8243077397346497
+    }
+  },
+  {
+    "text": "anh đang có chuyện buồn",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "ask_bot",
+      "confidence": 0.4929175078868866
+    }
+  },
+  {
+    "text": "đầy hơi, khó tiêu, tiêu chảy",
+    "intent": "give_diagnose",
+    "intent_prediction": {
+      "name": "tai-mũi-họng",
+      "confidence": 0.9999520778656006
+    }
+  },
+  {
+    "text": "Nguyên nhân dẫn đến bệnh viêm xoang?",
+    "intent": "viêm xoang",
+    "intent_prediction": {
+      "name": "viêm đường hô hấp",
+      "confidence": 0.7546519041061401
+    }
+  },
+  {
+    "text": "Chẩn đoán bệnh viêm xoang?",
+    "intent": "viêm xoang",
+    "intent_prediction": {
+      "name": "viêm đường hô hấp",
+      "confidence": 0.6055781841278076
+    }
+  },
+  {
+    "text": "Những ưu tiên gì được hưởng khi điều trị?",
+    "intent": "lao phổi",
+    "intent_prediction": {
+      "name": "tai-mũi-họng",
+      "confidence": 0.4567210376262665
+    }
+  },
+  {
+    "text": "Các thành phần trong vắc-xin là gì?",
+    "intent": "covid",
+    "intent_prediction": {
+      "name": "viêm đường hô hấp",
+      "confidence": 0.23767104744911194
+    }
+  },
+  {
+    "text": "vaccine ngừa covid kéo dài bao lâu?",
+    "intent": "covid",
+    "intent_prediction": {
+      "name": "lao phổi",
+      "confidence": 0.998156726360321
+    }
+  }
+]

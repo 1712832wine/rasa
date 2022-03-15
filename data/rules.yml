@@ -7,7 +7,6 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-
 - rule: thank
   steps:
   - intent: thank
@@ -35,6 +34,12 @@ rules:
     - requested_slot: null
   - action: action_submit
 
+- rule: Activate form 2
+  steps:
+  - intent: get_data
+  - action: get_data_form
+  - active_loop: get_data_form
+
 - rule: Submit form 2
   condition:
   - active_loop: get_data_form
@@ -45,11 +50,7 @@ rules:
     - requested_slot: null
   - action: action_get_data
 
-- rule: Activate form 2
-  steps:
-  - intent: get_data
-  - action: get_data_form
-  - active_loop: get_data_form
+
 
 
 

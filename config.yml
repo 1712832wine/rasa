@@ -25,7 +25,9 @@ pipeline:
     "use_word_boundaries": False
   - name: DIETClassifier
     epochs: 100
-    constrain_similarities: true
+    constrain_similarities: true               
+  
+
   - name: EntitySynonymMapper
   - name: ResponseSelector
     epochs: 100

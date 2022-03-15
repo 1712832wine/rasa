@@ -1,0 +1,255 @@
+{
+  "mood_unhappy": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 4,
+    "confused_with": {
+      "ask_bot": 1
+    }
+  },
+  "thủy đậu": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "da liễu": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "tay-chân-miệng": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 25,
+    "confused_with": {}
+  },
+  "béo phì": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 25,
+    "confused_with": {}
+  },
+  "quai bị, sâu răng": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 21,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "request_save_form": {
+    "precision": 0.9166666666666666,
+    "recall": 1.0,
+    "f1-score": 0.9565217391304348,
+    "support": 11,
+    "confused_with": {}
+  },
+  "lao phổi": {
+    "precision": 0.9,
+    "recall": 0.9,
+    "f1-score": 0.9,
+    "support": 10,
+    "confused_with": {
+      "tai-mũi-họng": 1
+    }
+  },
+  "covid": {
+    "precision": 0.9743589743589743,
+    "recall": 0.95,
+    "f1-score": 0.9620253164556962,
+    "support": 40,
+    "confused_with": {
+      "lao phổi": 1,
+      "viêm đường hô hấp": 1
+    }
+  },
+  "viêm đường hô hấp": {
+    "precision": 0.8275862068965517,
+    "recall": 1.0,
+    "f1-score": 0.9056603773584906,
+    "support": 24,
+    "confused_with": {}
+  },
+  "thận": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17,
+    "confused_with": {}
+  },
+  "đau thần kinh tọa": {
+    "precision": 0.9130434782608695,
+    "recall": 1.0,
+    "f1-score": 0.9545454545454545,
+    "support": 21,
+    "confused_with": {}
+  },
+  "angry": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "mụn trứng cá": {
+    "precision": 0.9047619047619048,
+    "recall": 1.0,
+    "f1-score": 0.9500000000000001,
+    "support": 19,
+    "confused_with": {}
+  },
+  "mood_great": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 5,
+    "confused_with": {
+      "thank": 1
+    }
+  },
+  "give_password": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "tim mạch": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 40,
+    "confused_with": {}
+  },
+  "hạ canxi máu": {
+    "precision": 0.9615384615384616,
+    "recall": 1.0,
+    "f1-score": 0.9803921568627451,
+    "support": 25,
+    "confused_with": {}
+  },
+  "thank": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 0.9473684210526315,
+    "recall": 1.0,
+    "f1-score": 0.972972972972973,
+    "support": 18,
+    "confused_with": {}
+  },
+  "tai-mũi-họng": {
+    "precision": 0.9473684210526315,
+    "recall": 1.0,
+    "f1-score": 0.972972972972973,
+    "support": 36,
+    "confused_with": {}
+  },
+  "viêm xoang": {
+    "precision": 0.9166666666666666,
+    "recall": 0.8461538461538461,
+    "f1-score": 0.8799999999999999,
+    "support": 13,
+    "confused_with": {
+      "viêm đường hô hấp": 2
+    }
+  },
+  "đau mắt đỏ": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 17,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 5,
+    "confused_with": {}
+  },
+  "unknown": {
+    "precision": 1.0,
+    "recall": 0.43333333333333335,
+    "f1-score": 0.6046511627906976,
+    "support": 30,
+    "confused_with": {
+      "đau thần kinh tọa": 2,
+      "viêm đường hô hấp": 2
+    }
+  },
+  "goodbye": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 4,
+    "confused_with": {}
+  },
+  "give_age": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "give_diagnose": {
+    "precision": 1.0,
+    "recall": 0.8888888888888888,
+    "f1-score": 0.9411764705882353,
+    "support": 9,
+    "confused_with": {
+      "tai-mũi-họng": 1
+    }
+  },
+  "ask_bot": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 4,
+    "confused_with": {}
+  },
+  "cancel_form": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333333,
+    "support": 7,
+    "confused_with": {}
+  },
+  "give_gender": {
+    "precision": 0.875,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333333,
+    "support": 7,
+    "confused_with": {}
+  },
+  "accuracy": 0.948559670781893,
+  "macro avg": {
+    "precision": 0.9315424750392299,
+    "recall": 0.9552617521367521,
+    "f1-score": 0.9353412069899282,
+    "support": 486
+  },
+  "weighted avg": {
+    "precision": 0.9558583815825809,
+    "recall": 0.948559670781893,
+    "f1-score": 0.9435323975186571,
+    "support": 486
+  }
+}

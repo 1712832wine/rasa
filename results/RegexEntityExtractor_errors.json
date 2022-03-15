@@ -1,0 +1,716 @@
+[
+  {
+    "text": "anh muốn lưu hồ sơ bệnh án",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9996351003646851,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em lưu hồ sơ bệnh án cho chị",
+    "entities": [
+      {
+        "start": 25,
+        "end": 28,
+        "value": "chị",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.9993731379508972,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chị muốn em lưu hồ sơ bệnh án",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "chị",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9995098114013672,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh muốn lập hồ sơ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9995706677436829,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh muốn tạo hồ sơ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9994235038757324,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh tên là Long",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "value": "Long",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9918751120567322,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.9925202131271362,
+        "value": "Long",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chị là Hảo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "chị",
+        "entity": "user_gender"
+      },
+      {
+        "start": 7,
+        "end": 10,
+        "value": "Hảo",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9992086291313171,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9943055510520935,
+        "value": "Hảo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh có tên là Đạt",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "value": "Đạt",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9989354014396667,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.9877724051475525,
+        "value": "Đạt",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chào em, chị là Mai",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "chị",
+        "entity": "user_gender"
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "value": "Mai",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.993499755859375,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9760274887084961,
+        "value": "Mai",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "xin chào, anh tên Bảo",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 18,
+        "end": 21,
+        "value": "Bảo",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.9876874089241028,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 18,
+        "end": 21,
+        "confidence_entity": 0.8048589825630188,
+        "value": "Bảo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chào em, chị là Hân",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "chị",
+        "entity": "user_gender"
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "value": "Hân",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.9925780892372131,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9936954379081726,
+        "value": "Hân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "xin chào anh tên là Huy",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 20,
+        "end": 23,
+        "value": "Huy",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.9934908151626587,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 20,
+        "end": 23,
+        "confidence_entity": 0.9920294284820557,
+        "value": "Huy",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh có tên là Nam",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "value": "Nam",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9985414743423462,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_gender",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.9772260189056396,
+        "value": "Nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh tên là Toàn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "value": "Toàn",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9953098893165588,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 11,
+        "end": 15,
+        "confidence_entity": 0.9923704862594604,
+        "value": "Toàn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "mình tên là Ngọc",
+    "entities": [
+      {
+        "start": 12,
+        "end": 16,
+        "value": "Ngọc",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_name",
+        "start": 12,
+        "end": 16,
+        "confidence_entity": 0.3700442314147949,
+        "value": "Ngọc",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "xin chào, anh tên là Thành",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "value": "Thành",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.9799540042877197,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.9969696402549744,
+        "value": "Thành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh là nam",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9936422109603882,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tôi là nam",
+    "entities": [
+      {
+        "start": 7,
+        "end": 10,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9971874356269836,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "giới tính của anh là nam",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9972967505455017,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chị là nữ",
+    "entities": [
+      {
+        "start": 7,
+        "end": 9,
+        "value": "nữ",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.992384135723114,
+        "value": "nữ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em là nam",
+    "entities": [
+      {
+        "start": 6,
+        "end": 9,
+        "value": "nam",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 6,
+        "end": 9,
+        "confidence_entity": 0.994381844997406,
+        "value": "nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em là nữ",
+    "entities": [
+      {
+        "start": 6,
+        "end": 8,
+        "value": "nữ",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 6,
+        "end": 8,
+        "confidence_entity": 0.9894590377807617,
+        "value": "nữ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "giới tính của chị là nữ",
+    "entities": [
+      {
+        "start": 21,
+        "end": 23,
+        "value": "nữ",
+        "entity": "user_gender"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 21,
+        "end": 23,
+        "confidence_entity": 0.9975506663322449,
+        "value": "nữ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Béo phì có gây tiểu đường không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 15,
+        "end": 25,
+        "value": "tiểu đường",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bị suy thận sống được bao lâu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 3,
+        "end": 11,
+        "value": "suy thận",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Bị suy thận giai đoạn cuối thì còn sống được bao lâu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 3,
+        "end": 11,
+        "value": "suy thận",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Các yếu tố làm tăng nguy cơ suy thận là gì",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 28,
+        "end": 36,
+        "value": "suy thận",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Phương pháp chẩn đoán suy thận là gì",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 22,
+        "end": 30,
+        "value": "suy thận",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Nguyên nhân gây suy thận là gì?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 16,
+        "end": 24,
+        "value": "suy thận",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Trong 1 năm, người mắc bệnh lao phổi có thể lây cho bao nhiêu người khác?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_age",
+        "start": 6,
+        "end": 7,
+        "value": "1",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  }
+]

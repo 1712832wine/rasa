@@ -1,0 +1,384 @@
+[
+  {
+    "text": "cảm ơn anh nha",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.40838614106178284,
+        "value": "anh nha",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "chào anh",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 5,
+        "end": 8,
+        "confidence_entity": 0.5046205520629883,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh có tên là Nam",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "anh",
+        "entity": "user_gender"
+      },
+      {
+        "start": 14,
+        "end": 17,
+        "value": "Nam",
+        "entity": "user_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9985414743423462,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_gender",
+        "start": 14,
+        "end": 17,
+        "confidence_entity": 0.9772260189056396,
+        "value": "Nam",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh bị đau bụng nhẹ",
+    "entities": [
+      {
+        "start": 7,
+        "end": 15,
+        "value": "đau bụng",
+        "entity": "note"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 7,
+        "end": 15,
+        "value": "đau bụng",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 7,
+        "end": 19,
+        "confidence_entity": 0.38435232639312744,
+        "value": "đau bụng nhẹ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh hơi chóng mặt",
+    "entities": [
+      {
+        "start": 8,
+        "end": 17,
+        "value": "chóng mặt",
+        "entity": "note"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 8,
+        "end": 17,
+        "value": "chóng mặt",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.5050656199455261,
+        "value": "anh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "note",
+        "start": 8,
+        "end": 17,
+        "confidence_entity": 0.9436687231063843,
+        "value": "chóng mặt",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em bị nôn mửa",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "nôn mửa",
+        "entity": "note"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 6,
+        "end": 13,
+        "value": "nôn mửa",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "chị bị cận thị, nhức đầu",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "cận thị",
+        "entity": "note"
+      },
+      {
+        "start": 16,
+        "end": 24,
+        "value": "nhức đầu",
+        "entity": "note"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 7,
+        "end": 14,
+        "value": "cận thị",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 16,
+        "end": 24,
+        "value": "nhức đầu",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9227226376533508,
+        "value": "cận thị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.7795282602310181,
+        "value": "nhức",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "note",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.7071729898452759,
+        "value": "đầu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "anh bị chóng mặt, đau đầu, nôn mửa",
+    "entities": [
+      {
+        "start": 7,
+        "end": 16,
+        "value": "chóng mặt",
+        "entity": "note"
+      },
+      {
+        "start": 18,
+        "end": 25,
+        "value": "đau đầu",
+        "entity": "note"
+      },
+      {
+        "start": 27,
+        "end": 34,
+        "value": "nôn mửa",
+        "entity": "note"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 7,
+        "end": 16,
+        "value": "chóng mặt",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 18,
+        "end": 25,
+        "value": "đau đầu",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 27,
+        "end": 34,
+        "value": "nôn mửa",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 7,
+        "end": 16,
+        "confidence_entity": 0.988934338092804,
+        "value": "chóng mặt",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "note",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.9361554384231567,
+        "value": "đau đầu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "đầy hơi, khó tiêu, tiêu chảy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "đầy hơi",
+        "entity": "note"
+      },
+      {
+        "start": 9,
+        "end": 17,
+        "value": "khó tiêu",
+        "entity": "note"
+      },
+      {
+        "start": 19,
+        "end": 28,
+        "value": "tiêu chảy",
+        "entity": "note"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 0,
+        "end": 7,
+        "value": "đầy hơi",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 9,
+        "end": 17,
+        "value": "khó tiêu",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "note",
+        "start": 19,
+        "end": 28,
+        "value": "tiêu chảy",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "em bị nôn mửa.",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "nôn mửa",
+        "entity": "note"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "note",
+        "start": 6,
+        "end": 13,
+        "value": "nôn mửa",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "chị muốn thoát",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "user_gender",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.997137188911438,
+        "value": "chị",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "user_name",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.5279848575592041,
+        "value": "thoát",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tuổi của anh là 31",
+    "entities": [
+      {
+        "start": 16,
+        "end": 18,
+        "value": "31",
+        "entity": "user_age"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "user_age",
+        "start": 16,
+        "end": 18,
+        "value": "31",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "user_name",
+        "start": 16,
+        "end": 18,
+        "confidence_entity": 0.7305883169174194,
+        "value": "31",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

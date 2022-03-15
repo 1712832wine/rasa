@@ -110,6 +110,10 @@ responses:
     text: "Xin chào {user_gender}, em có thể giúp gì cho {user_gender} ạ"
   utter_mood_great:
   - text: Có chuyện gì vui vậy ạ
+  utter_deactivate_get_data_form:
+  - text: Đã thoát quá trình xem bệnh án ạ.
+  utter_deactivate_diagnose_form:
+  - text: Đã thoát quá trình xem bệnh án ạ.
   utter_cheer_up:
   - text: 'Thui đừng buồn nữa nà, cho coi cái này nè:'
     image: https://i.imgur.com/nGF1K8f.jpg

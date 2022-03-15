@@ -204,6 +204,7 @@ stories:
   - intent: deny
   - action: action_deactivate_loop
   - active_loop: null
+  - action: utter_deactivate_diagnose_form
 
 - story: User interrupts the form and doesn't want to continue 2
   steps:
@@ -215,5 +216,6 @@ stories:
   - intent: deny
   - action: action_deactivate_loop
   - active_loop: null
+  - action: utter_deactivate_get_data_form
 
 
