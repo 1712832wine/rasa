@@ -73,7 +73,7 @@ nlu:
 
 - regex: user_age
   examples: |
-    - \d{1,3}
+    - \d{4}
 - regex: password
   examples: |
     - \d{6,9}
@@ -97,14 +97,14 @@ nlu:
     
 - intent: give_age
   examples: |
-    - anh [18](user_age) tuổi
-    - tôi [20](user_age) tuổi rồi
-    - năm nay anh [9](user_age) tuổi
-    - chị mới [26](user_age) tuổi thôi
-    - chị [45](user_age) tuổi thôi
-    - anh [23](user_age) tuổi
-    - anh [46](user_age)
-    - chị [78](user_age)
+    - anh sinh năm [1999](user_age)
+    - tôi sinh năm [2000](user_age)
+    - anh sinh năm [2001](user_age)
+    - chị sinh năm [2002](user_age)
+    - năm sinh của chị là [2003](user_age)
+    - năm sinh của anh là [2004](user_age)
+    - năm sinh [2005](user_age)
+    - năm sinh là [2006](user_age)
 
 - intent: give_password
   examples: |

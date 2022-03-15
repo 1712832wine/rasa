@@ -75,7 +75,8 @@ slots:
       conditions:
         - active_loop: diagnose_form
           requested_slot: password
-    
+        - active_loop: get_data_form
+          requested_slot: password
   note:
     type: list
     influence_conversation: true
@@ -154,7 +155,7 @@ responses:
         name: user_gender
         value: Null
     text: "anh/chị, cho em xin tên ạ"
-  - text: "{user_gender}, cho em xin tên ạ"
+  - text: "{user_gender} ơi, cho em xin tên ạ"
   utter_ask_user_gender:
   - condition:
       - type: slot
@@ -166,15 +167,15 @@ responses:
       - type: slot
         name: user_gender
         value: Null
-    text: "anh/chị bao nhiêu tuổi ạ"
-  - text: "{user_gender} bao nhiêu tuổi ạ"
+    text: "anh/chị sinh năm bao nhiêu ạ"
+  - text: "{user_gender} sinh năm bao nhiêu ạ"
   utter_ask_password:
   - condition:
       - type: slot
         name: user_gender
         value: Null
-    text: "Mời anh/chị nhập id, mỗi người có 1 id duy nhất"
-  - text: "Mời {user_gender} nhập id, mỗi người có 1 id duy nhất"
+    text: "Mời anh/chị nhập id, mỗi người có 1 id duy nhất (id là số, độ dài (6-9))"
+  - text: "Mời {user_gender} nhập id, mỗi người có 1 id duy nhất (id là số, độ dài (6-9))"
   utter_ask_note:
   - condition:
       - type: slot

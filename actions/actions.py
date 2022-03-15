@@ -151,6 +151,7 @@ class ActionGetData(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         """Define what the form has to do after all required slots are filled"""
+
         password = tracker.get_slot("password")
         con = sqlite3.connect('database.sqlite3')
         cur = con.cursor()
@@ -161,7 +162,7 @@ class ActionGetData(Action):
         con.close()
         if len(result) > 0:
             dispatcher.utter_message(
-                text=f"Hồ sơ của bạn là: {result[0][0]}{result[0][1]}{result[0][2]}{result[0][4]}{result[0][5]}!")
+                text=f"Hồ sơ của bạn là: [{result[0][0]}] - [{result[0][1]}] - [{result[0][2]}] - [{json.loads(result[0][4])}] - [{result[0][5]}]!")
         else:
             dispatcher.utter_message(
                 text=f"Không có hồ sơ của bạn trong danh sách!")
@@ -206,7 +207,7 @@ class ActionSubmit(Action):
         # reset all slot
 
         dispatcher.utter_message(
-            text=f"Hồ sơ đã hoàn thành, lưu các thông tin sau: {user_name}-{user_gender}-{user_age}-{password}-{note}")
+            text=f"Hồ sơ đã hoàn thành, lưu các thông tin sau: [{user_name}] - [{user_gender}] - [{user_age}] - [{password}] - [{note}]")
         return [AllSlotsReset()]
 
 

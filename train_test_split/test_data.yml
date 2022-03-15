@@ -200,13 +200,13 @@ nlu:
 
 - intent: give_age
   examples: |
-    - anh [27](user_age) tuổi
-    - chị [28](user_age)
-    - chị năm nay [29](user_age) tuổi
-    - chị [30](user_age) tuổi
-    - anh [31](user_age)
-    - tuổi của anh là [31](user_age)
-    - tuổi của chị là [32](user_age)
+    - anh sinh năm [1978](user_age)
+    - chị sinh năm [1928](user_age)
+    - chị sinh năm [1929](user_age)
+    - năm sinh của chị [1930](user_age)
+    - năm sinh của anh là [1931](user_age)
+    - năm sinh [1931](user_age)
+    - năm sinh của anh [1932](user_age)
     
 - intent: đau mắt đỏ
   examples: |
