@@ -18,7 +18,7 @@ from sentence_transformers import SentenceTransformer, util
 import sqlite3
 from datetime import datetime
 import hashlib
-from rasa_sdk.events import AllSlotsReset
+from rasa_sdk.events import AllSlotsReset, SlotSet
 from underthesea import word_tokenize
 from nltk.corpus import stopwords
 
@@ -166,8 +166,7 @@ class ActionGetData(Action):
         else:
             dispatcher.utter_message(
                 text=f"Không có hồ sơ của bạn trong danh sách!")
-        tracker.slots['password'] = None
-        return []
+        return [SlotSet("password", None)]
 
 
 class ActionSubmit(Action):
