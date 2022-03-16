@@ -18,15 +18,16 @@ pipeline:
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
+  
+  - name: DIETClassifier
+    epochs: 100
+    constrain_similarities: true               
+  
   - name: RegexEntityExtractor
     case_sensitive: True
     use_lookup_tables: True
     use_regexes: True
     "use_word_boundaries": False
-  - name: DIETClassifier
-    epochs: 100
-    constrain_similarities: true               
-  
 
   - name: EntitySynonymMapper
   - name: ResponseSelector

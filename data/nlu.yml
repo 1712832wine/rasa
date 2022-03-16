@@ -99,29 +99,34 @@ nlu:
   examples: |
     - anh sinh năm [1999](user_age)
     - tôi sinh năm [2000](user_age)
-    - anh sinh năm [2001](user_age)
-    - chị sinh năm [2002](user_age)
-    - năm sinh của chị là [2003](user_age)
-    - năm sinh của anh là [2004](user_age)
-    - năm sinh [2005](user_age)
-    - năm sinh là [2006](user_age)
+    - anh sinh năm 2001
+    - chị sinh năm 2002
+    - năm sinh của chị là 2003
+    - năm sinh của anh là 2004
+    - năm sinh 2005
+    - năm sinh là 2006
 
 - intent: give_password
   examples: |
-    - mật khẩu là [123456789](password)
-    - mật khẩu của anh là [987654321](password)
-    - mật khẩu của chị [987654321](password)
+    - mật khẩu là [123456](password)
+    - mật khẩu của anh là [123456](password)
+    - mật khẩu của chị 987654321
+    - id là 12345567
+    - id của anh là 123456789
+    - id 12345678
 - intent: give_diagnose
   examples: |
-    - tôi bị [đau bụng](note)
-    - anh bị [chóng mặt](note)
-    - anh bị [khó thở](note)
-    - anh bị [thị lực kém](note)
-    - chị bị [tiểu đường](note)
-    - chị bị [suy thận](note)
-    - em bị [cận thị](note)
-    - anh bị [chóng mặt](note), [đau đầu](note)
-    - anh bị [nhanh đói bụng](note)
+    - anh bị [triệu chứng](note)
+    - tôi bị [triệu chứng](note)
+    - tôi bị đau bụng
+    - anh bị chóng mặt
+    - anh bị khó thở
+    - anh bị thị lực kém
+    - chị bị tiểu đường
+    - chị bị suy thận
+    - em bị cận thị
+    - anh bị chóng mặt, đau đầu
+    - anh bị nhanh đói bụng
 - intent: goodbye
   examples: |
     - bye
