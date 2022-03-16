@@ -5,7 +5,7 @@ rules:
 - rule: goodbye
   steps:
   - intent: goodbye
-  - action: utter_goodbye
+  - action: action_goodbye
 
 - rule: thank
   steps:

@@ -126,8 +126,6 @@ responses:
   - text: Không có gì đâu
   utter_happy:
   - text: Umk, em cũng vui nữa
-  utter_goodbye:
-  - text: Em tạm biệt
   utter_unknown:
   - condition:
       - type: slot
@@ -181,8 +179,8 @@ responses:
       - type: slot
         name: user_gender
         value: Null
-    text: "Mời anh/chị nhập bệnh án ạ"
-  - text: "Mời {user_gender} nhập bệnh án ạ"
+    text: "Mời anh/chị nhập tất cả triệu chứng mình có ạ"
+  - text: "Mời {user_gender} nhập tất cả triệu chứng mình có ạ"
   utter_ask_continue:
   - condition:
       - type: slot
@@ -196,3 +194,4 @@ actions:
 - action_submit
 - validate_diagnose_form
 - validate_get_data_form
+- action_goodbye
